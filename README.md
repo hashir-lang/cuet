@@ -1,6 +1,6 @@
-# CUETECH — Central University of Emerging Technologies website
+# CueTech — Central University of Emerging Technologies website
 
-The new website for Central University of Emerging Technologies (CUETECH), built with Next.js 16, React 19, TypeScript and Tailwind CSS 4.
+The new website for Central University of Emerging Technologies (CueTech), built with Next.js 16, React 19, TypeScript and Tailwind CSS 4.
 It runs locally. Nothing has been deployed.
 
 - **50 pages**: home, about, 13 faculty pages, 17 program pages, 4 admissions pages, campus, facilities, student life, news and events (with detail pages), contact.
@@ -57,7 +57,7 @@ src/
   app/                 Pages (one folder per URL), sitemap, robots, contact API
   components/          Reusable building blocks
     art/               Hero line drawing and jali lattice pattern
-    brand/             Wordmark and emblem built from the official CUETECH logo
+    brand/             Wordmark and emblem built from the official CueTech logo
     cards/             Program, faculty, news and event cards
     layout/            Header, desktop menu, mobile drawer, footer, back-to-top
     media/             Image slots and illustrated artwork plates
@@ -66,7 +66,7 @@ src/
                        admissions, news, events, navigation, institutional text
   lib/                 Formatting, SEO helpers, contact-form validation
 public/
-  brand/               Official CUETECH logo cut-outs (emblem and full lockup, navy and light)
+  brand/               Official CueTech logo cut-outs (emblem and full lockup, navy and light)
   fonts/               Self-hosted fonts (SIL Open Font License)
   images/              Put real photographs here (see docs/CONTENT-GUIDE.md)
   og-image.png         Social sharing image

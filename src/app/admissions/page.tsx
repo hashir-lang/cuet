@@ -30,12 +30,13 @@ const journey = [
 
 export default function AdmissionsPage() {
   const dates = site.admissions.importantDates;
+  const email = site.contact.admissionsEmail ?? site.contact.email;
   return (
     <>
       <PageHero
         crumbs={[{ name: 'Admissions', href: '/admissions' }]}
         eyebrow="Admissions"
-        title="Begin your journey at CUETECH."
+        title="Begin your journey at CueTech."
         lede="Everything you need to choose a program, check the requirements and submit your application."
         aside={<Media media={{ src: null, alt: 'Illustration representing admissions', plate: 'admissions' }} className="aspect-[4/3] w-full" priority />}
       >
@@ -134,6 +135,14 @@ export default function AdmissionsPage() {
               Ask the Admissions Office
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
+            {email ? (
+              <p className="mt-3 text-stone-700">
+                or email{' '}
+                <a href={`mailto:${email}`} className="break-all font-semibold text-forest-700 underline underline-offset-4">
+                  {email}
+                </a>
+              </p>
+            ) : null}
           </div>
           <div className="lg:col-span-8">
             <FaqList items={admissionsFaqs} />

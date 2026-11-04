@@ -36,8 +36,21 @@ export function pageMeta({ title, description, path, noIndex, type = 'website' }
   };
 }
 
-/** Structured data. Only verified facts are included: name, alternate name, logo, URL and city. */
+/** schema.org PostalAddress for the campus. The street address is included once the University has supplied it. */
+export function postalAddressJsonLd() {
+  const street = site.contact.address;
+  return {
+    '@type': 'PostalAddress',
+    ...(street ? { streetAddress: street.join(', ') } : {}),
+    addressLocality: site.city,
+    addressRegion: site.region,
+    addressCountry: 'PK',
+  };
+}
+
+/** Structured data. Only verified facts are included: name, alternate name, logo, URL, address, contact details and map location. */
 export function organizationJsonLd() {
+  const c = site.contact;
   return {
     '@context': 'https://schema.org',
     '@type': 'CollegeOrUniversity',
@@ -45,7 +58,11 @@ export function organizationJsonLd() {
     alternateName: site.shortName,
     url: site.url,
     logo: `${site.url}${site.logo.full.src}`,
-    address: { '@type': 'PostalAddress', addressLocality: site.city, addressCountry: 'PK' },
+    address: postalAddressJsonLd(),
+    ...(c.email ? { email: c.email } : {}),
+    ...(c.phone ? { telephone: c.phone.display } : {}),
+    ...(c.mapLink ? { hasMap: c.mapLink } : {}),
+    ...(c.geo ? { geo: { '@type': 'GeoCoordinates', latitude: c.geo.lat, longitude: c.geo.lng } } : {}),
     ...(site.social.length ? { sameAs: site.social.map((s) => s.href) } : {}),
   };
 }

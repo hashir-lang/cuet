@@ -17,11 +17,12 @@ File: `src/content/site.ts`
 
 | Setting | What happens when you fill it |
 | --- | --- |
-| `contact.address` | Shown in the footer and on the contact page, e.g. `['Street', 'Area', 'Lahore 54000', 'Pakistan']` |
+| `contact.address` | Street address lines only, e.g. `['Maulana Shaukat Ali Road', 'Adjacent to Jinnah Institute of Cardiology']`. The city, province and country are added from `city`, `region` and `country`. Shown in the footer, on the contact page and in structured data |
 | `contact.phone` | `{ display: '+92 42 0000 0000', href: 'tel:+924200000000' }` |
-| `contact.email`, `contact.officeHours` | Shown on the contact page and footer |
-| `contact.mapEmbedUrl` | Replaces the "Map coming soon" panel with an embedded map (Google Maps → Share → Embed a map → copy the `src` URL) |
-| `logo` | The official CUETECH logo files in `public/brand/`: `mark` (emblem) and `full` (emblem with name), each with a `Light` version for navy backgrounds. To update the logo, replace the PNG files and keep the sizes listed here in step with the new files |
+| `contact.email`, `contact.admissionsEmail`, `contact.officeHours` | Email is shown in the footer, on the contact page and on the admissions pages; `admissionsEmail`, when set, replaces it on the admissions pages |
+| `contact.mapEmbedUrl` | The embedded map on the contact page. Currently built from the campus coordinates; for a labelled pin use Google Maps → Share → Embed a map → copy the `src` URL |
+| `contact.mapLink`, `contact.geo` | The public Google Maps link behind "Open in Google Maps" and "Get directions", and the campus coordinates used in structured data |
+| `logo` | The official CueTech logo files in `public/brand/`: `mark` (emblem) and `full` (emblem with name), each with a `Light` version for navy backgrounds. To update the logo, replace the PNG files and keep the sizes listed here in step with the new files |
 | `social` | Footer links, e.g. `[{ label: 'Facebook', href: 'https://facebook.com/...' }]`. Only add verified accounts |
 | `admissions.portalUrl` | The "Online application" page links straight to the portal |
 | `admissions.announcement` | Replaces the text in the dark bar at the top of every page |

@@ -8,7 +8,7 @@ import { Media } from '@/components/media/Media';
 import { Pending, TemplateBadge } from '@/components/ui/Editorial';
 import { JsonLd } from '@/components/ui/JsonLd';
 import { formatDate, formatTime } from '@/lib/format';
-import { pageMeta } from '@/lib/seo';
+import { pageMeta, postalAddressJsonLd } from '@/lib/seo';
 import { site } from '@/content/site';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -45,7 +45,7 @@ export default async function EventPage({ params }: Props) {
             description: e.excerpt,
             startDate: e.startsAt,
             ...(e.endsAt ? { endDate: e.endsAt } : {}),
-            ...(e.venue ? { location: { '@type': 'Place', name: e.venue, address: site.city } } : {}),
+            ...(e.venue ? { location: { '@type': 'Place', name: e.venue, address: postalAddressJsonLd() } } : {}),
             organizer: { '@type': 'CollegeOrUniversity', name: site.name, url: site.url },
           }}
         />

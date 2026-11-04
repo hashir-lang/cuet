@@ -3,10 +3,11 @@ import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
 import { Wordmark } from '@/components/brand/Wordmark';
 import { Jali } from '@/components/art/Jali';
 import { footerNav } from '@/content/navigation';
-import { site } from '@/content/site';
+import { addressLines, site } from '@/content/site';
 
 export function Footer() {
   const c = site.contact;
+  const address = addressLines();
   const year = new Date().getFullYear();
   return (
     <footer className="relative isolate overflow-hidden bg-forest-950 text-forest-100">
@@ -51,8 +52,17 @@ export function Footer() {
             <ul className="mt-5 space-y-4 text-[0.95rem]">
               <li className="flex gap-3">
                 <MapPin className="mt-1 size-4 shrink-0 text-brass-300" aria-hidden="true" />
-                {c.address ? (
-                  <address className="not-italic">{c.address.join(', ')}</address>
+                {address ? (
+                  <address className="not-italic">
+                    {c.mapLink ? (
+                      <a href={c.mapLink} target="_blank" rel="noopener noreferrer" className="hover:text-ivory">
+                        {address.join(', ')}
+                        <span className="sr-only"> (opens Google Maps in a new tab)</span>
+                      </a>
+                    ) : (
+                      address.join(', ')
+                    )}
+                  </address>
                 ) : (
                   <span>Lahore, Pakistan. Full address to be published.</span>
                 )}
@@ -101,7 +111,7 @@ export function Footer() {
             © {year} {site.name}. All rights reserved.
           </p>
           <p className="max-w-xl md:text-right">
-            Images on this website are illustrations or stock photographs, not photographs of the University. Facility figures are planning allocations.
+            Apart from the photograph of the University’s main building, images on this website are illustrations or stock photographs. Facility figures are planning allocations.
           </p>
         </div>
       </div>

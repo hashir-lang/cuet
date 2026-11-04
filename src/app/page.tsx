@@ -74,7 +74,7 @@ export default function HomePage() {
   return (
     <>
       {/* 1. Hero: full-bleed photo slideshow with a headline per slide */}
-      <HeroCarousel slides={heroSlides} label="Photographs of university life (stock photography, not the CUETECH campus)" />
+      <HeroCarousel slides={heroSlides} label="Photographs of the University’s main building and of university life" />
 
       {/* Key figures band under the hero */}
       <section aria-label="Key figures" className="border-t border-white/10 bg-forest-950 text-ivory">
@@ -170,7 +170,7 @@ export default function HomePage() {
       {/* 6. Why choose */}
       <Section tone="stone" labelledBy="why-title">
         <div className="container-cul">
-          <SectionHeading id="why-title" eyebrow={`Why ${site.shortName}`} title="Why choose CUETECH." />
+          <SectionHeading id="why-title" eyebrow={`Why ${site.shortName}`} title="Why choose CueTech." />
           <ul className="grid gap-px overflow-hidden border border-stone-200 bg-stone-200 sm:grid-cols-2 lg:grid-cols-4">
             {reasons.map((r) => (
               <li key={r.title} className="flex flex-col bg-paper p-6 sm:p-8">
@@ -247,7 +247,7 @@ export default function HomePage() {
           <div className="lg:col-span-5 lg:col-start-8">
             <SectionHeading id="student-title" eyebrow="Student Experience" title="More than a degree." className="!mb-6" />
             <p className="lede text-stone-700">
-              University is where friendships form, interests deepen and confidence grows. Student life at CUETECH is built around academic support, community and a campus designed for study.
+              University is where friendships form, interests deepen and confidence grows. Student life at CueTech is built around academic support, community and a campus designed for study.
             </p>
             <ul className="mt-8 space-y-4 border-t border-stone-300 pt-6">
               {['Academic advising and study support', 'A library for every faculty', 'Student societies and activities'].map((t) => (
@@ -271,7 +271,7 @@ export default function HomePage() {
           <SectionHeading
             id="admissions-title"
             eyebrow="Admissions"
-            title="Your path to CUETECH."
+            title="Your path to CueTech."
             align="split"
             intro="Applying is straightforward. Follow four steps, and contact the Admissions Office whenever you need help."
           />

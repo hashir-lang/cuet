@@ -20,7 +20,7 @@ export const metadata = pageMeta({
 
 export default function AboutPage() {
   const institutional = [
-    { label: 'Location', value: `${site.city}, ${site.country}` },
+    { label: 'Location', value: `${site.city}, ${site.region}, ${site.country}` },
     { label: 'Faculties', value: String(totals.faculties) },
     { label: 'Undergraduate programs', value: String(totals.programs) },
     { label: 'Laboratories planned', value: String(totals.laboratories) },

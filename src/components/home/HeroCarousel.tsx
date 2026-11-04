@@ -132,7 +132,7 @@ export function HeroCarousel({ slides, label }: { slides: HeroSlide[]; label: st
             aria-hidden={i !== index}
           >
             <div className="hero-slide-media">
-              <Image src={s.src} alt={s.alt} fill sizes="100vw" quality={60} preload={i === 0} className="object-cover" />
+              <Image src={s.src} alt={s.alt} fill sizes="100vw" quality={60} preload={i === 0} className="object-cover" style={{ objectPosition: s.objectPosition }} />
             </div>
           </div>
         ))}
@@ -188,8 +188,8 @@ export function HeroCarousel({ slides, label }: { slides: HeroSlide[]; label: st
           ) : null}
         </div>
 
-        {/* Bottom-right note. Keeps the site honest about the photographs without a label on every slide. */}
-        <p className="absolute bottom-8 right-10 hidden text-[0.68rem] uppercase tracking-[0.14em] text-ivory/45 lg:block">Stock photography</p>
+        {/* Bottom-right note on stock slides only. Keeps the site honest about the photographs without a label on every slide. */}
+        {slide.stock ? <p className="absolute bottom-8 right-10 hidden text-[0.68rem] uppercase tracking-[0.14em] text-ivory/45 lg:block">Stock photography</p> : null}
       </div>
 
       {/* Arrows: bottom-right on phones, right-middle on wide screens */}

@@ -10,7 +10,7 @@ const draft = <T,>(value: T): Draft<T> => ({ status: 'draft', value });
 
 export const university = {
   overview: draft([
-    'Central University of Emerging Technologies (CUETECH) is a multi-disciplinary university organised into thirteen faculties, offering seventeen undergraduate programs across business, computing, education, the humanities, the health sciences, engineering technology, aviation, law, agriculture and the mathematical sciences.',
+    'Central University of Emerging Technologies (CueTech) is a multi-disciplinary university organised into thirteen faculties, offering seventeen undergraduate programs across business, computing, education, the humanities, the health sciences, engineering technology, aviation, law, agriculture and the mathematical sciences.',
     'Its academic plan pairs classroom teaching with dedicated laboratory space for practice-led disciplines and a growing academic library, so that students learn by doing as well as by studying.',
   ]),
   vision: draft(

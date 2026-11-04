@@ -4,6 +4,7 @@ import { PageHero } from '@/components/ui/PageHero';
 import { AdmissionsNav } from '@/components/admissions/AdmissionsNav';
 import { CtaBand } from '@/components/ui/CtaBand';
 import { applySteps } from '@/content/admissions';
+import { site } from '@/content/site';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
@@ -13,6 +14,7 @@ export const metadata = pageMeta({
 });
 
 export default function HowToApplyPage() {
+  const email = site.contact.admissionsEmail ?? site.contact.email;
   return (
     <>
       <PageHero
@@ -52,6 +54,14 @@ export default function HowToApplyPage() {
             <div className="border border-stone-200 bg-ivory p-6 lg:sticky lg:top-[calc(var(--header-h)+1.5rem)]">
               <h2 className="heading-md">Need help?</h2>
               <p className="mt-2 text-stone-700">The Admissions Office can answer questions about programs, eligibility and your application.</p>
+              {email ? (
+                <p className="mt-2 text-stone-700">
+                  Email{' '}
+                  <a href={`mailto:${email}`} className="break-all font-semibold text-forest-700 underline underline-offset-4">
+                    {email}
+                  </a>
+                </p>
+              ) : null}
               <Link href="/contact" className="btn btn-dark mt-5 w-full">
                 Contact the University
               </Link>

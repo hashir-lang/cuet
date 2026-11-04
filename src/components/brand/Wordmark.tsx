@@ -4,14 +4,14 @@ import { site } from '@/content/site';
 
 type Tone = 'dark' | 'light';
 
-/** The CUETECH emblem on its own: the hexagonal mark cut from the official logo. */
+/** The CueTech emblem on its own: the hexagonal mark cut from the official logo. */
 export function BrandMark({ tone = 'dark', className, preload = false }: { tone?: Tone; className?: string; preload?: boolean }) {
   const mark = tone === 'dark' ? site.logo.mark : site.logo.markLight;
   return <Image src={mark.src} width={mark.width} height={mark.height} alt="" className={className} preload={preload} />;
 }
 
 /**
- * University wordmark: the official emblem beside the CUETECH name and the full
+ * University wordmark: the official emblem beside the CueTech name and the full
  * institutional name, set in the website's fonts so it stays crisp at any size.
  * Use `tone="light"` on dark (navy) backgrounds. Slightly more compact below 380 px
  * so the header still fits beside the menu button on the narrowest phones.
@@ -23,10 +23,10 @@ export function Wordmark({ tone = 'dark', className, preload = false }: { tone?:
       <span className="flex flex-col">
         <span
           className={clsx(
-            'font-serif text-[1.05rem] leading-none tracking-[0.2em] min-[380px]:text-[1.2rem] min-[380px]:tracking-[0.24em] sm:text-[1.3rem]',
+            'font-serif text-[1.15rem] leading-none tracking-[0.04em] min-[380px]:text-[1.3rem] sm:text-[1.45rem]',
             tone === 'dark' ? 'text-forest-900' : 'text-ivory',
           )}
-          style={{ fontWeight: 500 }}
+          style={{ fontWeight: 600 }}
         >
           {site.shortName}
         </span>

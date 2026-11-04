@@ -2,7 +2,7 @@
   "name": "cuetech-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Website for Central University of Emerging Technologies (CUETECH), local development build.",
+  "description": "Website for Central University of Emerging Technologies (CueTech), local development build.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -1,10 +1,10 @@
-import { Clock, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowUpRight, Clock, Mail, MapPin, Phone } from 'lucide-react';
 import { PageHero } from '@/components/ui/PageHero';
 import { ContactForm } from '@/components/contact/ContactForm';
 import { Pending, TBC } from '@/components/ui/Editorial';
 import { Jali } from '@/components/art/Jali';
 import { programs } from '@/content/programs';
-import { site } from '@/content/site';
+import { addressLines, site } from '@/content/site';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
@@ -15,6 +15,7 @@ export const metadata = pageMeta({
 
 export default function ContactPage() {
   const c = site.contact;
+  const address = addressLines();
   const missing = [!c.address && 'address', !c.phone && 'telephone', !c.email && 'email'].filter(Boolean) as string[];
 
   return (
@@ -46,7 +47,28 @@ export default function ContactPage() {
                   <MapPin className="mt-1 size-5 shrink-0 text-forest-700" aria-hidden="true" />
                   <div>
                     <p className="font-semibold">Address</p>
-                    {c.address ? <address className="not-italic text-stone-700">{c.address.map((l) => <span key={l} className="block">{l}</span>)}</address> : <p className="text-stone-700">Lahore, Pakistan. <TBC label="Full address to be confirmed." /></p>}
+                    {address ? (
+                      <>
+                        <address className="not-italic text-stone-700">
+                          {address.map((l) => (
+                            <span key={l} className="block">
+                              {l}
+                            </span>
+                          ))}
+                        </address>
+                        {c.mapLink ? (
+                          <a href={c.mapLink} target="_blank" rel="noopener noreferrer" className="link-arrow mt-3 text-forest-700">
+                            Open in Google Maps
+                            <ArrowUpRight className="size-4" aria-hidden="true" />
+                            <span className="sr-only">(opens in a new tab)</span>
+                          </a>
+                        ) : null}
+                      </>
+                    ) : (
+                      <p className="text-stone-700">
+                        Lahore, Pakistan. <TBC label="Full address to be confirmed." />
+                      </p>
+                    )}
                   </div>
                 </li>
                 <li className="flex gap-3">
@@ -87,7 +109,19 @@ export default function ContactPage() {
             Location
           </h2>
           {c.mapEmbedUrl ? (
-            <iframe title={`Map showing the location of ${site.name}`} src={c.mapEmbedUrl} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="mt-8 aspect-[16/9] w-full border-0 md:aspect-[21/9]" />
+            <>
+              <iframe title={`Map showing the location of ${site.name}`} src={c.mapEmbedUrl} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="mt-8 aspect-[16/9] w-full border border-stone-200 md:aspect-[21/9]" />
+              <div className="mt-5 flex flex-col gap-3 text-stone-700 sm:flex-row sm:items-center sm:justify-between">
+                {address ? <address className="not-italic">{address.join(', ')}</address> : null}
+                {c.mapLink ? (
+                  <a href={c.mapLink} target="_blank" rel="noopener noreferrer" className="link-arrow shrink-0 text-forest-700">
+                    Get directions
+                    <ArrowUpRight className="size-4" aria-hidden="true" />
+                    <span className="sr-only">(opens Google Maps in a new tab)</span>
+                  </a>
+                ) : null}
+              </div>
+            </>
           ) : (
             <div className="relative isolate mt-8 grid aspect-[16/10] place-items-center overflow-hidden border border-stone-200 bg-stone-100 md:aspect-[21/9]">
               <div className="absolute inset-0 -z-10 text-forest-700 opacity-[0.08]">

@@ -21,6 +21,7 @@ const checklist = [
 
 export default function ApplyPage() {
   const portal = site.admissions.portalUrl;
+  const email = site.contact.admissionsEmail ?? site.contact.email;
   return (
     <>
       <PageHero
@@ -52,7 +53,17 @@ export default function ApplyPage() {
             ) : (
               <>
                 <Pending title="The online application portal is not yet available on this website" className="mt-6">
-                  The University will link its official application portal here when admissions open. Until then, please contact the Admissions Office to ask about applying.
+                  The University will link its official application portal here when admissions open. Until then, please contact the Admissions Office to ask about applying
+                  {email ? (
+                    <>
+                      {' '}
+                      or email{' '}
+                      <a href={`mailto:${email}`} className="break-all font-semibold text-forest-700 underline underline-offset-4">
+                        {email}
+                      </a>
+                    </>
+                  ) : null}
+                  .
                 </Pending>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Link href="/contact" className="btn btn-primary">

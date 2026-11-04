@@ -13,7 +13,7 @@ Status of the Central University of Emerging Technologies website as delivered f
 | Admissions | Overview, How to apply, Requirements, Online application |
 | Campus | Campus & infrastructure, Facilities by faculty, Student life |
 | News & events | News list, events list, detail pages (template entries) |
-| Contact | Validated form with spam protection, contact details, map slot |
+| Contact | Validated form with spam protection, contact details, embedded campus map |
 | Technical | XML sitemap, robots.txt, 404 page, social sharing image, structured data |
 
 All 13 faculties and all 17 programs from the infrastructure report appear in the home page, menus, faculty pages, program directory, program pages, admissions lists and the sitemap. The Veterinary Science program is **BS Poultry Management** (not DVM).
@@ -24,9 +24,8 @@ Each item is shown on the site as a marked placeholder until supplied. Where to 
 
 **Identity and contact**
 - Official logo: supplied as a 1280 px PNG and cut into transparent emblem and full-lockup files in `public/brand/`. A vector master (SVG, PDF or AI) is still wanted for the sharpest favicons and for print
-- Official website domain. `https://cuetech.edu.pk` is a placeholder until the real domain is confirmed (set `NEXT_PUBLIC_SITE_URL`)
-- Confirmation of the campus city. The site still says Lahore, as in the original brief
-- Postal address, telephone, email, office hours, map location
+- Official website domain. `https://cuetech.edu.pk` is a placeholder until the real domain is confirmed (set `NEXT_PUBLIC_SITE_URL`). The University's email domain, `centraluniversitylahore.com`, suggests what the website domain will be
+- Telephone number and office hours. The postal address (Maulana Shaukat Ali Road, adjacent to Jinnah Institute of Cardiology, Lahore), the email address (info@centraluniversitylahore.com) and the map location have been supplied and are live on the site
 - Verified social media accounts
 - Year of establishment and a verified history
 
@@ -42,7 +41,7 @@ Each item is shown on the site as a marked placeholder until supplied. Where to 
 - Scholarship and financial aid information
 
 **Campus and student life**
-- Photographs of the campus, laboratories, library and student life. All images are illustrations except the home page hero, which uses five stock photographs from Unsplash (free licence, source URLs in `src/content/hero.ts`) until real campus photography is supplied
+- Photographs of the campus, laboratories, library and student life. The home page hero opens with the supplied photograph of the main building (`public/images/hero/main-building.jpg`, 1016 × 1548 px; a wider, higher-resolution version would look sharper on large screens). Its other four slides are stock photographs from Unsplash (free licence, source URLs in `src/content/hero.ts`), and all other images are illustrations
 - Details of student services (student affairs, careers, counselling, societies, sports, transport, hostels)
 
 **Questions about the infrastructure report (v8)**
@@ -56,7 +55,7 @@ Each item is shown on the site as a marked placeholder until supplied. Where to 
 | --- | --- | --- |
 | Contact form delivery | Validates and protects against spam; tells visitors delivery is not connected | Set `CONTACT_WEBHOOK_URL`; add a CAPTCHA and shared rate limiting before launch |
 | Online application | Placeholder page with checklist and contact link | Set `admissions.portalUrl` |
-| Map | "Map coming soon" panel | Set `contact.mapEmbedUrl` |
+| Map | Embedded Google Map of the campus on the contact page, with "Open in Google Maps" and "Get directions" links | Optional: replace `contact.mapEmbedUrl` with the official "Embed a map" URL from Google Maps for a labelled pin |
 | Analytics | None | Add if wanted (consider a consent notice) |
 | Content management | Content files in `src/content/` | Sufficient for now; a headless CMS can be added later without changing page layouts |
 
@@ -68,7 +67,7 @@ No cost, budget or rate figure from the report is stored in the website code or 
 
 | Element | Choice |
 | --- | --- |
-| Concept | The official CUETECH logo: deep navy and gold on warm ivory. The jali (carved lattice) and the Mughal-style hero line drawing remain as quiet decorative motifs |
+| Concept | The official CueTech logo: deep navy and gold on warm ivory. The jali (carved lattice) and the Mughal-style hero line drawing remain as quiet decorative motifs |
 | Colours | Navy `#0f1a36` (primary, from the logo), gold `#85652f` (action; darkened from the logo's gold so white text passes contrast), logo gold `#ba9b64` (accent on dark), ivory `#f8f4ec` and paper `#fcfaf6` (backgrounds), stone greys for text. Token names (`forest`, `sandstone`, `brass`) are unchanged so existing classes still work |
 | Logo | `public/brand/`: `cuetech-mark.png` (emblem), `cuetech-logo.png` (full lockup) and `-light` versions for navy backgrounds. Favicon and Apple touch icon are `src/app/icon.png` and `src/app/apple-icon.png`; the social sharing image is `public/og-image.png` |
 | Type | Newsreader (serif, headings) and Instrument Sans (text), self-hosted. Tracking tightens as size grows |
