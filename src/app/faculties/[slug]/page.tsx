@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, ArrowRight, BookOpen, FlaskConical, UserRound } from 'lucide-react';
 import { faculties, facultyBySlug } from '@/content/faculties';
-import { programsForFaculty } from '@/content/programs';
+import { programsForFaculty, proposedForFaculty } from '@/content/programs';
 import { infrastructureSource, planningNote } from '@/content/infrastructure';
+import { site } from '@/content/site';
 import { PageHero } from '@/components/ui/PageHero';
 import { Media } from '@/components/media/Media';
 import { ProgramCard } from '@/components/cards/ProgramCard';
@@ -24,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const f = facultyBySlug(slug);
   if (!f) return {};
-  const progs = programsForFaculty(f.slug).map((p) => p.name).join(' and ');
+  const progs = programsForFaculty(f.slug).map((p) => p.name).join(', ');
   return pageMeta({
     title: f.name,
-    description: `${f.name} at Central University of Emerging Technologies: ${f.tagline} Offering ${progs}.`,
+    description: `${f.name} at ${site.name}: ${f.tagline} ${f.department.name}, offering ${progs}.`,
     path: `/faculties/${f.slug}`,
   });
 }
@@ -38,6 +39,9 @@ export default async function FacultyPage({ params }: Props) {
   if (!f) notFound();
 
   const progs = programsForFaculty(f.slug);
+  const undergraduate = progs.filter((p) => p.level === 'Undergraduate');
+  const associate = progs.filter((p) => p.level === 'Associate Degree');
+  const proposed = proposedForFaculty(f.slug);
   const idx = faculties.findIndex((x) => x.slug === f.slug);
   const prev = faculties[(idx - 1 + faculties.length) % faculties.length];
   const next = faculties[(idx + 1) % faculties.length];
@@ -46,7 +50,8 @@ export default async function FacultyPage({ params }: Props) {
     <>
       <PageHero
         crumbs={[
-          { name: 'Faculties & Departments', href: '/faculties' },
+          { name: 'Academics', href: '/academics' },
+          { name: 'Faculties and Departments', href: '/faculties' },
           { name: f.shortName, href: `/faculties/${f.slug}` },
         ]}
         eyebrow={`Faculty ${pad2(f.order)} of ${faculties.length}`}
@@ -54,7 +59,8 @@ export default async function FacultyPage({ params }: Props) {
         lede={f.tagline}
         aside={<Media media={f.media} className="aspect-[4/3] w-full" priority sizes="(min-width: 1024px) 40vw, 100vw" />}
       >
-        <div className="flex flex-wrap gap-3">
+        <p className="font-serif text-[1.2rem] text-forest-100">{f.department.name}</p>
+        <div className="mt-4 flex flex-wrap gap-3">
           {progs.map((p) => (
             <Link key={p.slug} href={`/programs/${p.slug}`} className="btn btn-outline-light btn-sm">
               {p.shortName}
@@ -96,6 +102,18 @@ export default async function FacultyPage({ params }: Props) {
             </div>
 
             <div className="mt-12">
+              <h3 className="heading-md">Department</h3>
+              <div className="mt-5 border border-stone-200 bg-ivory p-6">
+                <p className="font-serif text-[1.25rem]">{f.department.name}</p>
+                <p className="mt-2 text-stone-700">The department teaches the faculty’s programs. Profiles of its teaching faculty, with official email addresses, are published on the Teaching Faculty pages.</p>
+                <Link href={`/teaching-faculty/${f.department.slug}`} className="link-arrow mt-4 text-forest-700">
+                  Teaching faculty of the department
+                  <ArrowRight className="size-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="mt-12">
               <h3 className="heading-md">Laboratories</h3>
               {f.labs.count > 0 ? (
                 <div className="mt-5 border border-stone-200 bg-ivory p-6">
@@ -116,9 +134,7 @@ export default async function FacultyPage({ params }: Props) {
                   </div>
                 </div>
               ) : (
-                <p className="mt-4 text-stone-700">
-                  The infrastructure plan does not allocate a dedicated laboratory to this faculty. Teaching is supported by classrooms and the faculty’s library collection.
-                </p>
+                <p className="mt-4 text-stone-700">The infrastructure plan does not allocate a dedicated laboratory to this faculty. Teaching is supported by classrooms and the faculty’s library collection.</p>
               )}
             </div>
           </div>
@@ -130,8 +146,20 @@ export default async function FacultyPage({ params }: Props) {
               </h2>
               <dl className="divide-y divide-stone-200">
                 <div className="flex items-start justify-between gap-4 px-6 py-4">
-                  <dt className="text-stone-600">Programs</dt>
-                  <dd className="numerals text-right font-semibold">{progs.length}</dd>
+                  <dt className="text-stone-600">Department</dt>
+                  <dd className="text-right font-semibold">{f.department.shortName}</dd>
+                </div>
+                <div className="flex items-start justify-between gap-4 px-6 py-4">
+                  <dt className="text-stone-600">Undergraduate programs</dt>
+                  <dd className="numerals text-right font-semibold">{undergraduate.length}</dd>
+                </div>
+                <div className="flex items-start justify-between gap-4 px-6 py-4">
+                  <dt className="text-stone-600">Associate degree programs</dt>
+                  <dd className="numerals text-right font-semibold">{associate.length}</dd>
+                </div>
+                <div className="flex items-start justify-between gap-4 px-6 py-4">
+                  <dt className="text-stone-600">Proposed graduate programs</dt>
+                  <dd className="numerals text-right font-semibold">{proposed.length}</dd>
                 </div>
                 <div className="flex items-start justify-between gap-4 px-6 py-4">
                   <dt className="flex items-center gap-2 text-stone-600">
@@ -150,19 +178,13 @@ export default async function FacultyPage({ params }: Props) {
                   <dd className="numerals text-right font-semibold">{f.plannedFacultyPositions}</dd>
                 </div>
                 <div className="flex items-start justify-between gap-4 px-6 py-4">
-                  <dt className="text-stone-600">Support staff positions planned</dt>
-                  <dd className="numerals text-right font-semibold">{f.plannedStaffPositions}</dd>
-                </div>
-                <div className="flex items-start justify-between gap-4 px-6 py-4">
                   <dt className="flex items-center gap-2 text-stone-600">
                     <UserRound className="size-4" aria-hidden="true" /> Dean
                   </dt>
                   <dd className="text-right">{f.head ? f.head.name : <TBC label="To be announced" />}</dd>
                 </div>
               </dl>
-              <p className="border-t border-stone-200 px-6 py-4 text-xs leading-relaxed text-stone-600">
-                Source: {infrastructureSource}. Planning allocations, not a description of operational facilities.
-              </p>
+              <p className="border-t border-stone-200 px-6 py-4 text-xs leading-relaxed text-stone-600">Source: {infrastructureSource}. Planning allocations, not a description of operational facilities.</p>
             </div>
           </aside>
         </div>
@@ -173,13 +195,43 @@ export default async function FacultyPage({ params }: Props) {
           <h2 id="faculty-programs" className="heading-xl">
             {progs.length === 1 ? 'Program' : 'Programs'} in this faculty
           </h2>
-          <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {progs.map((p) => (
-              <li key={p.slug}>
-                <ProgramCard program={p} />
-              </li>
-            ))}
-          </ul>
+          {undergraduate.length ? (
+            <>
+              <h3 className="eyebrow mt-10 text-sandstone-700">Undergraduate Degree Programs</h3>
+              <ul className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {undergraduate.map((p) => (
+                  <li key={p.slug}>
+                    <ProgramCard program={p} />
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+          {associate.length ? (
+            <>
+              <h3 className="eyebrow mt-10 text-sandstone-700">Associate Degree Programs</h3>
+              <ul className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {associate.map((p) => (
+                  <li key={p.slug}>
+                    <ProgramCard program={p} />
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+          {proposed.length ? (
+            <div className="mt-10 border border-stone-200 bg-paper p-6">
+              <h3 className="eyebrow text-sandstone-700">Graduate Programs (Proposed)</h3>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {proposed.map((p) => (
+                  <li key={p.name} className="border border-stone-200 bg-ivory px-3.5 py-2 text-[0.95rem]">
+                    {p.name}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-sm text-stone-600">Proposed programs are subject to approval. Details will be published when they are launched.</p>
+            </div>
+          ) : null}
           {f.head === null ? (
             <Pending title="Faculty leadership and academic staff" className="mt-10 max-w-2xl">
               Profiles of the Dean and academic staff will be added once appointments are announced.

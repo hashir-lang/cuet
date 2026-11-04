@@ -12,26 +12,29 @@ import { formatNumber } from '@/lib/format';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
-  title: 'Campus & Infrastructure',
-  description: `Planned academic infrastructure at Central University of Emerging Technologies: ${totals.laboratories} laboratories across practice-led faculties and a library allocation for every faculty.`,
+  title: 'Campus and Facilities',
+  description: `The campus and planned academic facilities of Central University of Emerging Technologies-CueTech, Lahore: ${totals.laboratories} laboratories across practice-led faculties and a library allocation for every faculty.`,
   path: '/campus',
 });
 
 const environments = [
   { plate: 'library' as const, title: 'Academic library', text: 'Every faculty has a dedicated allocation of books to support coursework and independent study.' },
   { plate: 'pharmacy' as const, title: 'Science laboratories', text: 'Laboratory space for pharmaceutical, health and natural sciences, where students learn by practice.' },
-  { plate: 'computing' as const, title: 'Computing laboratory', text: 'A dedicated laboratory for programming, software development and statistical computing.' },
-  { plate: 'law' as const, title: 'Legal skills facility', text: 'A space for advocacy and moot court exercises in the Faculty of Law & Sharia.' },
+  { plate: 'computing' as const, title: 'Computing laboratory', text: 'A dedicated laboratory for programming, software development, data science and statistical computing.' },
+  { plate: 'law' as const, title: 'Legal skills facility', text: 'A space for advocacy and moot court exercises in the Faculty of Law and Shariah.' },
 ];
 
 export default function CampusPage() {
   return (
     <>
       <PageHero
-        crumbs={[{ name: 'Campus & Infrastructure', href: '/campus' }]}
-        eyebrow="Campus"
-        title="Campus & infrastructure"
-        lede="The University’s infrastructure plan gives every faculty a library collection and every practice-led discipline dedicated laboratory space."
+        crumbs={[
+          { name: 'About CueTech', href: '/about' },
+          { name: 'Campus and Facilities', href: '/campus' },
+        ]}
+        eyebrow="About CueTech"
+        title="Campus and Facilities"
+        lede="The campus on Maulana Shaukat Ali Road, Lahore. The University’s infrastructure plan gives every faculty a library collection and every practice-led discipline dedicated laboratory space."
         aside={<Media media={{ src: null, alt: 'Illustration of the University campus', plate: 'campus' }} className="aspect-[4/3] w-full" priority />}
       />
 
@@ -65,7 +68,7 @@ export default function CampusPage() {
               eyebrow="Departmental laboratories"
               title="Where practice meets theory."
               tone="dark"
-              intro="Pharmaceutical Sciences carries the largest allocation, with six laboratories, followed by Nursing and Allied Health with three each."
+              intro="Pharmacy and Pharmaceutical Sciences carries the largest allocation, with six laboratories, followed by Nursing and Midwifery and Management and Allied Health Sciences with three each."
               className="!mb-8"
             />
             <Link href="/campus/facilities" className="btn btn-outline-light">
@@ -131,9 +134,13 @@ export default function CampusPage() {
           <div className="lg:col-span-5 lg:col-start-8">
             <SectionHeading id="library-title" eyebrow="Library resources" title="A collection for every discipline." className="!mb-6" />
             <p className="lede text-stone-700">
-              Every faculty has its own library allocation in the plan: 800 volumes each for Computer Science and Veterinary Science, and 500 for each of the other eleven faculties.
+              Every faculty has its own library allocation in the plan: 800 volumes each for Computing and Emerging Technologies and Veterinary Sciences, and 500 for each of the other eleven faculties.
             </p>
             <p className="mt-4 text-stone-700">Details of library opening hours, digital resources and borrowing will be published when the library opens.</p>
+            <Link href="/campus-life/library" className="link-arrow mt-6 text-forest-700">
+              Central Library and Digital Resources
+              <ArrowRight className="size-4" aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </Section>
@@ -167,7 +174,7 @@ export default function CampusPage() {
         </div>
       </Section>
 
-      <CtaBand title="See where you will study." primary={{ label: 'Facilities by faculty', href: '/campus/facilities' }} secondary={{ label: 'Student life', href: '/student-life' }} />
+      <CtaBand title="See where you will study." primary={{ label: 'Facilities by faculty', href: '/campus/facilities' }} secondary={{ label: 'Campus Life', href: '/campus-life' }} />
     </>
   );
 }

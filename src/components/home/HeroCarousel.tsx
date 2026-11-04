@@ -147,7 +147,7 @@ export function HeroCarousel({ slides, label }: { slides: HeroSlide[]; label: st
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 z-3 h-2/5 bg-gradient-to-t from-forest-950/80 to-transparent" />
 
       {/* Text, centred. The outgoing slide's text fades while the incoming one rises in. */}
-      <div className="container-cul relative z-10 flex h-[calc(100svh-7rem)] max-h-[56rem] min-h-[36rem] flex-col">
+      <div className="container-cul relative z-10 flex h-[calc(100svh-var(--chrome-h))] max-h-[56rem] min-h-[36rem] flex-col">
         <div className="grid flex-1 items-start justify-items-center px-2 pb-40 pt-8 text-center sm:pt-10 lg:pb-28 lg:pt-12">
           {leaving !== null ? <SlideText key={`out-${leaving}`} slide={slides[leaving]} out /> : null}
           <SlideText key={index} slide={slide} />

@@ -3,7 +3,7 @@ import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
 import { Wordmark } from '@/components/brand/Wordmark';
 import { Jali } from '@/components/art/Jali';
 import { footerNav } from '@/content/navigation';
-import { addressLines, site } from '@/content/site';
+import { addressLines, portalHref, site } from '@/content/site';
 
 export function Footer() {
   const c = site.contact;
@@ -17,20 +17,19 @@ export function Footer() {
 
       <div className="container-cul pb-10 pt-16 sm:pt-20">
         <div className="grid gap-12 border-b border-white/10 pb-14 lg:grid-cols-12">
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-3">
             <Link href="/" aria-label={`${site.name}, home`} className="inline-block">
               <Wordmark tone="light" />
             </Link>
-            <p className="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-forest-200">
-              Thirteen faculties and seventeen undergraduate programs in Lahore, Pakistan.
-            </p>
+            <p className="mt-6 max-w-sm font-serif text-[1.05rem] italic leading-relaxed text-forest-100">{site.tagline}</p>
+            <p className="mt-4 max-w-sm text-[0.95rem] leading-relaxed text-forest-200">Thirteen faculties, thirteen undergraduate and nine associate degree programs in Lahore, Pakistan.</p>
             <Link href="/admissions/apply" className="btn btn-primary btn-sm mt-7">
-              Apply now
+              Apply Online
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
           </div>
 
-          <nav aria-label="Footer" className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-5">
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:col-span-6">
             {footerNav.map((col) => (
               <div key={col.heading}>
                 <h2 className="eyebrow text-brass-300">{col.heading}</h2>
@@ -45,6 +44,28 @@ export function Footer() {
                 </ul>
               </div>
             ))}
+            <div>
+              <h2 className="eyebrow text-brass-300">
+                <Link href="/navigate" className="hover:text-ivory">
+                  Navigate CueTech
+                </Link>
+              </h2>
+              <ul className="mt-5 space-y-3 text-[0.95rem]">
+                {site.portals.map((p) => (
+                  <li key={p.id}>
+                    {p.href ? (
+                      <a href={p.href} target="_blank" rel="noopener noreferrer" className="text-forest-100 transition-colors duration-150 hover:text-ivory hover:underline hover:underline-offset-4">
+                        {p.label}
+                      </a>
+                    ) : (
+                      <Link href={portalHref(p)} className="text-forest-100 transition-colors duration-150 hover:text-ivory hover:underline hover:underline-offset-4">
+                        {p.label}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </nav>
 
           <div className="lg:col-span-3">
@@ -88,10 +109,20 @@ export function Footer() {
                 )}
               </li>
             </ul>
-            <Link href="/contact" className="link-arrow mt-6 text-ivory">
-              Contact page
-              <ArrowRight className="size-4" aria-hidden="true" />
-            </Link>
+            <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+              <li>
+                <Link href="/contact" className="link-arrow text-ivory">
+                  Contact Us
+                  <ArrowRight className="size-4" aria-hidden="true" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact/feedback" className="link-arrow text-ivory">
+                  Feedback and Complaints
+                  <ArrowRight className="size-4" aria-hidden="true" />
+                </Link>
+              </li>
+            </ul>
             {site.social.length > 0 ? (
               <ul className="mt-6 flex flex-wrap gap-4 text-sm">
                 {site.social.map((s) => (

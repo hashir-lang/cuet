@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { toast } from 'sonner';
 import clsx from 'clsx';
-import { enquiryTypes, LIMITS, validateContact, type ContactErrors } from '@/lib/contact';
+import { enquiryTypes, LIMITS, validateContact, type ContactErrors, type EnquiryType } from '@/lib/contact';
+import { site } from '@/content/site';
 
 type Field = keyof ContactErrors;
 const FIELD_ORDER: Field[] = ['name', 'email', 'phone', 'enquiryType', 'message', 'consent'];
@@ -14,9 +15,11 @@ const inputBase =
 /**
  * Contact form with inline validation (on blur, then live once a field has an error),
  * an error summary on submit, honeypot + timing spam checks, and Sonner toasts for status.
+ * `defaultEnquiryType` pre-selects the topic, e.g. on the Feedback and Complaints page.
  */
-export function ContactForm({ programs }: { programs: { slug: string; name: string }[] }) {
-  const [values, setValues] = useState({ name: '', email: '', phone: '', enquiryType: '', program: '', message: '', consent: false, website: '' });
+export function ContactForm({ programs, defaultEnquiryType = '' }: { programs: { slug: string; name: string }[]; defaultEnquiryType?: EnquiryType | '' }) {
+  const blank = { name: '', email: '', phone: '', enquiryType: defaultEnquiryType as string, program: '', message: '', consent: false, website: '' };
+  const [values, setValues] = useState(blank);
   const [errors, setErrors] = useState<ContactErrors>({});
   const [touched, setTouched] = useState<Partial<Record<Field, boolean>>>({});
   const [submitting, setSubmitting] = useState(false);
@@ -62,7 +65,7 @@ export function ContactForm({ programs }: { programs: { slug: string; name: stri
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; code?: string; errors?: ContactErrors };
       if (data.ok) {
         toast.success('Message sent', { id, description: 'Thank you. The University will reply to the email address you provided.' });
-        setValues({ name: '', email: '', phone: '', enquiryType: '', program: '', message: '', consent: false, website: '' });
+        setValues(blank);
         setTouched({});
         setSummary([]);
       } else if (data.code === 'NOT_CONFIGURED') {
@@ -189,7 +192,7 @@ export function ContactForm({ programs }: { programs: { slug: string; name: stri
       <div>
         <label className="flex items-start gap-3">
           <input id="consent" type="checkbox" checked={values.consent} onChange={(e) => set('consent', e.target.checked)} onBlur={() => blur('consent')} aria-invalid={Boolean(err('consent'))} aria-describedby={err('consent') ? 'consent-error' : undefined} className="mt-1 size-5 shrink-0 accent-forest-700" />
-          <span>I agree that Central University of Emerging Technologies may use these details to reply to my enquiry.</span>
+          <span>I agree that {site.legalName} may use these details to reply to my enquiry.</span>
         </label>
         {err('consent') ? <p id="consent-error" className="mt-1.5 text-sm text-sandstone-700">{err('consent')}</p> : null}
       </div>

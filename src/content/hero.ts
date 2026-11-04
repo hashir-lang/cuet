@@ -1,3 +1,5 @@
+import { site } from './site';
+
 /**
  * Slides for the home page hero.
  *
@@ -5,8 +7,9 @@
  * photographs are STOCK images (Unsplash licence: free to use, no attribution required),
  * chosen to suggest university life. None of them shows CueTech, which is why their `alt`
  * says so and the hero shows a small "Stock photography" note while they are on screen.
- * Replace them with real campus photography as it becomes available: drop the files into
- * /public/images/hero/, update `src`, set `stock: false` and write an honest `alt`.
+ * Replace them with real campus photography (or, until the campus is complete, AI-generated
+ * campus images) as it becomes available: drop the files into /public/images/hero/, update
+ * `src`, set `stock: false` and write an honest `alt`.
  */
 
 export type HeroSlide = {
@@ -16,7 +19,7 @@ export type HeroSlide = {
   alt: string;
   /** Small label above the title (the category line). */
   caption: string;
-  /** Short headline, two to five words. The first slide's title is the page's main heading. */
+  /** Short headline. The first slide's title is the page's main heading. */
   title: string;
   /** One supporting sentence under the title. */
   text: string;
@@ -34,10 +37,10 @@ export const heroSlides: HeroSlide[] = [
   {
     src: '/images/hero/main-building.jpg',
     alt: 'The main building of Central University of Emerging Technologies: a curved grey facade carrying the University’s name and emblem above the entrance, with palm trees, the security post and the car park in front.',
-    caption: 'Central University of Emerging Technologies',
-    title: 'Thirteen faculties. Seventeen degrees.',
-    text: 'Undergraduate education across business, computing, health, engineering, law and the sciences.',
-    cta: { label: 'Explore programs', href: '/programs' },
+    caption: site.name,
+    title: site.tagline,
+    text: 'Thirteen faculties, thirteen undergraduate and nine associate degree programs in Lahore.',
+    cta: { label: 'Explore degree programs', href: '/programs' },
     source: 'Photograph supplied by the University',
     stock: false,
     // Keeps the name sign in the lower half, under the headline, for both the landscape and the portrait version of the photo; 58% keeps the sign centred when phones crop the sides.
@@ -46,10 +49,10 @@ export const heroSlides: HeroSlide[] = [
   {
     src: '/images/hero/students-together.jpg',
     alt: 'Students laughing together around laptops at a shared table. Stock photograph.',
-    caption: 'Student life',
+    caption: 'Campus life',
     title: 'More than a degree.',
     text: 'Academic support, student societies and a campus designed for study.',
-    cta: { label: 'Student life', href: '/student-life' },
+    cta: { label: 'Campus life', href: '/campus-life' },
     source: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f',
     stock: true,
   },
@@ -59,17 +62,17 @@ export const heroSlides: HeroSlide[] = [
     caption: 'Laboratories',
     title: 'Learning by doing.',
     text: 'Dedicated laboratories planned for every practice-led faculty.',
-    cta: { label: 'Campus & infrastructure', href: '/campus' },
+    cta: { label: 'Campus and facilities', href: '/campus' },
     source: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d',
     stock: true,
   },
   {
     src: '/images/hero/engineering.jpg',
     alt: 'An engineer working at a laptop inside a machine workshop. Stock photograph.',
-    caption: 'Engineering & computing',
+    caption: 'Computing & engineering',
     title: 'Built for what comes next.',
-    text: 'Engineering technology, computer science and software engineering in one university.',
-    cta: { label: 'Faculties & Departments', href: '/faculties' },
+    text: 'Computer science, data science and information security engineering in one university.',
+    cta: { label: 'Faculties and Departments', href: '/faculties' },
     source: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
     stock: true,
   },

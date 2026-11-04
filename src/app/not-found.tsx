@@ -5,9 +5,10 @@ import { BrandMark } from '@/components/brand/Wordmark';
 export const metadata = { title: 'Page not found', robots: { index: false } };
 
 const suggestions = [
-  { label: 'Academic Programs', href: '/programs' },
-  { label: 'Faculties & Departments', href: '/faculties' },
+  { label: 'Degree Programs', href: '/programs' },
+  { label: 'Faculties and Departments', href: '/faculties' },
   { label: 'Admissions', href: '/admissions' },
+  { label: 'Campus Life', href: '/campus-life' },
   { label: 'Contact', href: '/contact' },
 ];
 

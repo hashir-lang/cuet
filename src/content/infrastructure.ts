@@ -1,14 +1,18 @@
 import { faculties } from './faculties';
-import { programs } from './programs';
+import { programs, proposedPrograms } from './programs';
 
 /**
- * Totals derived from the faculty data, so the numbers on the website can never
- * disagree with the per-faculty figures. Expected values from the report (v8):
+ * Totals derived from the faculty and program data, so the numbers on the website can never
+ * disagree with the per-faculty figures. Expected values from the infrastructure report (v8):
  * 21 laboratories, 78 planned faculty positions, 26 staff positions.
  */
 export const totals = {
   faculties: faculties.length,
+  /** All degree programs with their own page (undergraduate + associate). */
   programs: programs.length,
+  undergraduatePrograms: programs.filter((p) => p.level === 'Undergraduate').length,
+  associatePrograms: programs.filter((p) => p.level === 'Associate Degree').length,
+  proposedGraduatePrograms: proposedPrograms.length,
   laboratories: faculties.reduce((sum, f) => sum + f.labs.count, 0),
   /**
    * Library total: NOT CONFIRMED. The report (v8) states a total of 6,500 volumes, but its

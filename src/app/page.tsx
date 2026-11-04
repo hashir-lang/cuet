@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, BookOpen, FlaskConical, Layers, MapPin } from 'lucide-react';
+import { ArrowRight, BookOpen, FlaskConical, GraduationCap, Layers, MapPin, Sparkles } from 'lucide-react';
 import { Jali } from '@/components/art/Jali';
 import { FacultyIndex } from '@/components/home/FacultyIndex';
 import { HeroCarousel } from '@/components/home/HeroCarousel';
@@ -17,54 +17,34 @@ import { events } from '@/content/events';
 import { heroSlides } from '@/content/hero';
 import { site } from '@/content/site';
 import { university } from '@/content/university';
+import { whyCueTech } from '@/content/admissions';
 import { planningNote, totals } from '@/content/infrastructure';
 import { formatNumber } from '@/lib/format';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata = {
   ...pageMeta({
-    title: 'Undergraduate University in Lahore',
+    title: 'University in Lahore',
     description: site.description,
     path: '/',
   }),
-  title: { absolute: `${site.name} | Undergraduate University in Lahore` },
+  title: { absolute: `${site.name} | University in Lahore` },
 };
 
 const stats = [
   { value: totals.faculties, label: 'Faculties' },
-  { value: totals.programs, label: 'Undergraduate programs' },
+  { value: totals.undergraduatePrograms, label: 'Undergraduate degree programs' },
+  { value: totals.associatePrograms, label: 'Associate degree programs' },
   { value: totals.laboratories, label: 'Laboratories planned' },
-  { value: totals.plannedFacultyPositions, label: 'Academic positions planned' },
 ];
 
-const reasons = [
-  {
-    icon: Layers,
-    title: 'Breadth across thirteen faculties',
-    text: 'Study business, computing, health sciences, law, aviation, agriculture and more within one university, with programs that share common academic standards.',
-  },
-  {
-    icon: FlaskConical,
-    title: 'Learning through practice',
-    text: `The University’s infrastructure plan allocates ${totals.laboratories} laboratories to practice-led disciplines, led by six for Pharmaceutical Sciences.`,
-  },
-  {
-    icon: BookOpen,
-    title: 'A library built around every program',
-    text: 'Every faculty has its own library allocation in the plan, from 500 to 800 volumes, to support coursework and independent study.',
-  },
-  {
-    icon: MapPin,
-    title: 'Rooted in Lahore',
-    text: 'Study in one of South Asia’s great centres of learning and culture, close to the families, employers and communities the University serves.',
-  },
-];
+const reasonIcons = [Layers, Sparkles, FlaskConical, BookOpen, GraduationCap, MapPin];
 
 const steps = [
-  { title: 'Choose your program', text: 'Explore the seventeen programs and the faculty that teaches each one.', href: '/programs' },
-  { title: 'Check the requirements', text: 'Review eligibility and the documents you need to prepare.', href: '/admissions/requirements' },
-  { title: 'Prepare your documents', text: 'Gather your academic records, identity documents and photographs.', href: '/admissions/requirements#documents' },
-  { title: 'Submit your application', text: 'Apply through the University’s official application route.', href: '/admissions/apply' },
+  { title: 'Choose your program', text: 'Explore the undergraduate and associate degree programs and the faculty that teaches each one.', href: '/programs' },
+  { title: 'Check the requirements', text: 'Review eligibility and the documents you need to prepare.', href: '/admissions/programs-eligibility' },
+  { title: 'Note the schedule', text: 'Application dates and tests are published on the admission schedule.', href: '/admissions/schedule' },
+  { title: 'Apply online', text: 'Apply through the University’s official application route.', href: '/admissions/apply' },
 ];
 
 export default function HomePage() {
@@ -79,17 +59,15 @@ export default function HomePage() {
       {/* Key figures band under the hero */}
       <section aria-label="Key figures" className="border-t border-white/10 bg-forest-950 text-ivory">
         <div className="container-cul py-8 sm:py-10">
-          <div>
-            <dl className="grid grid-cols-2 gap-x-6 gap-y-6 md:grid-cols-4">
-              {stats.map((s) => (
-                <div key={s.label} className="flex flex-col">
-                  <dt className="text-sm text-forest-200">{s.label}</dt>
-                  <dd className="numerals order-first mt-1 font-serif text-4xl tracking-[-0.02em] text-ivory sm:text-5xl">{formatNumber(s.value)}</dd>
-                </div>
-              ))}
-            </dl>
-            <p className="mt-5 text-xs text-forest-200">Laboratory and staffing figures are planning allocations from the University’s infrastructure report.</p>
-          </div>
+          <dl className="grid grid-cols-2 gap-x-6 gap-y-6 md:grid-cols-4">
+            {stats.map((s) => (
+              <div key={s.label} className="flex flex-col">
+                <dt className="text-sm text-forest-200">{s.label}</dt>
+                <dd className="numerals order-first mt-1 font-serif text-4xl tracking-[-0.02em] text-ivory sm:text-5xl">{formatNumber(s.value)}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-5 text-xs text-forest-200">Laboratory figures are planning allocations from the University’s infrastructure report. Seven graduate programs are proposed.</p>
         </div>
       </section>
 
@@ -99,20 +77,22 @@ export default function HomePage() {
           <div className="lg:col-span-5">
             <p className="eyebrow flex items-center gap-3 text-sandstone-600">
               <span className="h-px w-8 bg-sandstone-500" aria-hidden="true" />
-              About the University
+              About CueTech
             </p>
             <h2 id="intro-title" className="heading-xl mt-5 max-w-[16ch]">
               A university shaped around the professions Pakistan needs.
             </h2>
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
-            <div className="flex items-start justify-between gap-4">
-              <p className="lede text-stone-700">{university.overview.value[0]}</p>
-            </div>
+            <p className="lede text-stone-700">{university.overview.value[0]}</p>
             <p className="mt-5 text-stone-700">{university.overview.value[1]}</p>
             <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link href="/about" className="link-arrow text-forest-700">
-                About the University
+                Introduction to CueTech
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </Link>
+              <Link href="/about/vision-mission" className="link-arrow text-forest-700">
+                Vision, Mission and Core Values
                 <ArrowRight className="size-4" aria-hidden="true" />
               </Link>
               <DraftBadge />
@@ -126,13 +106,13 @@ export default function HomePage() {
         <div className="container-cul">
           <SectionHeading
             id="faculties-title"
-            eyebrow="Faculties & Departments"
+            eyebrow="Faculties and Departments"
             title="Thirteen faculties, one academic community."
-            intro="Each faculty brings together the teaching, laboratories and library resources for its discipline."
+            intro="Each faculty has a teaching department and brings together the teaching, laboratories and library resources for its discipline."
             align="split"
             action={
               <Link href="/faculties" className="link-arrow text-forest-700">
-                Faculty directory
+                Faculties and Departments
                 <ArrowRight className="size-4" aria-hidden="true" />
               </Link>
             }
@@ -146,15 +126,20 @@ export default function HomePage() {
         <div className="container-cul">
           <SectionHeading
             id="programs-title"
-            eyebrow="Academic Programs"
+            eyebrow="Degree Programs"
             title="Find the program that fits your ambition."
             align="split"
-            intro={`A selection from our ${totals.programs} undergraduate programs. Search and filter them all in the program directory.`}
+            intro={`A selection from our ${totals.undergraduatePrograms} undergraduate and ${totals.associatePrograms} associate degree programs. Search and filter them all in the program directory.`}
             action={
-              <Link href="/programs" className="btn btn-outline btn-sm">
-                All {totals.programs} programs
-                <ArrowRight className="size-4" aria-hidden="true" />
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link href="/programs" className="btn btn-outline btn-sm">
+                  All {totals.programs} programs
+                  <ArrowRight className="size-4" aria-hidden="true" />
+                </Link>
+                <Link href="/programs/associate" className="btn btn-outline btn-sm">
+                  Associate degrees
+                </Link>
+              </div>
             }
           />
           <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -170,16 +155,33 @@ export default function HomePage() {
       {/* 6. Why choose */}
       <Section tone="stone" labelledBy="why-title">
         <div className="container-cul">
-          <SectionHeading id="why-title" eyebrow={`Why ${site.shortName}`} title="Why choose CueTech." />
-          <ul className="grid gap-px overflow-hidden border border-stone-200 bg-stone-200 sm:grid-cols-2 lg:grid-cols-4">
-            {reasons.map((r) => (
-              <li key={r.title} className="flex flex-col bg-paper p-6 sm:p-8">
-                <r.icon className="size-7 text-sandstone-600" strokeWidth={1.4} aria-hidden="true" />
-                <h3 className="heading-md mt-8">{r.title}</h3>
-                <p className="mt-3 text-[0.95rem] leading-relaxed text-stone-700">{r.text}</p>
-              </li>
-            ))}
+          <SectionHeading
+            id="why-title"
+            eyebrow={`Why ${site.shortName}`}
+            title="Why choose CueTech."
+            align="split"
+            action={
+              <Link href="/admissions/why-cuetech" className="link-arrow text-forest-700">
+                Why Choose CueTech?
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </Link>
+            }
+          />
+          <ul className="grid gap-px overflow-hidden border border-stone-200 bg-stone-200 sm:grid-cols-2 lg:grid-cols-3">
+            {whyCueTech.value.map((r, i) => {
+              const Icon = reasonIcons[i % reasonIcons.length];
+              return (
+                <li key={r.title} className="flex flex-col bg-paper p-6 sm:p-8">
+                  <Icon className="size-7 text-sandstone-600" strokeWidth={1.4} aria-hidden="true" />
+                  <h3 className="heading-md mt-8">{r.title}</h3>
+                  <p className="mt-3 text-[0.95rem] leading-relaxed text-stone-700">{r.text}</p>
+                </li>
+              );
+            })}
           </ul>
+          <div className="mt-4">
+            <DraftBadge />
+          </div>
         </div>
       </Section>
 
@@ -192,7 +194,7 @@ export default function HomePage() {
           <div className="lg:col-span-5">
             <SectionHeading
               id="facilities-title"
-              eyebrow="Facilities & Infrastructure"
+              eyebrow="Campus and Facilities"
               title="Built for learning by doing."
               tone="dark"
               intro="The University’s infrastructure plan allocates laboratory space to every practice-led faculty, and a library collection to every faculty."
@@ -210,7 +212,7 @@ export default function HomePage() {
             </dl>
             <p className="mt-6 text-sm text-forest-200">{planningNote}</p>
             <Link href="/campus" className="btn btn-outline-light mt-8">
-              Campus & infrastructure
+              Campus and Facilities
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
           </div>
@@ -225,13 +227,19 @@ export default function HomePage() {
         <div className="container-cul">
           <SectionHeading
             id="gallery-title"
-            eyebrow="Campus"
+            eyebrow="Our Campus"
             title="Spaces for study, practice and community."
             align="split"
             intro="These illustrations will be replaced by photography of the campus as it is completed."
+            action={
+              <Link href="/campus-life/gallery" className="link-arrow text-forest-700">
+                Campus Gallery
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </Link>
+            }
           />
           <div className="grid auto-rows-[11rem] grid-cols-2 gap-3 sm:auto-rows-[14rem] sm:gap-4 lg:grid-cols-4">
-            <Media media={{ src: null, alt: 'Illustration of the campus', plate: 'campus' }} className="col-span-2 row-span-2" sizes="50vw" />
+            <Media media={{ src: '/images/hero/main-building.jpg', alt: 'The main building of the University, with its name and emblem above the entrance.', plate: 'campus', caption: 'Main building, Maulana Shaukat Ali Road, Lahore. Photograph supplied by the University.' }} className="col-span-2 row-span-2" sizes="50vw" />
             <Media media={{ src: null, alt: 'Illustration of the library', plate: 'library' }} className="col-span-1" sizes="25vw" showLabel={false} />
             <Media media={{ src: null, alt: 'Illustration of a pharmacy laboratory', plate: 'pharmacy' }} className="col-span-1" sizes="25vw" showLabel={false} />
             <Media media={{ src: null, alt: 'Illustration of an aviation learning space', plate: 'aviation' }} className="col-span-1" sizes="25vw" showLabel={false} />
@@ -245,20 +253,24 @@ export default function HomePage() {
         <div className="container-cul grid items-center gap-12 lg:grid-cols-12">
           <Media media={{ src: null, alt: 'Illustration representing student life', plate: 'student-life' }} className="aspect-[4/3] lg:col-span-6" />
           <div className="lg:col-span-5 lg:col-start-8">
-            <SectionHeading id="student-title" eyebrow="Student Experience" title="More than a degree." className="!mb-6" />
-            <p className="lede text-stone-700">
-              University is where friendships form, interests deepen and confidence grows. Student life at CueTech is built around academic support, community and a campus designed for study.
-            </p>
+            <SectionHeading id="student-title" eyebrow="Campus Life" title="More than a degree." className="!mb-6" />
+            <p className="lede text-stone-700">University is where friendships form, interests deepen and confidence grows. Life at CueTech is built around academic support, community and a campus designed for study.</p>
             <ul className="mt-8 space-y-4 border-t border-stone-300 pt-6">
-              {['Academic advising and study support', 'A library for every faculty', 'Student societies and activities'].map((t) => (
-                <li key={t} className="flex items-center gap-3 font-medium">
+              {[
+                { label: 'Academic and career counselling', href: '/campus-life/counseling' },
+                { label: 'Central Library and digital resources', href: '/campus-life/library' },
+                { label: 'Student societies and clubs', href: '/campus-life/societies' },
+              ].map((t) => (
+                <li key={t.href} className="flex items-center gap-3 font-medium">
                   <span className="size-1.5 shrink-0 rotate-45 bg-sandstone-500" aria-hidden="true" />
-                  {t}
+                  <Link href={t.href} className="underline-offset-4 hover:underline">
+                    {t.label}
+                  </Link>
                 </li>
               ))}
             </ul>
-            <Link href="/student-life" className="link-arrow mt-8 text-forest-700">
-              Student life
+            <Link href="/campus-life" className="link-arrow mt-8 text-forest-700">
+              Students Facilitation and Campus Life
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
           </div>
@@ -268,13 +280,7 @@ export default function HomePage() {
       {/* 10. Admissions */}
       <Section labelledBy="admissions-title">
         <div className="container-cul">
-          <SectionHeading
-            id="admissions-title"
-            eyebrow="Admissions"
-            title="Your path to CueTech."
-            align="split"
-            intro="Applying is straightforward. Follow four steps, and contact the Admissions Office whenever you need help."
-          />
+          <SectionHeading id="admissions-title" eyebrow="Admissions" title="Your path to CueTech." align="split" intro="Applying is straightforward. Follow four steps, and contact the Admissions Office whenever you need help." />
           <ol className="grid gap-px border border-stone-200 bg-stone-200 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
               <li key={s.title} className="group relative bg-paper p-6 sm:p-7">
@@ -291,17 +297,15 @@ export default function HomePage() {
           <div className="mt-8 grid gap-6 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-7">
               {site.admissions.importantDates.length === 0 ? (
-                <Pending title="Admission dates will be announced">
-                  The University will publish application deadlines and key dates for the next intake here.
-                </Pending>
+                <Pending title="Admission dates will be announced">The University will publish application deadlines and key dates for the next intake on the Admission Schedule page.</Pending>
               ) : null}
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
               <Link href="/admissions/how-to-apply" className="btn btn-dark">
-                How to apply
+                How to Apply
               </Link>
               <Link href="/admissions/apply" className="btn btn-primary">
-                Apply now
+                Apply Online
                 <ArrowRight className="size-4" aria-hidden="true" />
               </Link>
             </div>
@@ -314,7 +318,9 @@ export default function HomePage() {
         <div className="container-cul grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <div className="mb-10 flex items-end justify-between gap-4">
-              <h2 id="news-title" className="heading-xl">News</h2>
+              <h2 id="news-title" className="heading-xl">
+                News
+              </h2>
               <Link href="/news" className="link-arrow shrink-0 text-forest-700">
                 All news
                 <ArrowRight className="size-4" aria-hidden="true" />
@@ -332,7 +338,7 @@ export default function HomePage() {
             <div className="mb-6 flex items-end justify-between gap-4">
               <h2 className="heading-xl">Events</h2>
               <Link href="/events" className="link-arrow shrink-0 text-forest-700">
-                All events
+                Events Calendar
                 <ArrowRight className="size-4" aria-hidden="true" />
               </Link>
             </div>
@@ -346,12 +352,7 @@ export default function HomePage() {
       </Section>
 
       {/* 13. Contact CTA */}
-      <CtaBand
-        title="Questions about studying with us?"
-        text="The University is here to help applicants, parents and partners. Get in touch, or start with our admissions guide."
-        primary={{ label: 'Contact us', href: '/contact' }}
-        secondary={{ label: 'Admissions guide', href: '/admissions' }}
-      />
+      <CtaBand title="Questions about studying with us?" text="The University is here to help applicants, parents and partners. Get in touch, or start with our admissions guide." primary={{ label: 'Contact Us', href: '/contact' }} secondary={{ label: 'Admissions overview', href: '/admissions' }} />
     </>
   );
 }

@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { BackToTop } from '@/components/layout/BackToTop';
+import { AdmissionsPopup } from '@/components/admissions/AdmissionsPopup';
 import { JsonLd } from '@/components/ui/JsonLd';
 import { organizationJsonLd } from '@/lib/seo';
 import { site } from '@/content/site';
@@ -11,7 +12,7 @@ import { site } from '@/content/site';
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Undergraduate University in Lahore`,
+    default: `${site.name} | University in Lahore`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <Footer />
         <BackToTop />
+        <AdmissionsPopup config={site.admissions.popup} dates={site.admissions.importantDates} />
         <Toaster position="bottom-center" theme="light" richColors closeButton offset={24} mobileOffset={16} />
         <JsonLd data={organizationJsonLd()} />
       </body>

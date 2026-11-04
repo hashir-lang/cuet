@@ -20,7 +20,8 @@ export function FacultyCard({ faculty }: { faculty: Faculty }) {
             {faculty.name}
           </Link>
         </h2>
-        <p className="mt-2 text-[0.95rem] leading-relaxed text-stone-700">{faculty.tagline}</p>
+        <p className="mt-1.5 text-sm text-stone-600">{faculty.department.name}</p>
+        <p className="mt-3 text-[0.95rem] leading-relaxed text-stone-700">{faculty.tagline}</p>
         <div className="mt-5 flex-1 border-t border-stone-200 pt-4">
           <p className="eyebrow text-stone-600">{progs.length === 1 ? 'Program' : 'Programs'}</p>
           <ul className="mt-2 space-y-1 text-[0.95rem] font-medium text-ink">

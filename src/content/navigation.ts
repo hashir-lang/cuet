@@ -1,70 +1,65 @@
-/** Main and footer navigation. Every href here must point to an existing page. */
+import { sections, type SectionLink } from './sections';
+import { menuLinks } from '@/lib/sections';
+import { site } from './site';
 
-export type NavLink = { label: string; href: string; description?: string };
-export type NavGroup = { label: string; href: string; links: NavLink[]; kind?: 'academics' };
+/**
+ * Main and footer navigation. The main menu is built from the sitemap in sections.ts
+ * (Annex-A of the University's brief). Every href must point to an existing page;
+ * `npm run check:links` reports any that do not.
+ */
 
-export const mainNav: (NavLink | NavGroup)[] = [
-  { label: 'About', href: '/about' },
-  {
-    label: 'Academics',
-    href: '/faculties',
-    kind: 'academics',
-    links: [
-      { label: 'Faculties & Departments', href: '/faculties', description: 'Thirteen faculties and what each one teaches.' },
-      { label: 'Academic Programs', href: '/programs', description: 'Search and filter all seventeen undergraduate programs.' },
-    ],
-  },
-  {
-    label: 'Admissions',
-    href: '/admissions',
-    links: [
-      { label: 'Admissions Overview', href: '/admissions', description: 'Start here: the admissions journey at a glance.' },
-      { label: 'How to Apply', href: '/admissions/how-to-apply', description: 'Step-by-step guide to submitting an application.' },
-      { label: 'Admission Requirements', href: '/admissions/requirements', description: 'Eligibility and the documents you will need.' },
-      { label: 'Online Application', href: '/admissions/apply', description: 'Access the application portal.' },
-    ],
-  },
-  {
-    label: 'Campus',
-    href: '/campus',
-    links: [
-      { label: 'Campus & Infrastructure', href: '/campus', description: 'Planned laboratories, library and learning spaces.' },
-      { label: 'Facilities by Faculty', href: '/campus/facilities', description: 'Laboratory allocations for each faculty.' },
-      { label: 'Student Life', href: '/student-life', description: 'Support, community and life beyond the classroom.' },
-    ],
-  },
-  { label: 'News & Events', href: '/news' },
-  { label: 'Contact', href: '/contact' },
-];
+export type NavLink = SectionLink;
+export type NavGroup = { label: string; href: string; links: NavLink[]; kind?: 'academics' | 'departments' };
+
+export const mainNav: (NavLink | NavGroup)[] = sections
+  .filter((s) => !s.hidden)
+  .map((s) => {
+    const links = menuLinks(s);
+    if (links.length === 0) return { label: s.label, href: s.path };
+    const kind = s.key === 'academics' ? 'academics' : s.key === 'teaching-faculty' ? 'departments' : undefined;
+    return { label: s.label, href: s.path, links, kind };
+  });
 
 export const isGroup = (item: NavLink | NavGroup): item is NavGroup => 'links' in item;
 
-export const footerNav: { heading: string; links: NavLink[] }[] = [
+/** "Navigate CueTech" quick links shown in the top bar. The rest are on the Navigate page and in the footer. */
+export const topBarPortals = site.portals.filter((p) => p.id === 'student-portal' || p.id === 'lms' || p.id === 'faculty-portal');
+
+export const footerNav: { heading: string; href?: string; links: NavLink[] }[] = [
   {
     heading: 'Study',
     links: [
-      { label: 'Faculties & Departments', href: '/faculties' },
-      { label: 'Academic Programs', href: '/programs' },
+      { label: 'Degree Programs', href: '/programs' },
+      { label: 'Faculties and Departments', href: '/faculties' },
       { label: 'Admissions', href: '/admissions' },
       { label: 'How to Apply', href: '/admissions/how-to-apply' },
-      { label: 'Online Application', href: '/admissions/apply' },
+      { label: 'Fees Structure', href: '/admissions/fees' },
+      { label: 'Academic Calendar', href: '/academics/calendar' },
+      { label: 'Apply Online', href: '/admissions/apply' },
     ],
   },
   {
     heading: 'Campus',
     links: [
-      { label: 'Campus & Infrastructure', href: '/campus' },
-      { label: 'Facilities by Faculty', href: '/campus/facilities' },
-      { label: 'Student Life', href: '/student-life' },
+      { label: 'Campus Life', href: '/campus-life' },
+      { label: 'Campus and Facilities', href: '/campus' },
+      { label: 'Central Library', href: '/campus-life/library' },
+      { label: 'Student Services', href: '/campus-life/student-services' },
+      { label: 'Alumni', href: '/campus-life/alumni' },
+      { label: 'Visit Our Campus', href: '/contact/visit' },
     ],
   },
   {
     heading: 'University',
     links: [
-      { label: 'About the University', href: '/about' },
-      { label: 'News', href: '/news' },
-      { label: 'Events', href: '/events' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'About CueTech', href: '/about' },
+      { label: 'University Leadership', href: '/about/leadership' },
+      { label: 'Governance', href: '/about/governance' },
+      { label: 'Teaching Faculty', href: '/teaching-faculty' },
+      { label: 'Global Engagement', href: '/global-engagement' },
+      { label: 'News & Events', href: '/news' },
+      { label: 'Careers at CueTech', href: '/careers' },
+      { label: 'Policies and Regulations', href: '/about/policies' },
     ],
   },
 ];

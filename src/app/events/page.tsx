@@ -1,13 +1,17 @@
-import { PageHero } from '@/components/ui/PageHero';
-import { NewsTabs } from '@/components/news/NewsTabs';
+import Link from 'next/link';
+import { SectionLayout } from '@/components/sections/SectionLayout';
 import { EventRow } from '@/components/cards/ArticleCard';
 import { Pending } from '@/components/ui/Editorial';
-import { events } from '@/content/events';
+import { sectionByKey } from '@/content/sections';
+import { eventCategories, events } from '@/content/events';
+import { site } from '@/content/site';
 import { pageMeta } from '@/lib/seo';
 
+const section = sectionByKey('news');
+
 export const metadata = pageMeta({
-  title: 'Events',
-  description: 'Upcoming events at Central University of Emerging Technologies: admissions sessions, orientation, lectures and university occasions.',
+  title: 'Events Calendar',
+  description: `Upcoming events at ${site.name}: admissions sessions, orientation, seminars, conferences, workshops and university occasions.`,
   path: '/events',
 });
 
@@ -18,30 +22,36 @@ export default function EventsPage() {
     return a.startsAt ? -1 : b.startsAt ? 1 : 0;
   });
   const onlyTemplates = events.every((e) => e.isTemplate);
+  const linked = eventCategories.filter((c) => c.slug === 'seminars-conferences' || c.slug === 'workshops-training');
 
   return (
-    <>
-      <PageHero
-        crumbs={[{ name: 'Events', href: '/events' }]}
-        eyebrow="News & Events"
-        title="Events"
-        lede="Admissions sessions, academic lectures and occasions across the University."
-      />
-      <NewsTabs current="events" />
-      <section aria-label="Event listings" className="bg-paper py-14 sm:py-20">
-        <div className="container-cul max-w-5xl">
-          {onlyTemplates ? (
-            <Pending title="No events have been announced yet" className="mb-10">
-              The entries below are templates that show how events will appear. Real events will be listed here with their dates and venues.
-            </Pending>
-          ) : null}
-          <div className="border-b border-stone-200">
-            {sorted.map((e) => (
-              <EventRow key={e.slug} event={e} headingLevel="h2" />
+    <SectionLayout section={section} current="/events" title="Events Calendar" lede="Admissions sessions, academic lectures, workshops and occasions across the University.">
+      <div className="space-y-10">
+        <nav aria-label="Event categories">
+          <ul className="flex flex-wrap gap-2">
+            <li>
+              <Link href="/events" className="btn btn-outline btn-sm" aria-current="page">
+                All events
+              </Link>
+            </li>
+            {linked.map((c) => (
+              <li key={c.slug}>
+                <Link href={`/events/category/${c.slug}`} className="btn btn-outline btn-sm">
+                  {c.label}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
+        </nav>
+        {onlyTemplates ? (
+          <Pending title="No events have been announced yet">The entries below are templates that show how events will appear. Real events will be listed here with their dates and venues.</Pending>
+        ) : null}
+        <div className="border-b border-stone-200">
+          {sorted.map((e) => (
+            <EventRow key={e.slug} event={e} headingLevel="h2" />
+          ))}
         </div>
-      </section>
-    </>
+      </div>
+    </SectionLayout>
   );
 }

@@ -125,13 +125,26 @@
   }
 }
 
-/* Motion durations, kept in one place */
+/* Motion durations and header heights, kept in one place */
 :root {
   --dur-press: 160ms;
   --dur-hover: 150ms;
   --dur-menu: 200ms;
   --dur-drawer: 420ms;
-  --header-h: 4.5rem;
+  /* Header rows (components/layout/Header.tsx): the dark top bar, the wordmark row and, from
+     80rem, the main-menu row. --header-h is the height of whichever row is sticky at the
+     current width; --chrome-h is everything above the home page hero. */
+  --topbar-h: 2.5rem;
+  --brand-h: 4.5rem;
+  --nav-h: 3rem;
+  --header-h: var(--brand-h);
+  --chrome-h: calc(var(--topbar-h) + var(--brand-h));
+}
+@media (min-width: 80rem) {
+  :root {
+    --header-h: var(--nav-h);
+    --chrome-h: calc(var(--topbar-h) + var(--brand-h) + var(--nav-h));
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -494,6 +507,25 @@
   transition-duration: 280ms;
 }
 
+/* Admissions pop-up (components/admissions/AdmissionsPopup.tsx): 200 ms fade, slight scale from centre. */
+.modal-backdrop {
+  transition: opacity 200ms var(--ease-out);
+}
+.modal-backdrop[data-starting-style],
+.modal-backdrop[data-ending-style] {
+  opacity: 0;
+}
+.modal-popup {
+  transition:
+    opacity 200ms var(--ease-out),
+    transform 200ms var(--ease-out);
+}
+.modal-popup[data-starting-style],
+.modal-popup[data-ending-style] {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
 .accordion-panel {
   height: var(--accordion-panel-height);
   overflow: hidden;
@@ -649,6 +681,10 @@
   }
   .nav-popup[data-starting-style],
   .nav-popup[data-ending-style] {
+    transform: none;
+  }
+  .modal-popup[data-starting-style],
+  .modal-popup[data-ending-style] {
     transform: none;
   }
   .btn:active {

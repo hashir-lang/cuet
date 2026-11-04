@@ -1,6 +1,7 @@
 /** Contact form validation, shared by the browser form and the API route so the rules never drift. */
 
-export const enquiryTypes = ['Admissions', 'Academic programs', 'General enquiry', 'Media', 'Other'] as const;
+export const enquiryTypes = ['Admissions', 'Academic programs', 'Fees and scholarships', 'Careers and recruitment', 'Feedback or complaint', 'Media', 'General enquiry', 'Other'] as const;
+export type EnquiryType = (typeof enquiryTypes)[number];
 
 export type ContactInput = {
   name: string;

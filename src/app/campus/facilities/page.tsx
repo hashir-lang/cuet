@@ -12,7 +12,7 @@ import { pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
   title: 'Facilities by Faculty',
-  description: 'Planned laboratories and library resources for each faculty at Central University of Emerging Technologies, including pharmacy, nursing, allied health, engineering technology, aviation, computing and law facilities.',
+  description: 'Planned laboratories and library resources for each faculty at Central University of Emerging Technologies-CueTech, including pharmacy, nursing, health sciences, engineering and technology, aviation, computing and law facilities.',
   path: '/campus/facilities',
 });
 
@@ -24,10 +24,11 @@ export default function FacilitiesPage() {
     <>
       <PageHero
         crumbs={[
-          { name: 'Campus & Infrastructure', href: '/campus' },
+          { name: 'About CueTech', href: '/about' },
+          { name: 'Campus and Facilities', href: '/campus' },
           { name: 'Facilities by Faculty', href: '/campus/facilities' },
         ]}
-        eyebrow="Campus"
+        eyebrow="Campus and Facilities"
         title="Facilities by faculty"
         lede={`${totals.laboratories} laboratories are planned across ${withLabs.length} faculties. ${planningNote}`}
       />

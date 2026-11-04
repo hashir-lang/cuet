@@ -15,7 +15,11 @@ export function ProgramCard({ program, showMedia = true, headingLevel = 'h3', cl
         <Media media={program.media} className="aspect-[16/10] w-full" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" archScale={0.72} showLabel={false} />
       ) : null}
       <div className="flex flex-1 flex-col p-5 sm:p-6">
-        <p className="eyebrow text-sandstone-600">{faculty?.shortName}</p>
+        <p className="eyebrow flex flex-wrap items-center gap-x-2 text-sandstone-600">
+          <span>{program.level}</span>
+          <span aria-hidden="true" className="text-stone-400">·</span>
+          <span className="text-stone-600">{faculty?.shortName}</span>
+        </p>
         <H className="heading-md mt-3">
           <Link href={`/programs/${program.slug}`} className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none">
             {program.name}

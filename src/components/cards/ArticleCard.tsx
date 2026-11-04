@@ -2,6 +2,8 @@ import Link from 'next/link';
 import clsx from 'clsx';
 import { CalendarDays, MapPin } from 'lucide-react';
 import type { Article, EventItem } from '@/content/types';
+import { newsCategoryLabel } from '@/content/news';
+import { eventCategoryLabel } from '@/content/events';
 import { Media } from '@/components/media/Media';
 import { TemplateBadge } from '@/components/ui/Editorial';
 import { dayAndMonth, formatDate, formatTime } from '@/lib/format';
@@ -12,7 +14,7 @@ export function ArticleCard({ article, className, headingLevel = 'h3' }: { artic
     <article className={clsx('group relative flex h-full flex-col', className)}>
       <Media media={article.media} className="aspect-[16/10] w-full" sizes="(min-width: 1024px) 33vw, 100vw" archScale={0.7} showLabel={false} />
       <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-stone-600">
-        <span className="eyebrow text-sandstone-600">{article.category}</span>
+        <span className="eyebrow text-sandstone-600">{newsCategoryLabel(article.category)}</span>
         <span aria-hidden="true">·</span>
         {article.publishedAt ? <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time> : <span>Date to be confirmed</span>}
         {article.isTemplate ? <TemplateBadge /> : null}
@@ -49,7 +51,7 @@ export function EventRow({ event, headingLevel = 'h3' }: { event: EventItem; hea
       </div>
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-          <span className="eyebrow text-sandstone-600">{event.category}</span>
+          <span className="eyebrow text-sandstone-600">{eventCategoryLabel(event.category)}</span>
           {event.isTemplate ? <TemplateBadge /> : null}
         </div>
         <H className="heading-md mt-2">

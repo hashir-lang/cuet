@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, ArrowUpRight, CalendarDays, Clock, MapPin } from 'lucide-react';
-import { eventBySlug, events } from '@/content/events';
+import { eventBySlug, eventCategoryLabel, events } from '@/content/events';
 import { PageHero } from '@/components/ui/PageHero';
 import { Media } from '@/components/media/Media';
 import { Pending, TemplateBadge } from '@/components/ui/Editorial';
@@ -46,16 +46,17 @@ export default async function EventPage({ params }: Props) {
             startDate: e.startsAt,
             ...(e.endsAt ? { endDate: e.endsAt } : {}),
             ...(e.venue ? { location: { '@type': 'Place', name: e.venue, address: postalAddressJsonLd() } } : {}),
-            organizer: { '@type': 'CollegeOrUniversity', name: site.name, url: site.url },
+            organizer: { '@type': 'CollegeOrUniversity', name: site.name, legalName: site.legalName, url: site.url },
           }}
         />
       ) : null}
       <PageHero
         crumbs={[
-          { name: 'Events', href: '/events' },
+          { name: 'News & Events', href: '/news' },
+          { name: 'Events Calendar', href: '/events' },
           { name: e.title, href: `/events/${e.slug}` },
         ]}
-        eyebrow={e.category}
+        eyebrow={eventCategoryLabel(e.category)}
         title={e.title}
         tone="ivory"
       >

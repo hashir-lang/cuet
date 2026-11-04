@@ -1,5 +1,5 @@
 /**
- * Content types for the Central University of Emerging Technologies website.
+ * Content types for the Central University of Emerging Technologies-CueTech website.
  *
  * Content rules (read before editing):
  * - Anything the University has not verified must stay `null` / empty.
@@ -59,8 +59,17 @@ export type LabAllocation = {
   intendedUse: Draft<string> | null;
 };
 
+/** A teaching department. Under the Act each faculty currently has one department. */
+export type Department = {
+  slug: string;
+  name: string;
+  /** Short label for tight spaces, e.g. "Computer Science & IT". */
+  shortName: string;
+};
+
 export type Faculty = {
   slug: string;
+  /** Name as given in the University's Act. */
   name: string;
   /** Short label used in tight spaces such as the mega menu. */
   shortName: string;
@@ -68,6 +77,7 @@ export type Faculty = {
   tagline: string;
   introduction: Draft<string[]>;
   focusAreas: Draft<string[]>;
+  department: Department;
   labs: LabAllocation;
   /** Library volumes allocated in the infrastructure plan. */
   libraryVolumes: number;
@@ -81,25 +91,33 @@ export type Faculty = {
   head: { name: string; title: string } | null;
 };
 
+export type ProgramLevel = 'Undergraduate' | 'Associate Degree' | 'Graduate';
+
 export type Program = {
   slug: string;
   name: string;
   shortName: string;
   facultySlug: string;
-  /** e.g. "Bachelor's degree". Kept generic until the University confirms the award title. */
-  level: string;
+  level: ProgramLevel;
   tagline: string;
   overview: Draft<string>;
   introduction: Draft<string[]>;
   objectives: Draft<string[]>;
   learningOutcomes: Draft<string[]>;
   careerAreas: Draft<string[]>;
-  /** Fields that must come from the University. Null = not yet confirmed. */
+  /**
+   * The scheme of study. Every field must come from the University. Null = not yet confirmed,
+   * and the program page shows a "to be confirmed" panel for it.
+   */
   official: {
+    scope: string | null;
     duration: string | null;
     totalCreditHours: string | null;
     curriculum: { semester: string; courses: string[] }[] | null;
     eligibility: string[] | null;
+    passingCriteria: string[] | null;
+    internship: string | null;
+    projects: string | null;
     accreditation: string | null;
     fees: string | null;
   };
@@ -108,11 +126,22 @@ export type Program = {
   media: MediaSlot;
 };
 
+/** A graduate program the University has proposed but not yet launched. Listed, but without its own page. */
+export type ProposedProgram = {
+  name: string;
+  shortName: string;
+  level: 'Graduate';
+  facultySlug: string;
+};
+
+export type NewsCategory = 'university-news' | 'announcements' | 'press-releases' | 'media-coverage' | 'notices';
+export type EventCategory = 'university-events' | 'seminars-conferences' | 'workshops-training' | 'admissions' | 'student-life';
+
 export type Article = {
   slug: string;
   title: string;
   excerpt: string;
-  category: string;
+  category: NewsCategory;
   /** ISO date. Null until a real publication date exists. */
   publishedAt: string | null;
   body: string[];
@@ -125,7 +154,7 @@ export type EventItem = {
   slug: string;
   title: string;
   excerpt: string;
-  category: string;
+  category: EventCategory;
   /** ISO date-time. Null until scheduled. */
   startsAt: string | null;
   endsAt: string | null;
@@ -134,4 +163,41 @@ export type EventItem = {
   media: MediaSlot;
   registrationUrl: string | null;
   isTemplate: boolean;
+};
+
+/** A member of the teaching faculty, shown on the Teaching Faculty pages with photo, profile and official email. */
+export type FacultyMember = {
+  name: string;
+  designation: string;
+  departmentSlug: string;
+  /** Official University email. */
+  email: string | null;
+  /** Path under /public, e.g. '/images/faculty/name.jpg'. Null shows a placeholder. */
+  photo: string | null;
+  qualifications: string | null;
+  profile: string[];
+};
+
+/** A job announcement for the Careers page. Closed announcements stay listed under "Previous announcements". */
+export type JobOpening = {
+  slug: string;
+  title: string;
+  department: string | null;
+  /** e.g. 'Full-time', 'Contract', 'Visiting'. */
+  type: string;
+  /** ISO dates. */
+  postedAt: string;
+  closesAt: string | null;
+  status: 'open' | 'closed';
+  /** Link to the advertisement or application form. */
+  href: string | null;
+  summary: string;
+};
+
+/** An international or institutional partner for the Global Engagement pages. */
+export type Partner = {
+  name: string;
+  country: string;
+  type: string;
+  href: string | null;
 };

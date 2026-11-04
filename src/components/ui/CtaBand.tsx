@@ -5,7 +5,7 @@ import { HeroArcade } from '@/components/art/HeroArcade';
 /** Closing call to action used at the end of most pages. */
 export function CtaBand({
   title = 'Begin your application to CueTech.',
-  text = 'Choose from seventeen undergraduate programs across thirteen faculties. Our admissions guide explains each step.',
+  text = 'Choose from thirteen undergraduate and nine associate degree programs across thirteen faculties. Our admissions guide explains each step.',
   primary = { label: 'How to apply', href: '/admissions/how-to-apply' },
   secondary = { label: 'Contact the University', href: '/contact' },
 }: {

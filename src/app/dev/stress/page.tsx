@@ -22,7 +22,7 @@ const worstProgram: Program = {
   slug: 'bs-medical-laboratory-technology',
   name: 'Bachelor of Science in Medical Laboratory Technology and Transfusion Sciences',
   shortName: 'BS MLT & Transfusion Sciences',
-  facultySlug: 'pharmaceutical-sciences',
+  facultySlug: 'pharmacy-and-pharmaceutical-sciences',
   tagline:
     'A long tagline that an editor might paste from a brochure, describing laboratory diagnostics, haematology, clinical chemistry, microbiology and blood banking practice in hospital settings.',
 };
@@ -37,7 +37,7 @@ const worstFaculty: Faculty = {
 const worstArticle: Article = {
   ...news[0],
   title: 'Benachrichtigungseinstellungen: Vice-Chancellor announces partnership with Aleksandra Wiśniewska-Kowalczyk Foundation',
-  category: 'Admissions & Scholarships Announcements',
+  category: 'announcements',
   excerpt: 'bartholomew.fitzgerald@northwind-industries-holdings.example.com will coordinate applications.',
   isTemplate: false,
   publishedAt: '2026-12-31T23:30:00+05:00',
@@ -66,7 +66,7 @@ export default async function StressPage({ searchParams }: Props) {
   return (
     <div className="container-cul space-y-12 py-12">
       <h1 className="heading-xl">Component stress test ({worst ? 'worst case' : 'demo data'})</h1>
-      <Breadcrumbs items={[{ name: 'Academic Programs', href: '/programs' }, { name: p.name, href: '#' }]} />
+      <Breadcrumbs items={[{ name: 'Degree Programs', href: '/programs' }, { name: p.name, href: '#' }]} />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProgramCard program={p} />
         <FacultyCard faculty={f} />

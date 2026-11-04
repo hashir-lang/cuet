@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
-import { news, newsBySlug } from '@/content/news';
+import { news, newsBySlug, newsCategoryLabel } from '@/content/news';
 import { PageHero } from '@/components/ui/PageHero';
 import { Media } from '@/components/media/Media';
 import { ArticleCard } from '@/components/cards/ArticleCard';
@@ -34,10 +34,10 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <PageHero
         crumbs={[
-          { name: 'News', href: '/news' },
+          { name: 'News & Events', href: '/news' },
           { name: a.title, href: `/news/${a.slug}` },
         ]}
-        eyebrow={a.category}
+        eyebrow={newsCategoryLabel(a.category)}
         title={a.title}
         tone="ivory"
       >
