@@ -33,14 +33,15 @@ export type HeroSlide = {
 export const heroSlides: HeroSlide[] = [
   {
     src: '/images/hero/main-building.jpg',
-    alt: 'The main building of Central University of Emerging Technologies: a curved grey facade carrying the University’s name and emblem above the entrance, with the security post and car park in front.',
+    alt: 'The main building of Central University of Emerging Technologies: a curved grey facade carrying the University’s name and emblem above the entrance, with palm trees, the security post and the car park in front.',
     caption: 'Central University of Emerging Technologies',
     title: 'Thirteen faculties. Seventeen degrees.',
     text: 'Undergraduate education across business, computing, health, engineering, law and the sciences.',
     cta: { label: 'Explore programs', href: '/programs' },
     source: 'Photograph supplied by the University',
     stock: false,
-    objectPosition: '50% 45%',
+    // Keeps the name sign in the lower half, under the headline, for both the landscape and the portrait version of the photo; 58% keeps the sign centred when phones crop the sides.
+    objectPosition: '58% 45%',
   },
   {
     src: '/images/hero/students-together.jpg',

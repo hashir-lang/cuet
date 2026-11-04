@@ -41,7 +41,7 @@ Each item is shown on the site as a marked placeholder until supplied. Where to 
 - Scholarship and financial aid information
 
 **Campus and student life**
-- Photographs of the campus, laboratories, library and student life. The home page hero opens with the supplied photograph of the main building (`public/images/hero/main-building.jpg`, 1016 × 1548 px; a wider, higher-resolution version would look sharper on large screens). Its other four slides are stock photographs from Unsplash (free licence, source URLs in `src/content/hero.ts`), and all other images are illustrations
+- Photographs of the campus, laboratories, library and student life. The home page hero opens with the supplied photograph of the main building (`public/images/hero/main-building.jpg`; a landscape version at 2000 px or wider looks best, and the hero text sits in the upper part of the frame so the name sign in the lower half stays readable). Its other four slides are stock photographs from Unsplash (free licence, source URLs in `src/content/hero.ts`), and all other images are illustrations
 - Details of student services (student affairs, careers, counselling, societies, sports, transport, hostels)
 
 **Questions about the infrastructure report (v8)**

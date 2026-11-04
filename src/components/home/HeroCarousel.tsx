@@ -18,8 +18,10 @@ const two = (n: number) => String(n).padStart(2, '0');
 
 /**
  * Full-bleed hero slideshow for the home page. Each slide is a photograph with its own
- * category line, headline, sentence and call to action. Layout: text centred, counter
- * and progress line bottom-left, call to action bottom-centre, arrows at the right.
+ * category line, headline, sentence and call to action. Layout: text centred in the upper
+ * part of the hero (so it stays clear of the photographs' subjects, such as the name sign on
+ * the main building), counter and progress line bottom-left, call to action bottom-centre,
+ * arrows at the right.
  *
  * Motion: an opacity dissolve between photographs (a transition, so quick clicks retarget
  * instead of restarting), a slow 8 s zoom and the progress line as CSS animations (off the
@@ -138,15 +140,15 @@ export function HeroCarousel({ slides, label }: { slides: HeroSlide[]; label: st
         ))}
       </div>
 
-      {/* Scrims: an even darkening, a soft pool behind the centred text, and darker top and bottom edges. */}
-      <div aria-hidden="true" className="absolute inset-0 z-3 bg-forest-950/35" />
-      <div aria-hidden="true" className="absolute inset-0 z-3 bg-[radial-gradient(ellipse_60%_55%_at_50%_50%,rgba(10,18,38,0.6),transparent_100%)]" />
-      <div aria-hidden="true" className="absolute inset-x-0 top-0 z-3 h-40 bg-gradient-to-b from-forest-950/70 to-transparent" />
-      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 z-3 h-1/2 bg-gradient-to-t from-forest-950/85 to-transparent" />
+      {/* Scrims: an even darkening, a soft pool behind the text in the upper part, a darker top so the words read over sky, and a darker bottom edge for the controls. */}
+      <div aria-hidden="true" className="absolute inset-0 z-3 bg-forest-950/30" />
+      <div aria-hidden="true" className="absolute inset-0 z-3 bg-[radial-gradient(ellipse_60%_50%_at_50%_28%,rgba(10,18,38,0.6),transparent_100%)]" />
+      <div aria-hidden="true" className="absolute inset-x-0 top-0 z-3 h-[55%] bg-gradient-to-b from-forest-950/80 via-forest-950/40 to-transparent" />
+      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 z-3 h-2/5 bg-gradient-to-t from-forest-950/80 to-transparent" />
 
       {/* Text, centred. The outgoing slide's text fades while the incoming one rises in. */}
       <div className="container-cul relative z-10 flex h-[calc(100svh-7rem)] max-h-[56rem] min-h-[36rem] flex-col">
-        <div className="grid flex-1 place-items-center px-2 pb-40 pt-12 text-center lg:pb-28">
+        <div className="grid flex-1 items-start justify-items-center px-2 pb-40 pt-8 text-center sm:pt-10 lg:pb-28 lg:pt-12">
           {leaving !== null ? <SlideText key={`out-${leaving}`} slide={slides[leaving]} out /> : null}
           <SlideText key={index} slide={slide} />
         </div>
@@ -220,10 +222,10 @@ function SlideText({ slide, out = false }: { slide: HeroSlide; out?: boolean }) 
       <p className={clsx('eyebrow text-brass-300', motion)} style={{ '--i': 0 } as React.CSSProperties}>
         {slide.caption}
       </p>
-      <Title id={out ? undefined : 'hero-title'} className={clsx('display-xl mt-5 max-w-[16ch] text-ivory', motion)} style={{ '--i': 1 } as React.CSSProperties}>
+      <Title id={out ? undefined : 'hero-title'} className={clsx('display-lg mt-4 max-w-[18ch] text-ivory', motion)} style={{ '--i': 1 } as React.CSSProperties}>
         {slide.title}
       </Title>
-      <p className={clsx('lede mt-6 max-w-[46ch] text-forest-100/90', motion)} style={{ '--i': 2 } as React.CSSProperties}>
+      <p className={clsx('lede mt-5 max-w-[46ch] text-forest-100/90', motion)} style={{ '--i': 2 } as React.CSSProperties}>
         {slide.text}
       </p>
     </div>
