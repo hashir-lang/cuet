@@ -10,7 +10,7 @@ import { pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
   title: 'Faculties and Departments',
-  description: `The ${totals.faculties} faculties and departments of ${site.name}, from Computing and Emerging Technologies and Pharmacy and Pharmaceutical Sciences to Aviation and Aeronautics and Law and Shariah.`,
+  description: `The ${totals.faculties} faculties and departments of ${site.name}, from Computing and Emerging Technologies and Pharmacy and Pharmaceutical Sciences to Aviation and Aeronautical Sciences and Law and Shariah.`,
   path: '/faculties',
 });
 

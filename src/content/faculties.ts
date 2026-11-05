@@ -19,7 +19,7 @@ export const faculties: Faculty[] = [
   {
     slug: 'computing-and-emerging-technologies',
     name: 'Faculty of Computing and Emerging Technologies',
-    shortName: 'Computing & Emerging Technologies',
+    shortName: 'Computing and Emerging Technologies',
     order: 1,
     tagline: 'Rigorous computing, from first principles to working software and data.',
     introduction: draft([
@@ -27,7 +27,7 @@ export const faculties: Faculty[] = [
       'Students progress from algorithms and data structures to software design, databases, networks and data science, with project work that mirrors how technology is built in industry.',
     ]),
     focusAreas: draft(['Programming and algorithms', 'Software engineering', 'Data science and databases', 'Networks, systems and information technology']),
-    department: { slug: 'computer-science-and-information-technology', name: 'Department of Computer Science and Information Technology', shortName: 'Computer Science & IT' },
+    department: { slug: 'computer-science-and-information-technology', name: 'Department of Computer Science and Information Technology', shortName: 'Computer Science and IT' },
     labs: {
       count: 1,
       sizeAsDocumented: '600 / 800 sq ft',
@@ -63,7 +63,7 @@ export const faculties: Faculty[] = [
   {
     slug: 'arts-and-humanities',
     name: 'Faculty of Arts and Humanities',
-    shortName: 'Arts & Humanities',
+    shortName: 'Arts and Humanities',
     order: 3,
     tagline: 'Language, literature and the craft of clear expression.',
     introduction: draft([
@@ -103,7 +103,7 @@ export const faculties: Faculty[] = [
   {
     slug: 'law-and-shariah',
     name: 'Faculty of Law and Shariah',
-    shortName: 'Law & Shariah',
+    shortName: 'Law and Shariah',
     order: 5,
     tagline: 'Legal reasoning, justice and the rule of law.',
     introduction: draft([
@@ -125,13 +125,13 @@ export const faculties: Faculty[] = [
     head: null,
   },
   {
-    slug: 'aviation-and-aeronautics',
-    name: 'Faculty of Aviation and Aeronautics',
-    shortName: 'Aviation & Aeronautics',
+    slug: 'aviation-and-aeronautical-sciences',
+    name: 'Faculty of Aviation and Aeronautical Sciences',
+    shortName: 'Aviation and Aeronautical Sciences',
     order: 6,
     tagline: 'The business, safety and operations of flight.',
     introduction: draft([
-      'The Faculty of Aviation and Aeronautics studies how airlines, airports and aviation services are planned, regulated and run.',
+      'The Faculty of Aviation and Aeronautical Sciences studies how airlines, airports and aviation services are planned, regulated and run.',
       'Students learn the operational, commercial and safety principles that keep aviation moving, preparing for management roles across the industry.',
     ]),
     focusAreas: draft(['Airline and airport operations', 'Aviation safety and regulation', 'Air transport economics', 'Ground handling and logistics']),
@@ -145,13 +145,13 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing aviation and aeronautics', plate: 'aviation' },
+    media: { src: null, alt: 'Illustration representing aviation and aeronautical sciences', plate: 'aviation' },
     head: null,
   },
   {
     slug: 'basic-and-natural-sciences',
     name: 'Faculty of Basic and Natural Sciences',
-    shortName: 'Basic & Natural Sciences',
+    shortName: 'Basic and Natural Sciences',
     order: 7,
     tagline: 'Statistics and the mathematical language of evidence.',
     introduction: draft([
@@ -173,13 +173,13 @@ export const faculties: Faculty[] = [
     head: null,
   },
   {
-    slug: 'agricultural-sciences',
-    name: 'Faculty of Agricultural Sciences',
-    shortName: 'Agricultural Sciences',
+    slug: 'agriculture-sciences',
+    name: 'Faculty of Agriculture Sciences',
+    shortName: 'Agriculture Sciences',
     order: 8,
     tagline: 'Where agriculture meets enterprise.',
     introduction: draft([
-      'The Faculty of Agricultural Sciences studies agriculture as a business: how food and farm products are produced, financed, marketed and traded.',
+      'The Faculty of Agriculture Sciences studies agriculture as a business: how food and farm products are produced, financed, marketed and traded.',
       'Students combine an understanding of crops, livestock and supply chains with the management and economic skills needed to build successful agricultural enterprises.',
     ]),
     focusAreas: draft(['Agricultural economics', 'Agri-marketing and supply chains', 'Farm management', 'Rural enterprise']),
@@ -197,13 +197,13 @@ export const faculties: Faculty[] = [
     head: null,
   },
   {
-    slug: 'management-and-allied-health-sciences',
-    name: 'Faculty of Management and Allied Health Sciences',
-    shortName: 'Management & Allied Health Sciences',
+    slug: 'medicine-and-allied-health-sciences',
+    name: 'Faculty of Medicine and Allied Health Sciences',
+    shortName: 'Medicine and Allied Health Sciences',
     order: 9,
     tagline: 'Health for whole communities, and the systems that serve them.',
     introduction: draft([
-      'The Faculty of Management and Allied Health Sciences studies the health of populations: how disease spreads, how health can be promoted and how health services are organised and managed.',
+      'The Faculty of Medicine and Allied Health Sciences studies the health of populations: how disease spreads, how health can be promoted and how health services are organised and managed.',
       'Students develop scientific foundations alongside practical skills in health assessment, health promotion and the management of health programmes.',
     ]),
     focusAreas: draft(['Epidemiology and biostatistics', 'Health promotion', 'Health systems and management', 'Community health']),
@@ -223,7 +223,7 @@ export const faculties: Faculty[] = [
   {
     slug: 'engineering-and-technology',
     name: 'Faculty of Engineering and Technology',
-    shortName: 'Engineering & Technology',
+    shortName: 'Engineering and Technology',
     order: 10,
     tagline: 'Engineering technology for secure information systems.',
     introduction: draft([
@@ -247,7 +247,7 @@ export const faculties: Faculty[] = [
   {
     slug: 'nursing-and-midwifery',
     name: 'Faculty of Nursing and Midwifery',
-    shortName: 'Nursing & Midwifery',
+    shortName: 'Nursing and Midwifery',
     order: 11,
     tagline: 'Skilled, compassionate care, grounded in evidence.',
     introduction: draft([
@@ -271,7 +271,7 @@ export const faculties: Faculty[] = [
   {
     slug: 'pharmacy-and-pharmaceutical-sciences',
     name: 'Faculty of Pharmacy and Pharmaceutical Sciences',
-    shortName: 'Pharmacy & Pharmaceutical Sciences',
+    shortName: 'Pharmacy and Pharmaceutical Sciences',
     order: 12,
     tagline: 'Medicines, patients and the science that connects them.',
     introduction: draft([

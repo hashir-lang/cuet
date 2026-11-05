@@ -208,7 +208,7 @@ export const programs: Program[] = [
     slug: 'bs-aviation-management',
     name: 'BS Aviation Management',
     shortName: 'BS Aviation Management',
-    facultySlug: 'aviation-and-aeronautics',
+    facultySlug: 'aviation-and-aeronautical-sciences',
     tagline: 'Preparing managers for airlines, airports and aviation services.',
     overview: 'BS Aviation Management combines management studies with the operational, regulatory and safety knowledge specific to the aviation industry.',
     introduction: [
@@ -264,7 +264,7 @@ export const programs: Program[] = [
     slug: 'bs-agribusiness-management',
     name: 'BS Agribusiness Management',
     shortName: 'BS Agribusiness Management',
-    facultySlug: 'agricultural-sciences',
+    facultySlug: 'agriculture-sciences',
     tagline: 'The management and economics of food and agriculture.',
     overview:
       'BS Agribusiness Management combines agricultural knowledge with business, economics and marketing, preparing students to manage enterprises across the agricultural value chain.',
@@ -293,7 +293,7 @@ export const programs: Program[] = [
     slug: 'bs-public-health',
     name: 'BS Public Health',
     shortName: 'BS Public Health',
-    facultySlug: 'management-and-allied-health-sciences',
+    facultySlug: 'medicine-and-allied-health-sciences',
     tagline: 'Protecting and improving the health of whole communities.',
     overview: 'BS Public Health studies how diseases spread, how health can be promoted and how health systems can serve populations more fairly and effectively.',
     introduction: [
@@ -544,7 +544,7 @@ export const programs: Program[] = [
     slug: 'ad-aviation-management',
     name: 'AD Aviation Management',
     shortName: 'AD Aviation Management',
-    facultySlug: 'aviation-and-aeronautics',
+    facultySlug: 'aviation-and-aeronautical-sciences',
     tagline: 'Into the aviation industry, faster.',
     overview: 'The Associate Degree in Aviation Management introduces airline and airport operations, aviation safety and customer service for entry-level roles in the industry.',
     introduction: ['Students learn how airports and airlines work day to day, from passenger handling and cargo to safety and regulation.', adNote],

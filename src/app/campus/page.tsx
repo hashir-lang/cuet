@@ -68,7 +68,7 @@ export default function CampusPage() {
               eyebrow="Departmental laboratories"
               title="Where practice meets theory."
               tone="dark"
-              intro="Pharmacy and Pharmaceutical Sciences carries the largest allocation, with six laboratories, followed by Nursing and Midwifery and Management and Allied Health Sciences with three each."
+              intro="Pharmacy and Pharmaceutical Sciences carries the largest allocation, with six laboratories, followed by Nursing and Midwifery and Medicine and Allied Health Sciences with three each."
               className="!mb-8"
             />
             <Link href="/campus/facilities" className="btn btn-outline-light">
