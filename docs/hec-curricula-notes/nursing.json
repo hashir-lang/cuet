@@ -1,0 +1,145 @@
+[
+  {
+    "slug": "bs-nursing",
+    "sourceTitle": "HEC Curriculum of BS in Nursing (BSN) / MS in Nursing (MSN), Revised 2024",
+    "programTitleInSource": "BS in Nursing (BSN) / Bachelor of Science in Nursing (BSN)",
+    "sourcePages": "PDF pages 8-13 (printed 7-12) for program description, PLOs, eligibility, core competencies, framework, scheme of studies and internship; course learning outcomes on PDF pages 13-29 (printed 12-28)",
+    "scope": "The Bachelor of Science in Nursing (BSN) is a four-year professional degree leading to practice as a Registered Nurse. It integrates the knowledge, skills, competencies and professional attitude required for competent clinical nursing practice, focusing on risk mitigation, disease prevention, health restoration and health promotion. Courses are built on nursing knowledge, basic sciences, arts and humanities and are delivered through theoretical teaching, simulation and clinical practice in diverse healthcare and community settings. Graduates are prepared to provide comprehensive, evidence-based care at primary, secondary and tertiary levels in roles such as staff nurse, community health nurse and home health care nurse, and complete a one-year internship afterwards.",
+    "duration": "4 years (8 semesters); program duration 4-6 years, extendable by one further year in special cases; semesters of 16-18 weeks (including 1-2 weeks for examination)",
+    "totalCreditHours": "134",
+    "structure": [
+      { "component": "Major (including two Elective courses)", "credits": "82 credit hours (23 courses, of which 2 Electives worth 5 credits) (computed from the scheme)" },
+      { "component": "General Education (GE)", "credits": "33 credit hours (14 courses tagged GE in the scheme) (computed from the scheme); the document separately states the GE cluster as 12 mandatory courses worth 30 credits" },
+      { "component": "Interdisciplinary (ID)", "credits": "15 credit hours (6 courses) (computed from the scheme)" },
+      { "component": "Clinical Practicum (CP)", "credits": "4 credit hours (1 course, Semester VIII)" },
+      { "component": "Theory / Clinical / Skills-Lab split", "credits": "Theory 92.5, Clinical 25.5, Skills/Lab 13, plus a 3-credit Semester VIII Elective with no breakdown given (computed from the scheme)" },
+      { "component": "Internship (post-degree)", "credits": "One year of paid internship after completion of all credit requirements (no credit hours assigned)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Microbiology", "credits": "2 (Theory 1.5, Skills/Lab 0.5)", "category": "General Education (Natural Sciences)" },
+          { "title": "Biochemistry", "credits": "2 (Theory 1.5, Skills/Lab 0.5)", "category": "General Education" },
+          { "title": "English – Functional English", "credits": "3 (Theory 3)", "category": "General Education" },
+          { "title": "Fundamentals of Nursing – I", "credits": "3 (Theory 2, Skills/Lab 1)", "category": "Major" },
+          { "title": "Anatomy & Physiology – I", "credits": "3 (Theory 2.5, Skills/Lab 0.5)", "category": "Major" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2 (Theory 2)", "category": "General Education" },
+          { "title": "Information and Communication Technology", "credits": "2 (Theory 1, Skills/Lab 1)", "category": "General Education" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Fundamentals of Nursing – II", "credits": "4 (Theory 2, Clinical 1, Skills/Lab 1)", "category": "Major" },
+          { "title": "Quantitative Reasoning – I", "credits": "3 (Theory 3)", "category": "General Education" },
+          { "title": "Anatomy & Physiology – II", "credits": "3 (Theory 2.5, Skills/Lab 0.5)", "category": "Major" },
+          { "title": "Applied Nutrition", "credits": "2 (Theory 2)", "category": "Interdisciplinary" },
+          { "title": "Theoretical Basis of Nursing", "credits": "2 (Theory 2)", "category": "General Education (Arts & Humanities)" },
+          { "title": "Islamic Studies / Ethics", "credits": "2 (Theory 2)", "category": "General Education" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Professional Communication Skills", "credits": "3 (Theory 3)", "category": "General Education" },
+          { "title": "Clinical Pharmacology and Drug Administration – I", "credits": "2 (Theory 2)", "category": "Major" },
+          { "title": "Medical Surgical Nursing – I", "credits": "7 (Theory 3, Clinical 3, Skills/Lab 1)", "category": "Major" },
+          { "title": "Health Assessment – I", "credits": "2 (Theory 1, Skills/Lab 1)", "category": "Major" },
+          { "title": "Pathophysiology – I", "credits": "3 (Theory 2, Skills/Lab 1)", "category": "Major" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Applied Psychology", "credits": "3 (Theory 3)", "category": "Interdisciplinary" },
+          { "title": "Medical Surgical Nursing – II", "credits": "7 (Theory 3, Clinical 3, Skills/Lab 1)", "category": "Major" },
+          { "title": "Health Assessment – II", "credits": "2 (Theory 1, Skills/Lab 1)", "category": "Major" },
+          { "title": "Pathophysiology – II", "credits": "2 (Theory 2)", "category": "Major" },
+          { "title": "Clinical Pharmacology and Drug Administration – II", "credits": "2 (Theory 2)", "category": "Major" },
+          { "title": "Professional Ethics for Nurses", "credits": "2 (Theory 2)", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2 (Theory 2)", "category": "General Education" },
+          { "title": "Pediatric Health Nursing", "credits": "7 (Theory 3, Clinical 3, Skills/Lab 1)", "category": "Major" },
+          { "title": "Maternal, Neonatal and Child Health Nursing", "credits": "3 (Theory 2, Clinical 1)", "category": "Major" },
+          { "title": "Epidemiology", "credits": "2 (Theory 2)", "category": "Interdisciplinary" },
+          { "title": "Infectious Diseases", "credits": "2 (Theory 2)", "category": "Interdisciplinary" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Principles of Teaching & Learning", "credits": "3 (Theory 3)", "category": "Interdisciplinary" },
+          { "title": "Public Health Nursing", "credits": "4 (Theory 2, Clinical 2)", "category": "Major" },
+          { "title": "Mental Health Nursing", "credits": "6 (Theory 3, Clinical 2, Skills/Lab 1)", "category": "Major" },
+          { "title": "Introduction to Biostatistics (QR II)", "credits": "3 (Theory 3)", "category": "General Education" },
+          { "title": "Culture, Health & Society", "credits": "2 (Theory 2)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Leadership & Management", "credits": "3 (Theory 2, Clinical 1)", "category": "Interdisciplinary" },
+          { "title": "Critical Care Nursing", "credits": "7 (Theory 2, Clinical 4, Skills/Lab 1)", "category": "Major" },
+          { "title": "Introduction to Nursing Research", "credits": "3 (Theory 3)", "category": "Major" },
+          { "title": "Entrepreneurship", "credits": "2 (Theory 2)", "category": "General Education" },
+          { "title": "Elective", "credits": "2 (Theory 2)", "category": "Major" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Geriatric Nursing", "credits": "3 (Theory 1.5, Clinical 1.5)", "category": "Major" },
+          { "title": "Trends and Issues in Health Care", "credits": "2 (Theory 2)", "category": "Major" },
+          { "title": "Expository Writing", "credits": "3 (Theory 3)", "category": "General Education" },
+          { "title": "Elective", "credits": "3 (breakdown not given)", "category": "Major" },
+          { "title": "Clinical Practicum", "credits": "4 (Clinical 4)", "category": "Clinical Practicum" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "HSSC, A-levels or an equivalent qualification (12 years of schooling) in the Pre-Medical group with a minimum of 50% marks.",
+      "The admitting university may conduct an entry test through its own testing body or another body, as per its own approved screening/admission criteria."
+    ],
+    "passingCriteria": [
+      "Completion of the 134 credit hours of the standardized eight-semester scheme of studies.",
+      "Minimum attendance of 75%.",
+      "Completion within the program duration of 4-6 years, extendable by one further year in special cases.",
+      "A summer semester of 8-9 weeks may carry a maximum of 8 credit hours and is used only for remedial, deficiency, failure or repetition courses.",
+      "Course load is as per the HEC Semester Guidelines."
+    ],
+    "internship": "One year of paid internship is required after completion of all credit requirements of the BSN degree, at any healthcare facility; placement for the internship is the responsibility of the institute offering the program. Within the degree, clinical practice is built into the major courses (25.5 clinical credits in total) and culminates in a 4-credit, all-clinical Clinical Practicum in Semester VIII that prepares students for role transition to bedside nurse. The document does not mention a licensing or registration examination.",
+    "projects": null,
+    "accreditationBody": "Pakistan Nursing and Midwifery Council (PN&MC)",
+    "specializations": [],
+    "notes": [
+      "The document calls the program 'BS in Nursing (BSN)' on the cover and 'Bachelor of Science in Nursing (BSN)' in the description, and once 'BScN'. This entry covers only the generic four-year BSN; the MSN section (PDF pages 30-37) was ignored and the document contains no Post-RN BSN section.",
+      "The scheme-of-studies table (PDF pages 11-13) has columns S.N. / Course / Category / Theory / Clinical / Skills-Lab / Credits. The total credit is given first in each 'credits' string and the document's column breakdown is folded in after it; the document writes totals with a leading zero (e.g. '02', '07'), dropped here.",
+      "Category abbreviations used by the document (GE, GE (NS), GE (AH), ID, CP, Major) were expanded to General Education, General Education (Natural Sciences), General Education (Arts & Humanities), Interdisciplinary, Clinical Practicum and Major. The document itself does not expand them; NS/AH follow the general-education categories named in the program description.",
+      "Semester totals as stated by the document: I 17, II 16, III 17, IV 18, V 16, VI 18, VII 17, VIII 15 = 134; every total was re-added and matches the course rows.",
+      "The document gives no explicit component-wise breakdown (Major / GE / ID credits); the 'structure' figures were computed from the scheme. The document also states (PDF page 29) that the GE cluster is 'the mandatory 12 courses worth 30 credits', whereas the scheme tags 14 courses / 33 credits as GE (Microbiology and Biochemistry 2 each as GE (NS), Theoretical Basis of Nursing 2 as GE (AH), Professional Communication Skills 3, Culture, Health & Society 2; ICT is 2 credits rather than 3). Both figures are reported.",
+      "In the Semester VIII table two rows are both numbered '4' (Elective and Clinical Practicum); this is a numbering slip in the source and both rows are kept. The Semester VIII Elective has dashes in all Theory/Clinical/Skills-Lab columns, so only its total (3) is known.",
+      "Elective courses: 'Elective' (Major, 2 credits) in Semester VII and 'Elective' (Major, 3 credits) in Semester VIII. The document lists no elective titles, so none are given and 'specializations' is empty.",
+      "Degree-award requirements: the document states only credit hours (134), 75% attendance, program duration and summer-semester limits. It gives no CGPA threshold, grading scale or other award rule for the BSN, and names no capstone, thesis or project, so 'projects' is null.",
+      "The eligibility clause names no age limit, medical-fitness requirement or gender condition; only the Pre-Medical group, 50% marks and an optional university entry test.",
+      "Regulating body: the document does not describe an accreditation procedure. It names the Pakistan Nursing and Midwifery Council through its Registrar on the NCRC (PDF page 6) and in the Recommendations (PDF page 13), which say institutions still on the annual system are 'not aligned with the HEC and PN&MC guidelines' and must adopt the semester system by Fall 2024. The program is described as 'leading to practice as a Registered Nurse'. No licensing examination is mentioned.",
+      "Recommendations on PDF page 13 also state that nursing and midwifery programs may be offered only in institutions with relevant faculty, infrastructure, required labs and attached hospitals for clinical practice.",
+      "Credit-hour definitions (PDF pages 10-11): 3 theory credit hours = 3 classes of 1 hour, or 2 classes of 1.5 hours, or 1 class of 3 hours per week; 1 practical/laboratory/field credit hour = 3 hours.",
+      "A core-competencies table (PDF pages 9-10) maps eight competencies (e.g. understanding of human body and mind, professional/ethical/legal practice, provision of care, critical thinking, evidence-based practice, communication, health promotion, professional development) to courses; it is not part of the scheme and is not reproduced.",
+      "No Associate Degree or intermediate exit award is defined for this program in the document.",
+      "Minor source defects: the learning outcomes printed under 'Infectious Diseases' (PDF page 25) actually describe teaching-and-learning content; 'Culture, Health, and Society' has no credit line in the CLO section while a stray 'Credits Total = 02' line follows Clinical Practicum (PDF page 27); course titles vary slightly between the scheme and the CLO headings (e.g. 'Health Care' vs 'Healthcare', 'Fundamentals of Nursing – 1'). Scheme-table spellings were used."
+    ]
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "slug": "doctor-of-pharmacy",
+    "sourceTitle": "HEC Curriculum for Doctor of Pharmacy (Pharm. D) 2025 (Revised Curriculum for Degree Programs in Pharmacy, notified 3 September 2025, No. HEC/NCRC/PHARMACY/2025/7953)",
+    "programTitleInSource": "Doctor of Pharmacy (Pharm. D)",
+    "sourcePages": "PDF pages 9-17 (guiding principles, program description, eligibility, program structure, scheme of studies, degree award requirements, specialization clusters); PDF pages 28-33 (Pharmacy Practice Experience and Capstone Project); scheme repeated in Annex-A at PDF pages 37-40",
+    "scope": "The Doctor of Pharmacy is a five-year program that provides a comprehensive foundation in pharmaceutical sciences and clinical practice. The curriculum builds expertise in the core areas of Pharmaceutics, Pharmacology, Pharmaceutical Chemistry, Pharmacognosy and Pharmacy Practice, while courses in Basic Medical Sciences cover human anatomy, physiology and pathology. These foundational sciences are integrated with advanced training in Pharmacy Practice through hospital rotations, community pharmacy internships and case-based learning, giving students exposure to medication management, patient counselling and healthcare collaboration. Graduates are positioned to work in hospitals, community pharmacies, the pharmaceutical industry, regulatory agencies, government departments, non-governmental and international health organizations, or to become entrepreneurs and pursue further specialization.",
+    "duration": "5 years (10 regular semesters); maximum 7 years, further extendable by one year subject to approval of the university's statutory body",
+    "totalCreditHours": "Minimum 195 (210 if the optional specialization track is opted)",
+    "structure": [
+      { "component": "General Education", "credits": "34 credit hours (14 courses as prescribed by HEC)" },
+      { "component": "Major: Core courses (Pharmacology, Pharmacy Practice, Pharmaceutics, Pharmacognosy, Pharmaceutical Chemistry)", "credits": "141 credit hours (38 courses)" },
+      { "component": "Interdisciplinary / Allied courses", "credits": "14 credit hours (4 courses)" },
+      { "component": "Field Experience (Pharmacy Practice Experience / Clinical Pharmacy Clerkship)", "credits": "3 credit hours" },
+      { "component": "Capstone Project", "credits": "3 credit hours" },
+      { "component": "Optional specialization cluster (electives from one cluster)", "credits": "15 credit hours (5-6 courses), raising the degree total to 210" },
+      { "component": "Mandatory international certifications (non-credited)", "credits": "Three certifications equivalent to 3 credit hours in total (each of at least 16 hours = 1 credit hour); waived if the specialization track is opted" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Physical Pharmacy - I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Organic Chemistry - I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Biochemistry - I", "credits": "2+1", "category": "Major: Core" },
+          { "title": "Physiology-I", "credits": "3+1", "category": "Allied/Interdisciplinary" },
+          { "title": "Functional English", "credits": "3", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Physical Pharmacy - II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Organic Chemistry - II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Biochemistry - II", "credits": "2+1", "category": "Major: Core" },
+          { "title": "Anatomy & Histology", "credits": "2+1", "category": "Allied/Interdisciplinary" },
+          { "title": "Physiology-II", "credits": "3+1", "category": "Allied/Interdisciplinary" },
+          { "title": "Islamic Studies", "credits": "2", "category": "General Education" }
+        ],
+        "total": "20"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Drug Delivery Systems and Formulation Science - I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmacology and Therapeutics-I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmacognosy - (Basic I)", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pathology", "credits": "2+1", "category": "Allied/Interdisciplinary" },
+          { "title": "Basic Pharmaceutical Microbiology", "credits": "2+1", "category": "General Education (Natural Sciences)" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Drug Delivery Systems and Formulation Science - II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Applied Pharmaceutical Microbiology and Immunology", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Artificial Intelligence in Pharmacology and Therapeutics (Pharmacology and Therapeutics-II)", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmacognosy (Basic - II)", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pakistan Studies", "credits": "2", "category": "General Education" },
+          { "title": "Fehm-e-Quran I", "credits": "1", "category": "General Education" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Pharmacognosy (Applied)", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmaceutical Analysis-I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmacology and Therapeutics-III", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Hospital and Community Pharmacy", "credits": "2", "category": "Major: Core" },
+          { "title": "Quantitative Reasoning – I", "credits": "3", "category": "General Education" },
+          { "title": "Ideology & Constitution of Pakistan", "credits": "2", "category": "General Education" },
+          { "title": "Fehm-e-Quran II", "credits": "1", "category": "General Education" }
+        ],
+        "total": "20"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Pharmacognosy (Advanced)", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Dispensing, Social & Administrative Pharmacy", "credits": "2", "category": "Major: Core" },
+          { "title": "Pharmaceutical Analysis-II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmacology and Therapeutics-IV", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Applications of ICT (Especial focus on Pharmacy)", "credits": "2+1", "category": "General Education" },
+          { "title": "Quantitative Reasoning-II", "credits": "3", "category": "General Education" }
+        ],
+        "total": "20"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Industrial Pharmacy - I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Biopharmaceutics and Pharmacokinetics - I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Clinical Pharmacy-I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmaceutical Quality Management System", "credits": "3", "category": "Major: Core" },
+          { "title": "Expository Writing", "credits": "3", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2", "category": "General Education" }
+        ],
+        "total": "20"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Industrial Pharmacy - II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Biopharmaceutics and Pharmacokinetics - II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Clinical Pharmacy-II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Civics & Community Engagement (Fulfill requirement of Pharmacy Practice-III)", "credits": "1+1", "category": "General Education" },
+          { "title": "Pharmaceutical Quality Control", "credits": "2+1", "category": "Major: Core" },
+          { "title": "Pharmaceutical Management and Marketing", "credits": "2", "category": "General Education (Social Sciences)" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester IX",
+        "courses": [
+          { "title": "Pharmaceutical Technology - I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmaceutical Regulatory Science-I", "credits": "3", "category": "Major: Core" },
+          { "title": "Medicinal Chemistry-I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Advanced Clinical Pharmacy-I", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Clinical Pharmacology", "credits": "2+1", "category": "Major: Core" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester X",
+        "courses": [
+          { "title": "Pharmaceutical Technology - II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Pharmaceutical Regulatory Science-II", "credits": "3", "category": "Major: Core" },
+          { "title": "Medicinal Chemistry-II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Advanced Clinical Pharmacy-II", "credits": "3+1", "category": "Major: Core" },
+          { "title": "Bioethics (Arts & Humanities Category)", "credits": "2", "category": "General Education" },
+          { "title": "Capstone Project", "credits": "3", "category": "Capstone Project" }
+        ],
+        "total": "20"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (12 years of schooling) or an IBCC-equivalent qualification in the Pre-Medical Group with at least 60% cumulative score.",
+      "The admitting university may or may not conduct an entry or admission test, through its own testing body or an external testing service provider of repute, under the screening, admission and merit-calculation criteria approved by its statutory bodies."
+    ],
+    "passingCriteria": [
+      "All General Education courses prescribed in the HEC Undergraduate Education Policy V 1.1, including Pakistan Studies and Fehm-e-Quran, must be completed.",
+      "A minimum of 195 credit hours is required where no specialization is opted.",
+      "A minimum of 210 credit hours is required for a Pharm-D degree with specialization in a particular domain.",
+      "A capstone or research project of 3 credit hours must be completed in accordance with the HEC Undergraduate Education Policy V 1.1; it cannot be substituted with additional coursework or internship.",
+      "An internship or field experience of 3 credit hours must be completed; it cannot be substituted with additional coursework, capstone, research or project work.",
+      "Three international certifications (non-credited, equivalent to 3 credit hours in total, each of at least 16 hours) must be completed over the five-year program; this requirement is waived for students who opt for the 210-credit specialization track.",
+      "CGPA must not be below 2.00 out of 4.00 at completion of the degree; the university may set a higher standard.",
+      "A student who fails a practical re-appears in the practical only, and a student who fails theory re-appears in theory only; the theory and practical weightage for CGPA follows the distribution of marks.",
+      "External evaluation is mandatory for all practical courses in every examination, with equal weightage given to external and internal evaluation, and the course teacher acts as the internal examiner.",
+      "The program must be completed within a maximum of 7 years, extendable by a further year subject to approval of the university's statutory body."
+    ],
+    "internship": "Field experience of 3 credit hours is a mandatory degree award requirement, delivered as Pharmacy Practice Experience (PPE), described as a Clinical Pharmacy Clerkship. The internship lasts six to eight weeks, preferably during a semester or summer break, and must be graded by a faculty member in collaboration with the supervisor in the field; it cannot be substituted with additional coursework, capstone or project work. Students may start PPE in the third year and it is graded by faculty in the fifth year. PPE may be undertaken in community pharmacy, the pharmaceutical industry, regulatory bodies, sales and marketing, or hospital and clinical settings. In hospital and clinical settings the training covers participation in the inter-professional team, patient assessment, drug therapy review, written and verbal communication, pharmacokinetic monitoring and systems management to improve therapeutic outcomes, assessed through clinical rounds, case presentations, OSCE, oral viva, case discussions, journal clubs and assignments. Separately, the Civics and Community Engagement course requires students to dedicate 100 hours over the degree to community service in pharmacy-related assignments, reported to the class teacher.",
+    "projects": "A Capstone Project of 3 credit hours, placed in Semester X, is a mandatory degree award requirement and may be supervised by faculty members of any core discipline of Pharmacy (Pharmaceutics, Pharmacy Practice, Pharmacology, Pharmaceutical Chemistry, Pharmacognosy); it cannot be substituted with additional coursework or internship. The project comprises a proposal (20% of the grade) with literature review, objectives, methodology and ethical considerations including IRB approval where human subjects are involved; execution of research- or practice-based work (30%); a written report structured like a thesis or manuscript (25%); and an oral presentation and defence of about 15-20 minutes (25%), with a poster presentation possible. It follows an eight- to nine-month timeline with bi-weekly or monthly supervisory meetings and is assessed by a committee of two to three faculty members, graded Pass with Distinction (A), Pass (B or C) or Fail (D or F).",
+    "accreditationBody": "Pharmacy Council of Pakistan",
+    "specializations": [
+      "Pharmacology",
+      "Pharmacy Practice",
+      "Pharmaceutics",
+      "Pharmacognosy",
+      "Pharmaceutical Chemistry / Medicinal Chemistry",
+      "Pharmaceutical Analysis / Quality Control",
+      "Industrial Pharmacy",
+      "Hospital and Community Pharmacy",
+      "Regulatory Affairs",
+      "Clinical Research in Pharmacy",
+      "Pharmaceutical Marketing",
+      "Pharmaceutical Management"
+    ],
+    "notes": [
+      "Program title: the HEC document uses 'Doctor of Pharmacy (Pharm. D)' (also written Pharm.D and Pharm-D). Under its Standard Nomenclature clause, all NQF level 6 undergraduate pharmacy programs must carry this title and equivalent programs with other names are to be renamed.",
+      "The document covers only the Pharm. D program; it contains no M.Phil/PhD sections and does not define an Associate Degree or exit award, so none is given here.",
+      "Credit reconciliation: the ten semester tables sum to 192 credit hours (34 General Education + 141 Major Core + 14 Allied/Interdisciplinary + 3 Capstone). The 3-credit Field Experience (Pharmacy Practice Experience / Clinical Pharmacy Clerkship) is not placed in any semester table; it completes the 195 minimum.",
+      "The document states 14 General Education courses, but the scheme lists 15 General Education rows because Fehm-e-Quran appears as two 1-credit parts (I and II); the 34-credit total matches.",
+      "Accreditation body: the document does not use the word 'accredits'. The Pharmacy Council of Pakistan is named in the notification letter and preface as the professional council that collaborated with HEC and prepared the Annex-A course contents, and the Pharmacy Act 1967 and DRAP appear only inside course contents. The field is filled on that basis.",
+      "The scheme of studies appears twice: in the HEC booklet (booklet pages 5-7, PDF pages 13-15) and again in Annex-A prepared by the Pharmacy Council of Pakistan (PDF pages 37-40). Both copies are identical, including semester totals.",
+      "Annex-A (PDF pages 34-124) contains Pharmacy Council of Pakistan course contents provided 'as reference only'. It labels courses differently from the scheme (for example 'Pharmaceutical Chemistry IA (Organic Chemistry I)', 'Pharmacy Practice-IA: Social and Administrative Pharmacy (Hospital and Community Pharmacy)', 'Pharmacology & Therapeutics-1A/IB/IIA/IIB'); titles here follow the scheme tables, not the Annex.",
+      "Semester IV lists Pharmacology and Therapeutics-II under the title 'Artificial Intelligence in Pharmacology and Therapeutics (Pharmacology and Therapeutics-II)'; copied verbatim.",
+      "Semester VI 'Quantitative Reasoning-II' carries the category annotation 'General Education (Contents of Biostatics added)' [sic] in the document; recorded here simply as General Education.",
+      "Semester VIII 'Civics & Community Engagement' is annotated '(Fulfill requirement of Pharmacy Practice-III)' in the scheme; kept in the title.",
+      "Scheme footnotes: * HEC-designed model courses may be used by the university; ** courses recommended by the NCRC under the Natural Science, Social Science and Arts & Humanities categories (Basic Pharmaceutical Microbiology, Pharmaceutical Management and Marketing, Bioethics); *** the capstone project can be supervised by faculty members of any core discipline of Pharmacy. Markers removed from titles.",
+      "Semester and credit definitions (PDF page 12): regular semesters 16-18 weeks (1-2 weeks for examinations); summer semesters 8-9 weeks (1 week for examinations); course load 15-21 credit hours per regular semester and up to 8 credit hours in summer (for remedial/deficiency/failure/repetition courses only); 3 theory credits = 3 contact hours per week; 1 lab/field credit = 3 contact hours per week.",
+      "Specialization (PDF page 17): optional, chosen at the discretion of students and/or HEIs. A student completes 5-6 elective courses (15 credits) from one cluster; HEIs adjust the scheme accordingly with statutory-body approval and may add clusters; at least one 3-credit certification course (1 credit = 16 contact hours) must be offered in each cluster; the specialization is shown in parentheses on the transcript or degree; if no track is opted the degree is awarded without specialization; all Pharm-D degrees are equivalent for employment.",
+      "Additional requirements found only in the Annex-A reference contents: a mandatory Basic Life Support workshop as part of the Physiology-II practical; visits to at least five pharmaceutical industries in Industrial Pharmacy-II; medicinal-plant and herbal-industry study tours in Pharmacognosy; a minimum of 10 practicals per practical course. These are Pharmacy Council guidance, not HEC degree award requirements.",
+      "The source text is OCR-extracted; minor spacing errors (e.g. 'Ch emistry', 'MININUM') were corrected silently. No scheme data was missing."
+    ]
+  }
+]

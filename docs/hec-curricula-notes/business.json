@@ -1,0 +1,802 @@
+[
+  {
+    "slug": "bba",
+    "sourceTitle": "HEC Curriculum Booklet – Business & Management 2025 (BBA, BS, MBA, EMBA, AD & MS), notified 24 October 2025",
+    "programTitleInSource": "Bachelor of Business Administration (BBA)",
+    "sourcePages": "PDF pages 13-28 (booklet pages 5-20); scheme of studies PDF pages 23-27 (booklet pages 15-19)",
+    "scope": "The Bachelor of Business Administration (BBA) is a four-year undergraduate degree at NQF Level 6 that builds a strong foundation in business and management principles and integrates theoretical knowledge with practical application for a dynamic, competitive global business environment. The curriculum spans general education, core business areas including accounting, finance, marketing and human resource management, interdisciplinary courses, specialization electives, an internship and a capstone project. Emphasis is placed on analytical thinking, problem solving, ethical decision-making, leadership and an entrepreneurial mindset. Graduates are prepared for entry-level managerial roles in public and private sector organisations, for starting or expanding family businesses, or for advanced study in business and management.",
+    "duration": "4 years (8 regular semesters); maximum 6 years (12 regular semesters), further extendible by 1 year (2 regular semesters) with the permission of the statutory bodies",
+    "totalCreditHours": "Minimum 130",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Mandatory Core Courses", "credits": "33 credit hours (11 courses)" },
+      { "component": "Core Courses to be Decided by HEIs", "credits": "27 credit hours (9 courses)" },
+      { "component": "Specialization / Electives (specialization clusters)", "credits": "18 credit hours (6 courses)" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "12 credit hours (4 courses)" },
+      { "component": "Field Experience / Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3+0", "category": "General Education" },
+          { "title": "Functional English", "credits": "3+0", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "2+1", "category": "General Education" },
+          { "title": "Principles of Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-I", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-I", "credits": "3+0", "category": "Interdisciplinary" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3+0", "category": "General Education" },
+          { "title": "Social Science", "credits": "2+0", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3+0", "category": "General Education" },
+          { "title": "Natural Science", "credits": "2+1", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Organizational Behaviour", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Accounting", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2+0", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2+0", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2+0", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Financial Accounting", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-II", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-II", "credits": "3+0", "category": "Interdisciplinary" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2+0", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2+0", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2+0", "category": "General Education" },
+          { "title": "Business Finance", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-III", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-IV", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Principles of Marketing", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Marketing Management", "credits": "3+0", "category": "Major" },
+          { "title": "Financial Management", "credits": "3+0", "category": "Major" },
+          { "title": "Human Resource Management", "credits": "3+0", "category": "Major" },
+          { "title": "Interdisciplinary Course-III", "credits": "3+0", "category": "Interdisciplinary" },
+          { "title": "HEI Decided Core Course-V", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "HEI Decided Core Course-VI", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-VII", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-IV", "credits": "3+0", "category": "Interdisciplinary" },
+          { "title": "Elective-I", "credits": "3+0", "category": "Specialization" },
+          { "title": "Elective-II", "credits": "3+0", "category": "Specialization" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Business Research Methods", "credits": "3+0", "category": "Major" },
+          { "title": "AI in Business", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-VIII (Business & Management Relevant Certification)", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Elective-III", "credits": "3+0", "category": "Specialization" },
+          { "title": "Elective-IV", "credits": "3+0", "category": "Specialization" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "HEI Decided Core Course-IX", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Elective-V", "credits": "3+0", "category": "Specialization" },
+          { "title": "Elective-VI", "credits": "3+0", "category": "Specialization" },
+          { "title": "Capstone Project", "credits": "3+0", "category": "Capstone Project" },
+          { "title": "Internship/Field Experience", "credits": "3", "category": "Field Experience" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (HSSC), A-levels, or an equivalent qualification recognised by the IBCC, involving 12 years of schooling with a minimum of 50% marks.",
+      "Students admitted through lateral entry with Level 5 qualifications (for example non-relevant Associate Degrees, BA, BSc or B.Com) must complete a bridging semester of 15-18 credit hours of deficiency courses determined by the HEI, offered as a complete set in one semester.",
+      "No bridging semester is required for holders of relevant Associate Degrees completed under the semester system."
+    ],
+    "passingCriteria": [
+      "Completion of 130 credit hours in a minimum of eight semesters spread over a minimum of four years.",
+      "CGPA of at least 2.00 out of 4.00 at completion of the degree; the university may set a higher standard.",
+      "Completion of the 3-credit-hour internship or field experience and the capstone project, neither of which may be substituted by other coursework.",
+      "Completion of relevant business and management certification equivalent to 3 credit hours in total over the four-year program, where 16 hours of study count as 1 credit hour; the department guides the choice of certifications."
+    ],
+    "internship": "A field experience or internship of 3 credit hours is a mandatory, non-substitutable requirement of the BBA degree. It lasts six to eight weeks, is preferably undertaken during a semester break or summer, and must be formally evaluated by a faculty member in consultation with the field supervisor. The scheme lists it in Semester VIII, and students may complete it any time after the fifth semester.",
+    "projects": "A capstone project, typically spanning three to six credit hours (3 credit hours in the program structure and scheme), is a mandatory requirement of the BBA degree. It must be supervised and graded by a faculty member in accordance with the HEI's protocols and cannot be substituted with additional coursework or the internship. It is placed in Semester VIII.",
+    "accreditationBody": "National Business Education Accreditation Council (NBEAC)",
+    "specializations": [
+      "Business Analytics",
+      "Digital Business and E-Commerce",
+      "Entrepreneurship and Innovation",
+      "Finance",
+      "Human Resource Management",
+      "Islamic Banking and Finance",
+      "Marketing",
+      "Operations and Supply Chain Management",
+      "Project Management"
+    ],
+    "notes": [
+      "The document calls the scheme of studies 'suggestive'; HEIs may redistribute courses across semesters based on staff and facilities. Course load is 15-21 credit hours per regular semester (16-18 weeks including 1-2 weeks of examinations); up to 8 credit hours may be offered in summer/winter semesters for failure, repetition or deficiency courses.",
+      "Credit notation in the schemes is theory+practical (e.g. '3+0', '2+1'); the Internship/Field Experience row gives only '3'. Semester totals are stated in the document and were verified by addition; they sum to 130.",
+      "Discipline-related/Major courses total 78 credit hours (26 courses): mandatory core 33 + HEI-decided core 27 + specialization electives 18. With General Education 34, interdisciplinary 12, internship 3 and capstone 3 the minimum is 130.",
+      "Mandatory core (33 credit hours, 11 courses) is chosen by category from PDF page 17 (booklet 9): Management 9 cr (3 of Principles of Management, Organizational Behavior, Human Resource Management, Strategic Management); Marketing 6 cr (2 of Principles of Marketing, Marketing Management, Digital Marketing); Finance 6 cr (2 of Business Finance, Financial Management, Islamic Finance); Accounting 6 cr (2 of Principles of Accounting, Managerial Accounting/Cost Accounting, Financial Accounting); Others 6 cr (2 of Business Research Methods, AI in Business, Digital Transformation and Innovation). The five courses not selected move to the HEI-decided core pool. The scheme's 11 'Major' courses are Principles of Management, Organizational Behaviour, Principles of Accounting, Financial Accounting, Business Finance, Principles of Marketing, Marketing Management, Financial Management, Human Resource Management, Business Research Methods and AI in Business.",
+      "HEI-decided core courses (27 credit hours, 9 courses): the document gives a suggestive list of 27 subjects (PDF pages 17-18, booklet 9-10), e.g. Business Analytics, Business Communication, Business Ethics, Business Law, Business Math and Stats, Corporate Finance, E-Commerce and Digital Business, Entrepreneurship and Innovation, Management Information System, Operations Management, Supply Chain Management, Total Quality Management; HEIs may add courses with statutory approval. HEI Decided Core Course-VIII in Semester VII is earmarked for a business and management relevant certification.",
+      "Interdisciplinary courses (minimum 12 credit hours, 4 courses) are chosen from five clusters on PDF pages 22-23 (booklet 14-15): AI & Technology, Economics, Law, Sustainability, and Others; students may take at most one course from a cluster.",
+      "Specialization rule (section 1.5.6): six electives (18 credit hours) taken from a single cluster allow the specialization to be noted on the transcript; electives taken across clusters give no specialization; specializations are never printed on the degree certificate. The listed clusters are not exhaustive and HEIs may add clusters with statutory approval. Section 1.7.1: effective Fall 2026 all BBA programs bearing specialization-related captions/titles (e.g. 'BBA in Sales and Marketing') must be discontinued.",
+      "Source oddity: the cluster headed '1.5.6.9 Project Management' (PDF page 22, booklet 14) actually lists sustainability-themed courses (Business Ethics and Governance, Circular Economy and Business Models, Climate Change and Business Strategy, Corporate Social Responsibility, Environmental Economics, Green Marketing and Branding, Social Impact Assessment, Sustainability Reporting and ESG Metrics), and a stray '1.' precedes the heading; the heading is kept as printed. The Human Resource Management cluster list also has duplicated letters (a, b) in the source.",
+      "Fehm-e-Quran appears in the General Education table as one 2-credit-hour course but is delivered in the scheme as two 0+1 parts (Semesters II and III) for Muslim students; for non-Muslim students HEIs may replace the 2 credit hours with a suitable General Education course approved by their statutory bodies. 'Organizational Behaviour' is the spelling used in the scheme; the core-course table uses 'Organizational Behavior'.",
+      "Section 1.7.2: the BBA is not deemed equivalent to any other Level 6 qualification, including BS programs in specialized areas of business or management.",
+      "Section 1.7.4 (PDF page 28, booklet 20): 'Students enrolled in the Bachelor of Business Administration (BBA) shall be allowed to exit the program with an Associate Degree in Business Administration, provided they have completed the requirements of the Associate Degree in the first four semesters as per HEC Undergraduate Education Policy 2023.' The first four semesters of the BBA scheme total 70 credit hours (18+18+16+18).",
+      "Lateral entry (section 1.7.3): transcripts of lateral-entry students show only post-admission coursework plus the prior qualification's credit hours (exact number for Associate Degrees; '50 credit hours earned against BA/BSc/B.Com as per National Qualifications Framework' for conventional degrees); bridging-semester grades are listed but excluded from the CGPA.",
+      "Accreditation: the document names the National Business Education Accreditation Council (NBEAC) as the accreditation council that contributed to the curriculum (PDF page 9) and whose No Objection Certificate is required for new BS titles (PDF page 31); it does not contain an explicit sentence stating that NBEAC accredits the BBA.",
+      "The document supersedes the 2012 Business Administration curriculum and the 2019 Revised Business Education Curriculum notification to the extent of inconsistency (PDF page 11, booklet 3)."
+    ]
+  },
+  {
+    "slug": "bs-aviation-management",
+    "sourceTitle": "HEC Curriculum Booklet – Business & Management 2025 (BBA, BS, MBA, EMBA, AD & MS), notified 24 October 2025",
+    "programTitleInSource": "BS in 'thematic area of Business and Management' (BS Programs in Business and Management Disciplines); thematic area in this case: Aviation Management",
+    "sourcePages": "PDF pages 30-39 (booklet pages 22-31); scheme of studies PDF pages 36-38 (booklet pages 28-30)",
+    "scope": "The Bachelor of Studies (BS) programs in business and management disciplines are four-year NQF Level 6 degrees titled 'BS in [thematic area]'. They are designed to give students a robust academic foundation and the practical skills needed in a dynamic business environment, emphasising critical thinking, strategic decision-making and ethical leadership together with an understanding of core business functions across sectors. Theoretical instruction is combined with practical application, case studies and industry exposure, and entrepreneurial thinking, business planning and venture creation are encouraged. In this program the thematic area is Aviation Management, with 27 credit hours of domain courses designed by the institution.",
+    "duration": "4 years (8 regular semesters); maximum 6 years (12 regular semesters), further extendible by 1 year (2 regular semesters) with the permission of the statutory bodies",
+    "totalCreditHours": "Minimum 130",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Mandatory Core Courses (common for all BS programs in Business & Management)", "credits": "33 credit hours (11 courses)" },
+      { "component": "Domain Core Courses in the thematic area (to be decided by HEIs)", "credits": "27 credit hours (9 courses)" },
+      { "component": "Electives (one pool, not constituting specializations)", "credits": "18 credit hours (6 courses)" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "12 credit hours (4 courses)" },
+      { "component": "Field Experience / Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3+0", "category": "General Education" },
+          { "title": "Functional English", "credits": "3+0", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "2+1", "category": "General Education" },
+          { "title": "Principles of Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-I", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-I", "credits": "3+0", "category": "Interdisciplinary" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3+0", "category": "General Education" },
+          { "title": "Social Science", "credits": "2+0", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3+0", "category": "General Education" },
+          { "title": "Natural Science", "credits": "2+1", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Organizational Behaviour", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Accounting", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2+0", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2+0", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Principles of Marketing", "credits": "3+0", "category": "Major" },
+          { "title": "Financial Accounting", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-II", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-II", "credits": "3+0", "category": "Interdisciplinary" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2+0", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2+0", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2+0", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2+0", "category": "General Education" },
+          { "title": "Business Finance", "credits": "3+0", "category": "Major" },
+          { "title": "Marketing Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-III", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Human Resource Management", "credits": "3+0", "category": "Major" },
+          { "title": "Financial Management", "credits": "3+0", "category": "Major" },
+          { "title": "Interdisciplinary Course-III", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-IV", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Domain Course-V", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "HEI Decided Domain Course-VI", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Domain Course-VII", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-IV", "credits": "3+0", "category": "IDS" },
+          { "title": "Elective-I", "credits": "3+0", "category": "Elective" },
+          { "title": "Elective-II", "credits": "3+0", "category": "Elective" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Business Research Methods", "credits": "3+0", "category": "Major" },
+          { "title": "AI in Business", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-VIII (Business & Management Relevant Certification)", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Elective-III", "credits": "3+0", "category": "Elective" },
+          { "title": "Elective-IV", "credits": "3+0", "category": "Elective" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "HEI Decided Domain Course-IX", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Elective-V", "credits": "3+0", "category": "Elective" },
+          { "title": "Elective-VI", "credits": "3+0", "category": "Elective" },
+          { "title": "Capstone Project", "credits": "3+0", "category": "Capstone Project" },
+          { "title": "Internship/Field Experience", "credits": "3", "category": "Field Experience" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (HSSC), A-levels, or an equivalent qualification recognised by the IBCC, involving 12 years of schooling with a minimum of 50% marks.",
+      "Lateral entry follows the rules given for the BBA: holders of Level 5 qualifications (for example non-relevant Associate Degrees, BA, BSc or B.Com) must complete a bridging semester of 15-18 credit hours determined by the HEI, while holders of relevant Associate Degrees completed under the semester system need no bridging semester."
+    ],
+    "passingCriteria": [
+      "Completion of 130 credit hours in a minimum of eight semesters spread over a minimum of four years.",
+      "CGPA of at least 2.00 out of 4.00 at completion of the degree; the university may set a higher standard.",
+      "Completion of the 3-credit-hour internship or field experience and the 3-credit-hour capstone project, neither of which may be substituted by other coursework.",
+      "Completion of relevant certification equivalent to 3 credit hours in total over the four-year program, where 16 hours of study count as 1 credit hour; the department guides the choice of certifications."
+    ],
+    "internship": "A field experience or internship of 3 credit hours is a mandatory, non-substitutable requirement of the BS programs. It lasts six to eight weeks, is preferably undertaken during a semester break or summer, and must be formally evaluated by a faculty member in consultation with the field supervisor. The scheme lists it in Semester VIII, and students may complete it any time after the fifth semester.",
+    "projects": "A capstone project worth 3 credit hours is a mandatory requirement of the BS degrees. It must be supervised and graded by a faculty member in accordance with the HEI's protocols and cannot be substituted with additional coursework or the internship. It is placed in Semester VIII.",
+    "accreditationBody": "National Business Education Accreditation Council (NBEAC)",
+    "specializations": [],
+    "notes": [
+      "Title: the document gives no separate curriculum for Aviation Management. This entry uses the generic scheme for 'BS in thematic area of Business and Management' (section 2.7). Section 2.3 (PDF page 30, booklet 22) lists 'Aviation Management' (item 3) among the nine BS titles the NCRC allows to continue: Accounting & Finance; Agribusiness; Aviation Management; Business Analytics; Entrepreneurship/Management & Entrepreneurship; Project Management; Supply Chain Management; Tourism & Hospitality Management; Islamic Banking and Finance. All other BS programs in business/management must be phased out by Fall 2026 and restructured as BBA specializations; any new niche BS title requires a No Objection Certificate from NBEAC.",
+      "Standard nomenclature (section 2.2) is 'BS in [thematic area]', e.g. BS in Accounting & Finance; the document's own title for this area is 'Aviation Management', matching the program name here.",
+      "The 27 credit hours (9 courses) of domain-specific courses ('HEI Decided Domain Course-I' to '-IX') are designed by the institution offering the BS in the domain (section 2.6.3); the document provides no list of Aviation Management domain courses. HEI Decided Domain Course-VIII in Semester VII is earmarked for a business and management relevant certification.",
+      "Electives (18 credit hours, 6 courses) come from one pool designed by the HEI and 'shall not constitute any specializations' (section 2.6.4), unlike the BBA's specialization clusters; hence 'specializations' is empty.",
+      "Mandatory core (33 credit hours, 11 courses) follows the same category table as the BBA (PDF page 34, booklet 26): Management 9 cr (3 of Principles of Management, Organizational Behavior, HRM, Strategic Management); Marketing 6 cr (2 of Principles of Marketing, Marketing Management, Digital Marketing); Finance 6 cr (2 of Business Finance, Financial Management, Islamic Finance); Accounting 6 cr (2 of Principles of Accounting, Managerial Accounting/Cost Accounting, Financial Accounting); Others 6 cr (2 of Business Research Methods, AI in Business, Digital Transformation and Innovation). The five courses left out move to the HEI-decided domain pool.",
+      "Interdisciplinary courses (12 credit hours, 4 courses) are chosen from five clusters (AI & Technology, Economics, Law, Sustainability, Others) on PDF pages 35-36 (booklet 27-28); at most one course per cluster.",
+      "Category labels are copied as printed: in Semester V the document labels 'Interdisciplinary Course-III' as 'Major' (apparently a typographical error; the other interdisciplinary courses are labelled 'Interdisciplinary'), and in Semester VI it uses the abbreviation 'IDS' for Interdisciplinary.",
+      "The scheme is 'suggestive'; HEIs may redistribute courses. Credit notation is theory+practical ('3+0', '2+1'); Internship/Field Experience is given only as '3'. Stated semester totals were verified by addition and sum to 130. Course load is 15-21 credit hours per regular semester.",
+      "Fehm-e-Quran is one 2-credit-hour General Education course delivered as two 0+1 parts (Semesters II and III) for Muslim students; HEIs may substitute a suitable General Education course for non-Muslim students.",
+      "Exit (section 2.9.2, PDF page 39, booklet 31): students may exit 'with an Associate Degree with the caption of the BS degree' after completing the Associate Degree requirements in the first four semesters; the first four semesters of this scheme total 70 credit hours (18+18+17+17).",
+      "Accreditation: the document names NBEAC as the accreditation council involved in the curriculum and as the issuer of NOCs for new BS titles, but does not explicitly state that NBEAC accredits individual BS programs."
+    ]
+  },
+  {
+    "slug": "bs-agribusiness-management",
+    "sourceTitle": "HEC Curriculum Booklet – Business & Management 2025 (BBA, BS, MBA, EMBA, AD & MS), notified 24 October 2025",
+    "programTitleInSource": "BS in 'thematic area of Business and Management' (BS Programs in Business and Management Disciplines); thematic area in this case: Agribusiness",
+    "sourcePages": "PDF pages 30-39 (booklet pages 22-31); scheme of studies PDF pages 36-38 (booklet pages 28-30)",
+    "scope": "The Bachelor of Studies (BS) programs in business and management disciplines are four-year NQF Level 6 degrees titled 'BS in [thematic area]'. They are designed to give students a robust academic foundation and the practical skills needed in a dynamic business environment, emphasising critical thinking, strategic decision-making and ethical leadership together with an understanding of core business functions across sectors. Theoretical instruction is combined with practical application, case studies and industry exposure, and entrepreneurial thinking, business planning and venture creation are encouraged. In this program the thematic area is Agribusiness, with 27 credit hours of domain courses designed by the institution.",
+    "duration": "4 years (8 regular semesters); maximum 6 years (12 regular semesters), further extendible by 1 year (2 regular semesters) with the permission of the statutory bodies",
+    "totalCreditHours": "Minimum 130",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Mandatory Core Courses (common for all BS programs in Business & Management)", "credits": "33 credit hours (11 courses)" },
+      { "component": "Domain Core Courses in the thematic area (to be decided by HEIs)", "credits": "27 credit hours (9 courses)" },
+      { "component": "Electives (one pool, not constituting specializations)", "credits": "18 credit hours (6 courses)" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "12 credit hours (4 courses)" },
+      { "component": "Field Experience / Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3+0", "category": "General Education" },
+          { "title": "Functional English", "credits": "3+0", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "2+1", "category": "General Education" },
+          { "title": "Principles of Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-I", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-I", "credits": "3+0", "category": "Interdisciplinary" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3+0", "category": "General Education" },
+          { "title": "Social Science", "credits": "2+0", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3+0", "category": "General Education" },
+          { "title": "Natural Science", "credits": "2+1", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Organizational Behaviour", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Accounting", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2+0", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2+0", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Principles of Marketing", "credits": "3+0", "category": "Major" },
+          { "title": "Financial Accounting", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-II", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-II", "credits": "3+0", "category": "Interdisciplinary" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2+0", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2+0", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2+0", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2+0", "category": "General Education" },
+          { "title": "Business Finance", "credits": "3+0", "category": "Major" },
+          { "title": "Marketing Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-III", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Human Resource Management", "credits": "3+0", "category": "Major" },
+          { "title": "Financial Management", "credits": "3+0", "category": "Major" },
+          { "title": "Interdisciplinary Course-III", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-IV", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Domain Course-V", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "HEI Decided Domain Course-VI", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Domain Course-VII", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Interdisciplinary Course-IV", "credits": "3+0", "category": "IDS" },
+          { "title": "Elective-I", "credits": "3+0", "category": "Elective" },
+          { "title": "Elective-II", "credits": "3+0", "category": "Elective" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Business Research Methods", "credits": "3+0", "category": "Major" },
+          { "title": "AI in Business", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Domain Course-VIII (Business & Management Relevant Certification)", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Elective-III", "credits": "3+0", "category": "Elective" },
+          { "title": "Elective-IV", "credits": "3+0", "category": "Elective" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "HEI Decided Domain Course-IX", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "Elective-V", "credits": "3+0", "category": "Elective" },
+          { "title": "Elective-VI", "credits": "3+0", "category": "Elective" },
+          { "title": "Capstone Project", "credits": "3+0", "category": "Capstone Project" },
+          { "title": "Internship/Field Experience", "credits": "3", "category": "Field Experience" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (HSSC), A-levels, or an equivalent qualification recognised by the IBCC, involving 12 years of schooling with a minimum of 50% marks.",
+      "Lateral entry follows the rules given for the BBA: holders of Level 5 qualifications (for example non-relevant Associate Degrees, BA, BSc or B.Com) must complete a bridging semester of 15-18 credit hours determined by the HEI, while holders of relevant Associate Degrees completed under the semester system need no bridging semester."
+    ],
+    "passingCriteria": [
+      "Completion of 130 credit hours in a minimum of eight semesters spread over a minimum of four years.",
+      "CGPA of at least 2.00 out of 4.00 at completion of the degree; the university may set a higher standard.",
+      "Completion of the 3-credit-hour internship or field experience and the 3-credit-hour capstone project, neither of which may be substituted by other coursework.",
+      "Completion of relevant certification equivalent to 3 credit hours in total over the four-year program, where 16 hours of study count as 1 credit hour; the department guides the choice of certifications."
+    ],
+    "internship": "A field experience or internship of 3 credit hours is a mandatory, non-substitutable requirement of the BS programs. It lasts six to eight weeks, is preferably undertaken during a semester break or summer, and must be formally evaluated by a faculty member in consultation with the field supervisor. The scheme lists it in Semester VIII, and students may complete it any time after the fifth semester.",
+    "projects": "A capstone project worth 3 credit hours is a mandatory requirement of the BS degrees. It must be supervised and graded by a faculty member in accordance with the HEI's protocols and cannot be substituted with additional coursework or the internship. It is placed in Semester VIII.",
+    "accreditationBody": "National Business Education Accreditation Council (NBEAC)",
+    "specializations": [],
+    "notes": [
+      "Title: the document gives no separate curriculum for Agribusiness. This entry uses the generic scheme for 'BS in thematic area of Business and Management' (section 2.7). Section 2.3 (PDF page 30, booklet 22) lists 'Agribusiness' (item 2) among the nine BS titles the NCRC allows to continue: Accounting & Finance; Agribusiness; Aviation Management; Business Analytics; Entrepreneurship/Management & Entrepreneurship; Project Management; Supply Chain Management; Tourism & Hospitality Management; Islamic Banking and Finance. All other BS programs in business/management must be phased out by Fall 2026 and restructured as BBA specializations; any new niche BS title requires a No Objection Certificate from NBEAC.",
+      "Title difference: the document's permitted title is 'Agribusiness', not 'Agribusiness Management'; under section 2.2 the standard nomenclature would be 'BS in Agribusiness'.",
+      "The 27 credit hours (9 courses) of domain-specific courses ('HEI Decided Domain Course-I' to '-IX') are designed by the institution offering the BS in the domain (section 2.6.3); the document provides no list of Agribusiness domain courses. HEI Decided Domain Course-VIII in Semester VII is earmarked for a business and management relevant certification.",
+      "Electives (18 credit hours, 6 courses) come from one pool designed by the HEI and 'shall not constitute any specializations' (section 2.6.4), unlike the BBA's specialization clusters; hence 'specializations' is empty.",
+      "Mandatory core (33 credit hours, 11 courses) follows the same category table as the BBA (PDF page 34, booklet 26): Management 9 cr (3 of Principles of Management, Organizational Behavior, HRM, Strategic Management); Marketing 6 cr (2 of Principles of Marketing, Marketing Management, Digital Marketing); Finance 6 cr (2 of Business Finance, Financial Management, Islamic Finance); Accounting 6 cr (2 of Principles of Accounting, Managerial Accounting/Cost Accounting, Financial Accounting); Others 6 cr (2 of Business Research Methods, AI in Business, Digital Transformation and Innovation). The five courses left out move to the HEI-decided domain pool.",
+      "Interdisciplinary courses (12 credit hours, 4 courses) are chosen from five clusters (AI & Technology, Economics, Law, Sustainability, Others) on PDF pages 35-36 (booklet 27-28); at most one course per cluster.",
+      "Category labels are copied as printed: in Semester V the document labels 'Interdisciplinary Course-III' as 'Major' (apparently a typographical error; the other interdisciplinary courses are labelled 'Interdisciplinary'), and in Semester VI it uses the abbreviation 'IDS' for Interdisciplinary.",
+      "The scheme is 'suggestive'; HEIs may redistribute courses. Credit notation is theory+practical ('3+0', '2+1'); Internship/Field Experience is given only as '3'. Stated semester totals were verified by addition and sum to 130. Course load is 15-21 credit hours per regular semester.",
+      "Fehm-e-Quran is one 2-credit-hour General Education course delivered as two 0+1 parts (Semesters II and III) for Muslim students; HEIs may substitute a suitable General Education course for non-Muslim students.",
+      "Exit (section 2.9.2, PDF page 39, booklet 31): students may exit 'with an Associate Degree with the caption of the BS degree' after completing the Associate Degree requirements in the first four semesters; the first four semesters of this scheme total 70 credit hours (18+18+17+17).",
+      "Accreditation: the document names NBEAC as the accreditation council involved in the curriculum and as the issuer of NOCs for new BS titles, but does not explicitly state that NBEAC accredits individual BS programs."
+    ]
+  },
+  {
+    "slug": "ad-business-administration",
+    "sourceTitle": "HEC Curriculum Booklet – Business & Management 2025 (BBA, BS, MBA, EMBA, AD & MS), notified 24 October 2025",
+    "programTitleInSource": "Associate Degree in (thematic area of business and management); thematic area in this case: Business Administration",
+    "sourcePages": "PDF pages 65-70 (booklet pages 57-62); scheme of studies PDF pages 69-70 (booklet pages 61-62); BBA exit clause PDF page 28 (booklet page 20)",
+    "scope": "The two-year Associate Degree in business and management disciplines is an NQF Level 5 undergraduate program for students who have completed 12 years of schooling. It provides foundational knowledge and practical skills in business and management functions, preparing graduates for entry-level, para-professional positions across businesses and industries, or for further study through lateral entry into a four-year bachelor's degree. The curriculum balances general education with discipline-specific courses and combines theoretical understanding with applied learning. In this program the thematic area is Business Administration, the title the document assigns to the exit award for BBA students who complete the Associate Degree requirements in the first four semesters.",
+    "duration": "2 years (4 regular semesters); maximum 3.5 years",
+    "totalCreditHours": "70-72",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Mandatory Core Courses (common for all Associate Degrees in Business and Management)", "credits": "15 credit hours (5 courses)" },
+      { "component": "Domain Specific Courses in the thematic area (to be decided by HEIs)", "credits": "21 credit hours (7 courses in the scheme)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3+0", "category": "General Education" },
+          { "title": "Functional English", "credits": "3+0", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "2+1", "category": "General Education" },
+          { "title": "Principles of Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-I", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-II", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3+0", "category": "General Education" },
+          { "title": "Social Science", "credits": "2+0", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3+0", "category": "General Education" },
+          { "title": "Natural Science", "credits": "2+1", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Organizational Behavior", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Accounting", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2+0", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2+0", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2+0", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "HEI Decided Core Course-III", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-IV", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-V", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2+0", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2+0", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2+0", "category": "General Education" },
+          { "title": "Business Finance", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Marketing", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-VI", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-VII", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (HSSC), A-levels, or an equivalent qualification recognised by the IBCC, involving 12 years of schooling with a minimum of 50% marks."
+    ],
+    "passingCriteria": [
+      "Completion of 70-72 credit hours over a minimum of four regular semesters (two years), within a maximum duration of 3.5 years.",
+      "Completion of the 34 credit hours of General Education courses, the 15 credit hours of mandatory core courses and the 21 credit hours of HEI-decided domain courses prescribed in the program structure."
+    ],
+    "internship": null,
+    "projects": null,
+    "accreditationBody": "National Business Education Accreditation Council (NBEAC)",
+    "specializations": [],
+    "notes": [
+      "The document gives its own Associate Degree scheme of studies (section 6.4.4, PDF pages 69-70, booklet 61-62), which is used here; the AD is not defined as the first four semesters of the BBA or BS scheme, although both the BBA (section 1.7.4) and BS (section 2.9.2) sections allow students to exit with an Associate Degree after completing its requirements in the first four semesters.",
+      "Thematic areas: section 6.2 (PDF page 65, booklet 57) states that all NQF Level 5 programs in the discipline must be titled 'Associate Degree in (thematic area of business and management)' and lists the NCRC-decided areas as Accounting, Marketing, Finance, Human Resource Management, Entrepreneurship, Supply Chain Management, Islamic Banking and Finance, Project Management, Business Analytics and Digital Marketing. 'Business Administration' is not in that list.",
+      "Basis for the 'Business Administration' title: section 1.7.4 (PDF page 28, booklet 20) reads: 'Students enrolled in the Bachelor of Business Administration (BBA) shall be allowed to exit the program with an Associate Degree in Business Administration, provided they have completed the requirements of the Associate Degree in the first four semesters as per HEC Undergraduate Education Policy 2023.' The first four semesters of the BBA scheme total 70 credit hours (18+18+16+18).",
+      "Mandatory core (15 credit hours) comprises Principles of Management, Organizational Behavior, Principles of Marketing, Business Finance and Principles of Accounting (section 6.4.2, PDF page 68, booklet 60); all five appear as 'Major' in the scheme.",
+      "Domain courses: the structure table calls the 21 credit hours 'Domain Specific Courses wherein the Associate Degree is offered (to be decided by HEIs)', while the scheme labels them 'HEI Decided Core Course-I' to '-VII' (7 courses of 3 credit hours each); titles are kept as printed. The document gives no domain course list for any thematic area.",
+      "The scheme totals 70 credit hours (18+18+16+18); the structure permits 70-72. Stated semester totals were verified by addition. Course load is 15-21 credit hours per regular semester, with up to 8 credit hours in summer/winter semesters for failure, repetition or deficiency courses.",
+      "No degree award requirements section, CGPA threshold, internship or capstone project is given for the Associate Degree in the document; passingCriteria are derived from the program structure table (section 6.4) and 'internship' and 'projects' are null. The document says the AD follows the HEC Undergraduate Education Policy 2023 and subsequent notifications.",
+      "Fehm-e-Quran is one 2-credit-hour General Education course delivered as two 0+1 parts (Semesters II and III) for Muslim students; HEIs may substitute a suitable General Education course for non-Muslim students.",
+      "Section 6.1 notes that the AD serves as a route to four-year degrees through lateral entry; under BBA section 1.7.3 holders of relevant Associate Degrees completed under the semester system need no bridging semester.",
+      "Accreditation: the document names NBEAC as the accreditation council involved in the curriculum but does not explicitly state that NBEAC accredits Associate Degrees."
+    ]
+  },
+  {
+    "slug": "ad-accounting-and-finance",
+    "sourceTitle": "HEC Curriculum Booklet – Business & Management 2025 (BBA, BS, MBA, EMBA, AD & MS), notified 24 October 2025",
+    "programTitleInSource": "Associate Degree in (thematic area of business and management); thematic area in this case: Accounting and Finance",
+    "sourcePages": "PDF pages 65-70 (booklet pages 57-62); scheme of studies PDF pages 69-70 (booklet pages 61-62)",
+    "scope": "The two-year Associate Degree in business and management disciplines is an NQF Level 5 undergraduate program for students who have completed 12 years of schooling. It provides foundational knowledge and practical skills in business and management functions, preparing graduates for entry-level, para-professional positions across businesses and industries, or for further study through lateral entry into a four-year bachelor's degree. The curriculum balances general education with discipline-specific courses and combines theoretical understanding with applied learning. In this program the thematic area is Accounting and Finance, and the 21 credit hours of domain courses are designed by the institution.",
+    "duration": "2 years (4 regular semesters); maximum 3.5 years",
+    "totalCreditHours": "70-72",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Mandatory Core Courses (common for all Associate Degrees in Business and Management)", "credits": "15 credit hours (5 courses)" },
+      { "component": "Domain Specific Courses in the thematic area (to be decided by HEIs)", "credits": "21 credit hours (7 courses in the scheme)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3+0", "category": "General Education" },
+          { "title": "Functional English", "credits": "3+0", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "2+1", "category": "General Education" },
+          { "title": "Principles of Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-I", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-II", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3+0", "category": "General Education" },
+          { "title": "Social Science", "credits": "2+0", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3+0", "category": "General Education" },
+          { "title": "Natural Science", "credits": "2+1", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Organizational Behavior", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Accounting", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2+0", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2+0", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2+0", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "HEI Decided Core Course-III", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-IV", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-V", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2+0", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2+0", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2+0", "category": "General Education" },
+          { "title": "Business Finance", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Marketing", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-VI", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-VII", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (HSSC), A-levels, or an equivalent qualification recognised by the IBCC, involving 12 years of schooling with a minimum of 50% marks."
+    ],
+    "passingCriteria": [
+      "Completion of 70-72 credit hours over a minimum of four regular semesters (two years), within a maximum duration of 3.5 years.",
+      "Completion of the 34 credit hours of General Education courses, the 15 credit hours of mandatory core courses and the 21 credit hours of HEI-decided domain courses prescribed in the program structure."
+    ],
+    "internship": null,
+    "projects": null,
+    "accreditationBody": "National Business Education Accreditation Council (NBEAC)",
+    "specializations": [],
+    "notes": [
+      "The document gives its own Associate Degree scheme of studies (section 6.4.4, PDF pages 69-70, booklet 61-62), which is used here; the AD is not defined as the first four semesters of the BBA or BS scheme, although both the BBA (section 1.7.4) and BS (section 2.9.2) sections allow students to exit with an Associate Degree after completing its requirements in the first four semesters.",
+      "Thematic areas: section 6.2 (PDF page 65, booklet 57) states that all NQF Level 5 programs in the discipline must be titled 'Associate Degree in (thematic area of business and management)' and lists the NCRC-decided areas as Accounting, Marketing, Finance, Human Resource Management, Entrepreneurship, Supply Chain Management, Islamic Banking and Finance, Project Management, Business Analytics and Digital Marketing. 'Accounting' and 'Finance' appear as two separate areas; the combined title 'Accounting and Finance' is not itself listed for the AD (it is, however, a permitted BS title, 'Accounting & Finance', in section 2.3).",
+      "For context, 'Business Administration' and 'Aviation Management' are also absent from the recommended AD list; section 1.7.4 (PDF page 28, booklet 20) allows BBA students to exit with an 'Associate Degree in Business Administration' after completing the AD requirements in the first four semesters.",
+      "Mandatory core (15 credit hours) comprises Principles of Management, Organizational Behavior, Principles of Marketing, Business Finance and Principles of Accounting (section 6.4.2, PDF page 68, booklet 60); all five appear as 'Major' in the scheme.",
+      "Domain courses: the structure table calls the 21 credit hours 'Domain Specific Courses wherein the Associate Degree is offered (to be decided by HEIs)', while the scheme labels them 'HEI Decided Core Course-I' to '-VII' (7 courses of 3 credit hours each); titles are kept as printed. The document gives no domain course list for any thematic area.",
+      "The scheme totals 70 credit hours (18+18+16+18); the structure permits 70-72. Stated semester totals were verified by addition. Course load is 15-21 credit hours per regular semester, with up to 8 credit hours in summer/winter semesters for failure, repetition or deficiency courses.",
+      "No degree award requirements section, CGPA threshold, internship or capstone project is given for the Associate Degree in the document; passingCriteria are derived from the program structure table (section 6.4) and 'internship' and 'projects' are null. The document says the AD follows the HEC Undergraduate Education Policy 2023 and subsequent notifications.",
+      "Fehm-e-Quran is one 2-credit-hour General Education course delivered as two 0+1 parts (Semesters II and III) for Muslim students; HEIs may substitute a suitable General Education course for non-Muslim students.",
+      "Section 6.1 notes that the AD serves as a route to four-year degrees through lateral entry; under BBA section 1.7.3 holders of relevant Associate Degrees completed under the semester system need no bridging semester.",
+      "Accreditation: the document names NBEAC as the accreditation council involved in the curriculum but does not explicitly state that NBEAC accredits Associate Degrees."
+    ]
+  },
+  {
+    "slug": "ad-business-analytics",
+    "sourceTitle": "HEC Curriculum Booklet – Business & Management 2025 (BBA, BS, MBA, EMBA, AD & MS), notified 24 October 2025",
+    "programTitleInSource": "Associate Degree in (thematic area of business and management); thematic area in this case: Business Analytics",
+    "sourcePages": "PDF pages 65-70 (booklet pages 57-62); scheme of studies PDF pages 69-70 (booklet pages 61-62)",
+    "scope": "The two-year Associate Degree in business and management disciplines is an NQF Level 5 undergraduate program for students who have completed 12 years of schooling. It provides foundational knowledge and practical skills in business and management functions, preparing graduates for entry-level, para-professional positions across businesses and industries, or for further study through lateral entry into a four-year bachelor's degree. The curriculum balances general education with discipline-specific courses and combines theoretical understanding with applied learning. In this program the thematic area is Business Analytics, an area recommended by the NCRC, with 21 credit hours of domain courses designed by the institution.",
+    "duration": "2 years (4 regular semesters); maximum 3.5 years",
+    "totalCreditHours": "70-72",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Mandatory Core Courses (common for all Associate Degrees in Business and Management)", "credits": "15 credit hours (5 courses)" },
+      { "component": "Domain Specific Courses in the thematic area (to be decided by HEIs)", "credits": "21 credit hours (7 courses in the scheme)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3+0", "category": "General Education" },
+          { "title": "Functional English", "credits": "3+0", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "2+1", "category": "General Education" },
+          { "title": "Principles of Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-I", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-II", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3+0", "category": "General Education" },
+          { "title": "Social Science", "credits": "2+0", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3+0", "category": "General Education" },
+          { "title": "Natural Science", "credits": "2+1", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Organizational Behavior", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Accounting", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2+0", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2+0", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2+0", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "HEI Decided Core Course-III", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-IV", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-V", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2+0", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2+0", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2+0", "category": "General Education" },
+          { "title": "Business Finance", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Marketing", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-VI", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-VII", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (HSSC), A-levels, or an equivalent qualification recognised by the IBCC, involving 12 years of schooling with a minimum of 50% marks."
+    ],
+    "passingCriteria": [
+      "Completion of 70-72 credit hours over a minimum of four regular semesters (two years), within a maximum duration of 3.5 years.",
+      "Completion of the 34 credit hours of General Education courses, the 15 credit hours of mandatory core courses and the 21 credit hours of HEI-decided domain courses prescribed in the program structure."
+    ],
+    "internship": null,
+    "projects": null,
+    "accreditationBody": "National Business Education Accreditation Council (NBEAC)",
+    "specializations": [],
+    "notes": [
+      "The document gives its own Associate Degree scheme of studies (section 6.4.4, PDF pages 69-70, booklet 61-62), which is used here; the AD is not defined as the first four semesters of the BBA or BS scheme, although both the BBA (section 1.7.4) and BS (section 2.9.2) sections allow students to exit with an Associate Degree after completing its requirements in the first four semesters.",
+      "Thematic areas: section 6.2 (PDF page 65, booklet 57) states that all NQF Level 5 programs in the discipline must be titled 'Associate Degree in (thematic area of business and management)' and lists the NCRC-decided areas as Accounting, Marketing, Finance, Human Resource Management, Entrepreneurship, Supply Chain Management, Islamic Banking and Finance, Project Management, Business Analytics and Digital Marketing. 'Business Analytics' is item 9 of that list, so the title 'Associate Degree in Business Analytics' follows the document's nomenclature.",
+      "For context, 'Business Administration' and 'Aviation Management' are not in the recommended AD list; section 1.7.4 (PDF page 28, booklet 20) allows BBA students to exit with an 'Associate Degree in Business Administration' after completing the AD requirements in the first four semesters.",
+      "Mandatory core (15 credit hours) comprises Principles of Management, Organizational Behavior, Principles of Marketing, Business Finance and Principles of Accounting (section 6.4.2, PDF page 68, booklet 60); all five appear as 'Major' in the scheme.",
+      "Domain courses: the structure table calls the 21 credit hours 'Domain Specific Courses wherein the Associate Degree is offered (to be decided by HEIs)', while the scheme labels them 'HEI Decided Core Course-I' to '-VII' (7 courses of 3 credit hours each); titles are kept as printed. The document gives no domain course list for any thematic area.",
+      "The scheme totals 70 credit hours (18+18+16+18); the structure permits 70-72. Stated semester totals were verified by addition. Course load is 15-21 credit hours per regular semester, with up to 8 credit hours in summer/winter semesters for failure, repetition or deficiency courses.",
+      "No degree award requirements section, CGPA threshold, internship or capstone project is given for the Associate Degree in the document; passingCriteria are derived from the program structure table (section 6.4) and 'internship' and 'projects' are null. The document says the AD follows the HEC Undergraduate Education Policy 2023 and subsequent notifications.",
+      "Fehm-e-Quran is one 2-credit-hour General Education course delivered as two 0+1 parts (Semesters II and III) for Muslim students; HEIs may substitute a suitable General Education course for non-Muslim students.",
+      "Section 6.1 notes that the AD serves as a route to four-year degrees through lateral entry; under BBA section 1.7.3 holders of relevant Associate Degrees completed under the semester system need no bridging semester.",
+      "Accreditation: the document names NBEAC as the accreditation council involved in the curriculum but does not explicitly state that NBEAC accredits Associate Degrees."
+    ]
+  },
+  {
+    "slug": "ad-aviation-management",
+    "sourceTitle": "HEC Curriculum Booklet – Business & Management 2025 (BBA, BS, MBA, EMBA, AD & MS), notified 24 October 2025",
+    "programTitleInSource": "Associate Degree in (thematic area of business and management); thematic area in this case: Aviation Management",
+    "sourcePages": "PDF pages 65-70 (booklet pages 57-62); scheme of studies PDF pages 69-70 (booklet pages 61-62); BS exit clause PDF page 39 (booklet page 31)",
+    "scope": "The two-year Associate Degree in business and management disciplines is an NQF Level 5 undergraduate program for students who have completed 12 years of schooling. It provides foundational knowledge and practical skills in business and management functions, preparing graduates for entry-level, para-professional positions across businesses and industries, or for further study through lateral entry into a four-year bachelor's degree. The curriculum balances general education with discipline-specific courses and combines theoretical understanding with applied learning. In this program the thematic area is Aviation Management, with the 21 credit hours of domain courses designed by the institution.",
+    "duration": "2 years (4 regular semesters); maximum 3.5 years",
+    "totalCreditHours": "70-72",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Mandatory Core Courses (common for all Associate Degrees in Business and Management)", "credits": "15 credit hours (5 courses)" },
+      { "component": "Domain Specific Courses in the thematic area (to be decided by HEIs)", "credits": "21 credit hours (7 courses in the scheme)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3+0", "category": "General Education" },
+          { "title": "Functional English", "credits": "3+0", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "2+1", "category": "General Education" },
+          { "title": "Principles of Management", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-I", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-II", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3+0", "category": "General Education" },
+          { "title": "Social Science", "credits": "2+0", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3+0", "category": "General Education" },
+          { "title": "Natural Science", "credits": "2+1", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "Organizational Behavior", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Accounting", "credits": "3+0", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2+0", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2+0", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2+0", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "0+1", "category": "General Education" },
+          { "title": "HEI Decided Core Course-III", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-IV", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-V", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2+0", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2+0", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2+0", "category": "General Education" },
+          { "title": "Business Finance", "credits": "3+0", "category": "Major" },
+          { "title": "Principles of Marketing", "credits": "3+0", "category": "Major" },
+          { "title": "HEI Decided Core Course-VI", "credits": "3+0", "category": "To be decided by HEI" },
+          { "title": "HEI Decided Core Course-VII", "credits": "3+0", "category": "To be decided by HEI" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (HSSC), A-levels, or an equivalent qualification recognised by the IBCC, involving 12 years of schooling with a minimum of 50% marks."
+    ],
+    "passingCriteria": [
+      "Completion of 70-72 credit hours over a minimum of four regular semesters (two years), within a maximum duration of 3.5 years.",
+      "Completion of the 34 credit hours of General Education courses, the 15 credit hours of mandatory core courses and the 21 credit hours of HEI-decided domain courses prescribed in the program structure."
+    ],
+    "internship": null,
+    "projects": null,
+    "accreditationBody": "National Business Education Accreditation Council (NBEAC)",
+    "specializations": [],
+    "notes": [
+      "The document gives its own Associate Degree scheme of studies (section 6.4.4, PDF pages 69-70, booklet 61-62), which is used here; the AD is not defined as the first four semesters of the BBA or BS scheme, although both the BBA (section 1.7.4) and BS (section 2.9.2) sections allow students to exit with an Associate Degree after completing its requirements in the first four semesters.",
+      "Thematic areas: section 6.2 (PDF page 65, booklet 57) states that all NQF Level 5 programs in the discipline must be titled 'Associate Degree in (thematic area of business and management)' and lists the NCRC-decided areas as Accounting, Marketing, Finance, Human Resource Management, Entrepreneurship, Supply Chain Management, Islamic Banking and Finance, Project Management, Business Analytics and Digital Marketing. 'Aviation Management' (and 'Business Administration') are not in that list.",
+      "Basis for an Aviation Management AD title: 'Aviation Management' is a permitted BS title (section 2.3, PDF page 30, booklet 22), and section 2.9.2 (PDF page 39, booklet 31) allows BS students to 'exit the program with an Associate Degree with the caption of the BS degree, provided they have completed the requirements of the Associate Degree in the first four semesters as per HEC Undergraduate Policy 2023'. The first four semesters of the BS scheme total 70 credit hours (18+18+17+17). Separately, section 1.7.4 (PDF page 28, booklet 20) allows BBA students to exit with an 'Associate Degree in Business Administration'.",
+      "Mandatory core (15 credit hours) comprises Principles of Management, Organizational Behavior, Principles of Marketing, Business Finance and Principles of Accounting (section 6.4.2, PDF page 68, booklet 60); all five appear as 'Major' in the scheme.",
+      "Domain courses: the structure table calls the 21 credit hours 'Domain Specific Courses wherein the Associate Degree is offered (to be decided by HEIs)', while the scheme labels them 'HEI Decided Core Course-I' to '-VII' (7 courses of 3 credit hours each); titles are kept as printed. The document gives no domain course list for any thematic area, including Aviation Management.",
+      "The scheme totals 70 credit hours (18+18+16+18); the structure permits 70-72. Stated semester totals were verified by addition. Course load is 15-21 credit hours per regular semester, with up to 8 credit hours in summer/winter semesters for failure, repetition or deficiency courses.",
+      "No degree award requirements section, CGPA threshold, internship or capstone project is given for the Associate Degree in the document; passingCriteria are derived from the program structure table (section 6.4) and 'internship' and 'projects' are null. The document says the AD follows the HEC Undergraduate Education Policy 2023 and subsequent notifications.",
+      "Fehm-e-Quran is one 2-credit-hour General Education course delivered as two 0+1 parts (Semesters II and III) for Muslim students; HEIs may substitute a suitable General Education course for non-Muslim students.",
+      "Section 6.1 notes that the AD serves as a route to four-year degrees through lateral entry; under BBA section 1.7.3 holders of relevant Associate Degrees completed under the semester system need no bridging semester.",
+      "Accreditation: the document names NBEAC as the accreditation council involved in the curriculum but does not explicitly state that NBEAC accredits Associate Degrees."
+    ]
+  }
+]

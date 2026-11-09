@@ -1,4 +1,5 @@
 import type { Draft, MediaSlot, Program, ProgramLevel, ProposedProgram } from './types';
+import { schemes } from './schemes';
 
 /**
  * Degree programs, as listed in the University's website brief (Annex-A):
@@ -9,18 +10,21 @@ import type { Draft, MediaSlot, Program, ProgramLevel, ProposedProgram } from '.
  * no claim about the official scheme of study.
  *
  * Everything under `official` (scope, duration, credit hours, curriculum, admission and
- * passing criteria, internship, projects, accreditation, fees) must be supplied by the
- * University. It is null for now, so the website shows a "to be confirmed" panel instead
- * of inventing details.
+ * passing criteria, internship, projects, accreditation, fees) comes from `schemes.ts`,
+ * which holds the HEC revised curricula supplied by the University. A program without an
+ * entry there shows "to be confirmed" panels instead of invented details.
  */
 
 const draft = <T,>(value: T): Draft<T> => ({ status: 'draft', value });
 
 const unconfirmed: Program['official'] = {
+  basis: null,
   scope: null,
   duration: null,
   totalCreditHours: null,
+  structure: null,
   curriculum: null,
+  specializations: null,
   eligibility: null,
   passingCriteria: null,
   internship: null,
@@ -48,7 +52,7 @@ const make =
     objectives: draft(p.objectives),
     learningOutcomes: draft(p.learningOutcomes),
     careerAreas: draft(p.careerAreas),
-    official: unconfirmed,
+    official: schemes[p.slug] ?? unconfirmed,
     media: { src: null, ...p.media },
   });
 
@@ -610,6 +614,14 @@ export const programFaqs = (p: Program) => [
     question: 'What are the fees?',
     answer: p.official.fees ?? 'The fee structure has not yet been published on this website. Please contact the Admissions Office for current fees.',
   },
+  ...(p.official.basis
+    ? [
+        {
+          question: 'Is this the final scheme of study?',
+          answer: `The scheme shown follows the ${p.official.basis.title}, the national minimum standard. The University’s own scheme of study, approved by its Academic Council, will replace it when published.`,
+        },
+      ]
+    : []),
   {
     question: 'How do I apply?',
     answer: 'Follow the steps on the How to Apply page. It explains how to choose a program, prepare your documents and submit an application.',

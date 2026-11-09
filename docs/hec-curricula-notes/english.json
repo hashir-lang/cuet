@@ -1,0 +1,221 @@
+[
+  {
+    "slug": "bs-english",
+    "sourceTitle": "HEC Curriculum for English Degree Programs 2025",
+    "programTitleInSource": "Bachelor of Studies (BS) in English",
+    "sourcePages": "PDF pages 9-19 (booklet pages 1-11)",
+    "scope": "The BS in English is structured under the HEC Undergraduate Education Policy V 1.1 (2023) to give a comprehensive, interdisciplinary understanding of the English language, literature and linguistics in historical and contemporary contexts. Students engage with a broad range of literary texts, linguistic theories and communicative practices, supported by core and elective courses that reflect global trends, local relevance and emerging fields such as digital humanities, discourse studies and language technology. A capstone project applies disciplinary learning to real linguistic, literary or cultural questions. The program prepares graduates for careers in academia, education, research, publishing, media, cultural institutions and language-related industries.",
+    "duration": "4 years (8 regular semesters); maximum 6 years",
+    "totalCreditHours": "Minimum 136 (universities may offer up to 148)",
+    "structure": [
+      { "component": "General Education", "credits": "34 credit hours (15 courses)" },
+      { "component": "Major: compulsory courses", "credits": "63 credit hours (21 courses)" },
+      { "component": "Major: mandatory electives", "credits": "21 credit hours (7 courses)" },
+      { "component": "Interdisciplinary courses", "credits": "12 credit hours (4 courses)" },
+      { "component": "Internship", "credits": "3 credit hours" },
+      { "component": "Capstone project", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Introduction to Literary Studies", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Linguistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Understanding of Holy Quran I", "credits": "1 (0-1)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Introduction to Literary Movements", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Phonetics and Phonology", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Social Sciences (any course in the category)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Understanding of Holy Quran II", "credits": "1 (0-1)", "category": "General Education" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Introduction to Textual Analysis", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Morphology", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "British Literary History: Medieval to Romantic", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Natural Science (any course in the category)", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Arts and Humanities (any course in the category)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Civics and Community Engagement", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "British Literary History: Victorian to Postmodern", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Semantics and Pragmatics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Syntax", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Poetry: 14th to 19th Century", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Stylistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Classical Drama", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Sociolinguistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Non-Fiction", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Interdisciplinary Course I", "credits": "3", "category": "Interdisciplinary" },
+          { "title": "Interdisciplinary Course II", "credits": "3", "category": "Interdisciplinary" },
+          { "title": "Interdisciplinary Course III", "credits": "3", "category": "Interdisciplinary" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Novel: 18th and 19th Century", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Discourse Studies", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Psycholinguistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Second Language Acquisition", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Literary Theory and Criticism", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Elective I", "credits": "3", "category": "Major" },
+          { "title": "Elective II", "credits": "3", "category": "Major" },
+          { "title": "Elective III", "credits": "3", "category": "Major" },
+          { "title": "Elective IV", "credits": "3", "category": "Major" },
+          { "title": "Research Methods for English Studies", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Elective V", "credits": "3", "category": "Major" },
+          { "title": "Elective VI", "credits": "3", "category": "Major" },
+          { "title": "Elective VII", "credits": "3", "category": "Major" },
+          { "title": "Language and Technology in the Digital Age", "credits": "3 (3-0)", "category": "Interdisciplinary (mandatory)" },
+          { "title": "Capstone Project", "credits": "3", "category": "Capstone" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (12 years of schooling) or an IBCC-equivalent qualification in any group.",
+      "The University may set minimum eligibility scores and may hold an entry or admission test under criteria approved by its statutory bodies."
+    ],
+    "passingCriteria": [
+      "All General Education courses as prescribed in the HEC Undergraduate Education Policy V 1.1, including Pakistan Studies and Understanding of Holy Quran I and II, must be completed.",
+      "A minimum of 136 credit hours must be completed.",
+      "A capstone of 3 credit hours must be completed; it cannot be replaced by coursework or the internship.",
+      "A supervised internship of 3 credit hours must be completed; it cannot be replaced by coursework, capstone or project work.",
+      "CGPA must not be below 2.00 out of 4.00 at completion; the University may set a higher standard.",
+      "Minimum duration 8 regular semesters (4 years); maximum 12 regular semesters (6 years), extendable by up to 1 year with the approval of the University's statutory body."
+    ],
+    "internship": "A supervised internship of 3 credit hours is a mandatory degree requirement for the BS. It is graded and supervised by a faculty member together with a supervisor in the field, under protocols approved by the University's statutory body.",
+    "projects": "A capstone project of 3 credit hours is a mandatory degree requirement. It is a culminating body of work supervised and graded by a faculty member, and cannot be substituted with additional coursework or the internship.",
+    "accreditationBody": null,
+    "specializations": ["English Linguistics", "English Literature"],
+    "notes": [
+      "Where all seven electives are taken within one specialization, the degree is titled Bachelor of Studies in English (English Linguistics) or (English Literature); otherwise it is awarded as BS in English.",
+      "At least four interdisciplinary courses must be offered; Language and Technology in the Digital Age is mandatory, the other three may come from the document's recommended list."
+    ]
+  },
+  {
+    "slug": "ad-english",
+    "sourceTitle": "HEC Curriculum for English Degree Programs 2025",
+    "programTitleInSource": "Associate Degree (AD) in English",
+    "sourcePages": "PDF pages 10-11 and 13-14 (booklet pages 2-3 and 5-6)",
+    "scope": "The Associate Degree in English follows the first four semesters of the HEC scheme of studies for the BS in English. It combines the General Education courses of the HEC Undergraduate Education Policy with foundation courses in literary studies, literary movements, textual analysis, British literary history, poetry, stylistics and the core areas of linguistics: phonetics and phonology, morphology, syntax, semantics and pragmatics. Graduates may enter employment or, subject to the University's regulations, progress to the fifth semester of the BS in English.",
+    "duration": "2 years (4 regular semesters)",
+    "totalCreditHours": "70 (the first four semesters of the BS scheme, computed)",
+    "structure": [
+      { "component": "General Education", "credits": "32 credit hours (14 courses) in semesters I to IV" },
+      { "component": "Major (English)", "credits": "38 credit hours (13 courses) in semesters I to IV" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Introduction to Literary Studies", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Linguistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Understanding of Holy Quran I", "credits": "1 (0-1)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Introduction to Literary Movements", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Phonetics and Phonology", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Social Sciences (any course in the category)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Understanding of Holy Quran II", "credits": "1 (0-1)", "category": "General Education" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Introduction to Textual Analysis", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Morphology", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "British Literary History: Medieval to Romantic", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Natural Science (any course in the category)", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Arts and Humanities (any course in the category)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Civics and Community Engagement", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "British Literary History: Victorian to Postmodern", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Semantics and Pragmatics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Syntax", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Poetry: 14th to 19th Century", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Stylistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "17"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (12 years of schooling) or an IBCC-equivalent qualification in any group, as for the BS in English.",
+      "The University may set minimum eligibility scores and may hold an entry or admission test under criteria approved by its statutory bodies."
+    ],
+    "passingCriteria": [
+      "Completion of the first four semesters of the BS in English scheme of studies as prescribed by HEC, including the General Education courses.",
+      "Award of the Associate Degree is subject to the approval of the University's relevant statutory body.",
+      "Graduates with a CGPA of at least 2.00 out of 4.00 may be admitted to the fifth semester of the BS in English, with deficiency courses of up to 18 credit hours where required."
+    ],
+    "internship": "Field experience or internship is not a mandatory requirement for the Associate Degree in English.",
+    "projects": "No capstone project is required for the Associate Degree; the capstone belongs to the BS.",
+    "accreditationBody": null,
+    "specializations": [],
+    "notes": [
+      "The HEC document defines the AD in English by the eligibility criteria and the first four semesters of the BS in English; it gives no separate AD scheme.",
+      "The 2-year duration follows the HEC Undergraduate Education Policy; the English booklet itself states only that the AD is the first four semesters.",
+      "The 70 credit hours are the sum of the four semester totals (18 + 17 + 18 + 17)."
+    ]
+  }
+]

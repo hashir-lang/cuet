@@ -1,0 +1,167 @@
+[
+  {
+    "slug": "bs-public-health",
+    "sourceTitle": "HEC Curriculum of Public Health, Associate Degree | BS | MS (Revised 2025)",
+    "programTitleInSource": "Bachelor of Science in Public Health (BSPH)",
+    "sourcePages": "PDF pages 8-30 (printed pages 1-23); scheme of studies on PDF pages 12-14 (printed pages 5-7); degree award requirements and specializations on PDF pages 20-30",
+    "scope": "The Bachelor of Science in Public Health is a four-year, eight-semester program structured under the HEC Undergraduate Education Policy V 1.1. It gives students an interdisciplinary understanding of public health, covering epidemiology, biostatistics, reproductive, maternal, neonatal and child health, communicable and non-communicable diseases, environmental health, health policy and management, and social and behavioral sciences, with a focus on promoting health, preventing disease and improving quality of life. The curriculum builds theoretical knowledge, analytical and research skills, and prepares students to design, implement and evaluate culturally competent public health interventions. Graduates are prepared for careers in government health agencies, NGOs, hospitals, research institutions and the private sector, and for advanced study.",
+    "duration": "4 years (8 regular semesters); maximum 6 years (further extendable by another year subject to approval of the university's statutory body)",
+    "totalCreditHours": "Minimum 125 (including internship / field experience); universities may offer up to 144",
+    "structure": [
+      { "component": "General Education Courses", "credits": "32 credit hours (13 courses as prescribed by HEC Undergraduate Education Policy V 1.1)" },
+      { "component": "Discipline Related Courses / Major", "credits": "75 credit hours (25 courses, including 7 electives of 21 credit hours)" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "12 credit hours (4 courses)" },
+      { "component": "Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Introduction to Public Health", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning – I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Applications of Information & Communication Technologies (ICT)", "credits": "3 (2-1)", "category": "General Education" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Life Sciences Biology-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Concept of Health & Disease", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Medical Anthropology", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning – II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Life Sciences Biology-II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Fundamentals of Health Systems", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Health Promotion", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Arts & Humanities", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Edu / Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Ideology & Constitution of Pakistan", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Basic Epidemiology-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Biostatistics-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Primary Health Care", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Social Science", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Civics & Community Engagement", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Basic Epidemiology-II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Biostatistics-II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Population Dynamics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Reproductive Health", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Interdisciplinary / IDS Course – I", "credits": "3 (3-0)", "category": "Interdisciplinary" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Research Methods in Public Health", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Community Nutrition", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective – I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective – II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Interdisciplinary / IDS Course – II", "credits": "3 (3-0)", "category": "Interdisciplinary" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Communicable and Non-Communicable Diseases", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Interdisciplinary / IDS Course – III", "credits": "3 (3-0)", "category": "Interdisciplinary" },
+          { "title": "Elective – III", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective – IV", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Interdisciplinary / IDS Course – IV", "credits": "3 (3-0)", "category": "Interdisciplinary" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Environmental and Occupational Health", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective – V", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective – VI", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective – VII", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Capstone Project", "credits": "3 (3-0)", "category": "Capstone" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (involving 12 years of schooling) or an IBCC-equivalent qualification in the pre-medical group is the basic eligibility requirement for admission.",
+      "The university may set higher standards and may conduct an entry/admission test through its own testing body or an external testing service provider of repute, as per the screening, admission and merit calculation criteria approved by its statutory bodies.",
+      "Holders of an Associate Degree in Public Health may be admitted to the fifth semester without any deficiency course; holders of an Associate Degree in a discipline related to Public Health must complete deficiency courses through a bridging semester before the fifth semester.",
+      "The minimum eligibility for fifth-semester admission on the basis of an Associate Degree is a CGPA of 2.00/4.00 in the prior qualification; the university may set higher criteria.",
+      "Graduates of two-year conventional BSc/equivalent programs may be admitted to the fifth semester with a minimum 45% cumulative score in the prior qualification, subject to completing deficiency courses through a bridging semester as determined by the admitting university."
+    ],
+    "passingCriteria": [
+      "All courses in the General Education category, with the titles and credit hours prescribed in the HEC Undergraduate Education Policy V 1.1 including Pakistan Studies, must be completed.",
+      "A minimum of 125 credit hours, including all program-related requirements, must be completed.",
+      "A capstone/research project of 3 credit hours must be completed in accordance with the HEC Undergraduate Education Policy V 1.1; it cannot be substituted with additional coursework or internship.",
+      "An internship of 3 credit hours must be completed in accordance with the HEC Undergraduate Education Policy V 1.1; it cannot be substituted with additional coursework, capstone, research or project work.",
+      "CGPA must not be below 2.00/4.00 at the time of completion of the degree program; the university may set a higher standard.",
+      "The minimum duration is eight regular semesters spread over four years; it may be extended in extraordinary circumstances with approval of the university's statutory body, but not beyond the maximum duration prescribed in HEC semester guidelines, and a summer semester is not counted as a regular semester."
+    ],
+    "internship": "A supervised internship of 3 credit hours is a mandatory degree award requirement for the BS Public Health. It lasts six to eight weeks, preferably undertaken during a semester or summer break, and must be graded by a faculty member in collaboration with the supervisor in the field, in accordance with the HEC Undergraduate Education Policy V 1.1. It cannot be substituted with additional coursework, capstone, research or project work. The 3 internship credits count toward the 125-credit minimum but are not placed in any semester of the scheme of studies. Field experience/internship is not a mandatory requirement for the Associate Degree in Public Health.",
+    "projects": "A Capstone Project of 3 credit hours (3-0), listed in Semester VIII under the Capstone category, is a mandatory degree award requirement. The document describes it as a multifaceted body of work that serves as a culminating academic and intellectual experience; it must be supervised and graded by a faculty member as per the protocols prescribed by the concerned department and cannot be substituted with additional coursework or internship.",
+    "accreditationBody": null,
+    "specializations": [
+      "Epidemiology",
+      "Community Health",
+      "Global Health",
+      "Environmental and Occupational Health",
+      "Health Policy and Management",
+      "Nutrition and Public Health",
+      "Biostatistics and Data Science",
+      "Maternal and Child Health",
+      "Health Communication",
+      "Infectious Disease Control",
+      "Mental Health and Well-Being",
+      "Aging and Geriatric Health",
+      "Public Health Informatics",
+      "Emergency Preparedness",
+      "Behavioral and Social Science in Public Health",
+      "Occupational Health and Safety",
+      "Health Equity and Advocacy",
+      "Urban Health",
+      "Technology and Public Health",
+      "Sexual and Reproductive Health"
+    ],
+    "notes": [
+      "The HEC title is 'Bachelor of Science in Public Health (BSPH)'; the document also writes 'Bachelor of Science degree in Public Health' and 'BS Public Health'. Our slug bs-public-health maps to this program.",
+      "The document states that the course sequence is logically arranged but suggestive only; the offering department may rearrange the sequence and alter course titles and credits provided the essence of the courses remains intact, and may add courses subject to HEC policies and approval of the university's statutory body.",
+      "Semester totals as printed sum to 122 credit hours (15+17+15+15+15+15+15+15). The 3-credit internship is additional and not placed in any semester, giving the 125-credit minimum. The structure table reconciles exactly: 32 General Education + 75 Major + 12 Interdisciplinary + 3 Internship + 3 Capstone = 125. The 25 Major courses include the 7 electives.",
+      "Electives: the scheme is based on seven electives (21 credit hours, at least 25% of the 75-credit Major), categorised as Major. If all seven are taken from a single specialization domain the degree is awarded as 'Bachelor of Science in Public Health (name of specialization)' under the National Qualifications Framework 2015, e.g. Bachelor of Science in Public Health (Global Health); if taken from more than one domain they are general electives and the generic BSPH is awarded. Offering a specialization is optional, not binding on the department; departments may develop additional specializations with statutory approval; where the Major exceeds 75 credit hours the number of specialization electives increases accordingly.",
+      "The document labels the 20 specializations as 'few examples' of streams (NQF Level 6). For each it gives a recommended list of 9-18 courses from which the department may offer the seven electives or any other course relevant to that specialization (PDF pages 21-30). Those course lists are not reproduced here.",
+      "Interdisciplinary courses: minimum 12 credit hours (4 courses) chosen from other departments as allowed by the admitting department; may be increased with statutory approval. The recommended list (PDF pages 19-20) is: Health Economics; Behavioral Science in Health Promotion; Digital Health and Technology; Food Security and Nutrition; Sustainable Development and Health; Cultural Competence in Health; Population and Demographic Studies; Health Communication and Media; Community Health and Development; Geographic Information Systems (GIS) in Public Health; Emerging Infectious Diseases and Global Preparedness; Cultural Anthropology; Project Management; Program Planning and Evaluation; Systems Thinking; Water and Sanitation Health (WASH); Microbiology; Entomology; Parasitology; Lifestyle Medicine; Health Professional Education.",
+      "'Natural Science', 'Social Science' and 'Arts & Humanities' are category placeholders: the department may offer any course in the broader category relevant to the degree (Social Sciences e.g. Psychology, Sociology, Anthropology; Arts & Humanities e.g. a regional or international language such as Chinese, Arabic, French or Spanish, or Philosophy, History). HEC-designed model courses may be used for the General Education courses marked with a single asterisk in the document (Quantitative Reasoning I and II, Functional English, ICT, Expository Writing, Pakistan Studies, Islamic Studies, Ideology & Constitution of Pakistan, Civics & Community Engagement, Entrepreneurship).",
+      "The scheme prints 'Concept of Health & Disease' while the CLO heading reads 'Concepts of Health and Disease'; the scheme title is used. 'Islamic Studies' carries the parenthetical '(Religious Edu / Ethics for non-Muslim students)' in the scheme and is kept as printed. Footnote asterisks were removed from all titles.",
+      "Associate Degree in Public Health: the document says the BSPH eligibility criteria and the first four semesters of the BSPH define the AD admission requirement and structure (62 credit hours by the printed semester totals). Internship is not mandatory for the AD. BS students may exit with the AD after completing the first-four-semester requirements with a minimum CGPA of 2.0/4.0, with the subject field name unchanged. No separate AD scheme, AD credit total or AD duration is printed.",
+      "Semester duration: 16-18 weeks for regular semesters (1-2 weeks for examination) and 8-9 weeks for summer semesters (1 week for examination). Course load: 15-18 credit hours per regular semester, up to 8 credit hours in summer (for remedial/deficiency/failure/repetition courses only). A 3-credit theory course meets 3 classes of 1 hour, 2 of 1.5 hours, or 1 of 3 hours per week.",
+      "Maximum duration: the Program Structure table (PDF page 12) states 6 years, further extendable by another year with statutory approval; the Degree Award Requirements (PDF page 20) refer only to the maximum duration prescribed in HEC semester guidelines.",
+      "No accrediting or regulating professional council is named for this program. The document cites only the HEC Undergraduate Education Policy V 1.1, the National Qualifications Framework (2015) and the NCRC in Public Health, so accreditationBody is null.",
+      "OCR spacing errors in the extracted text were corrected where they affected copied wording ('Pakistan Studie s', 'As sociate', 'logical ly', 'prov ider'). The Semester VI table header sits at the foot of PDF page 13 with its rows on PDF page 14.",
+      "The same document also contains a Master of Science in Public Health (MSPH) program (PDF pages 31-37); it was not requested and is not extracted."
+    ]
+  }
+]

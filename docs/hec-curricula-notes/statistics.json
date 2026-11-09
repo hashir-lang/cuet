@@ -1,0 +1,239 @@
+[
+  {
+    "slug": "bs-statistics",
+    "sourceTitle": "HEC Curriculum for Statistics Degree Programs (AD | BS | M.Phil), Revised 2025",
+    "programTitleInSource": "Bachelor of Science in Statistics",
+    "sourcePages": "PDF pages 8-12 (guiding principles, general education, internship, capstone, electives, entry/exit provisions) and 13-29 (BS program description, eligibility, structure, scheme of studies on pages 15-19, interdisciplinary list, degree award requirements, elective pool and specializations)",
+    "scope": "The Bachelor of Science in Statistics is structured under the HEC Undergraduate Education Policy V 1.1 to give students an interdisciplinary understanding of statistics and the analytical and problem-solving skills needed for real-world data analysis. It covers probability, sampling, design of experiments, inferential statistics, regression analysis and statistical computing, emphasising hands-on learning with modern statistical software. Over eight semesters the curriculum builds theoretical knowledge, critical thinking and research skills, and lets students integrate statistics with fields such as economics, public health, epidemiology, psychology and artificial intelligence. Optional specializations such as Data Science, Biostatistics and Financial Statistics prepare graduates for careers in finance, healthcare, technology and research, or for further study.",
+    "duration": "Minimum 4 years (8 regular semesters); maximum 6 years, further extendable by another year subject to approval of the university's statutory body",
+    "totalCreditHours": "Minimum 133 (including internship); universities may offer up to a maximum of 144",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (15 courses)" },
+      { "component": "Major / Discipline Related Courses", "credits": "81 credit hours (27 courses including 7 mandatory elective courses)" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "12 credit hours (4 courses)" },
+      { "component": "Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Introduction to Statistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning – I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Application of Information & Communication Technologies", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Calculus-I", "credits": "3 (3-0)", "category": "IDS" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Introduction to Probability & Probability Distributions", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Sampling Theory", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Calculus – II", "credits": "3 (3-0)", "category": "IDS" },
+          { "title": "Understanding of Holy Quran - I", "credits": "1 (0-1)", "category": "General Education" },
+          { "title": "Quantitative Reasoning – II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Basic Statistical Inference", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Exploratory Data Analysis and Visualization", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Arts & Humanities", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Edu. / Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Understanding of Holy Quran - II", "credits": "1 (0-1)", "category": "General Education" },
+          { "title": "Ideology & Constitution of Pakistan", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Official Statistics", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Introduction to Regression and Analysis of Variance", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Data Wrangling", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Statistical Packages", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Non-Parametric Methods", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Social Science", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Civics & Community Engagement", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Probability Distributions", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Design and Analysis of Experiments", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Sampling Techniques", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Biostatistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Linear Algebra", "credits": "3 (3-0)", "category": "IDS" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Statistical Inference", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Regression Analysis", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Interdisciplinary/IDS Course IV", "credits": "3 (3-0)", "category": "IDS" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Statistical Programming Using R and Python", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Research Methodology", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Statistical Quality Control", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective III", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective IV", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Applied Multivariate Analysis", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective V", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective VI", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective VII", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Capstone Project", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (involving 12 years of schooling) or an IBCC-equivalent qualification in any group of studies is the minimum eligibility requirement for admission.",
+      "Students who have completed an Associate Degree in Statistics with a minimum CGPA of 2.00/4.00 may be admitted to the fifth semester without any deficiency course.",
+      "Students who have completed an Associate Degree in a discipline related to Statistics, with a minimum CGPA of 2.00/4.00, must complete deficiency courses through a bridging semester before the fifth semester.",
+      "Students who have completed a two-year conventional BSc or equivalent degree with a minimum 45% cumulative score may be admitted to the fifth semester after completing deficiency courses through a bridging semester, as determined by the admitting university.",
+      "Universities or departments may set higher eligibility and admission criteria than these minimums."
+    ],
+    "passingCriteria": [
+      "All courses in the General Education category, with titles and credit hours as prescribed in the HEC Undergraduate Education Policy V 1.1 including the course of Pakistan Studies, must be completed.",
+      "A minimum of 133 credit hours, including all program-related requirements, must be completed.",
+      "A capstone/research project of 3 credit hours must be completed in accordance with the HEC Undergraduate Education Policy V 1.1; it cannot be substituted with additional coursework or internship.",
+      "An internship of 3 credit hours must be completed in accordance with the HEC Undergraduate Education Policy V 1.1; it cannot be substituted with additional coursework, capstone, research or project work.",
+      "CGPA must not be below 2.00/4.00 at the time of completion of the degree program; the university may set a higher standard.",
+      "The minimum duration is eight regular semesters spread over four years; it may be extended in extraordinary circumstances with approval of the university's statutory body, but not beyond the maximum duration prescribed in HEC semester guidelines, and the summer semester does not count as a regular semester."
+    ],
+    "internship": "An internship of 3 credit hours lasting six to eight weeks, preferably undertaken during a semester or summer break in the senior years, is a mandatory degree award requirement for the Bachelor of Science in Statistics. It must be graded by a faculty member in collaboration with the supervisor in the field, under protocols set by the department and approved by the university's statutory body, and cannot be substituted with additional coursework, capstone, research or project work. The internship is not listed in any semester table; its 3 credit hours are counted on top of the 130 credit hours of tabulated coursework.",
+    "projects": "A capstone project of 3 credit hours, scheduled in Semester VIII, is a mandatory degree award requirement for the Bachelor of Science in Statistics with or without specialization. The document describes it as a multifaceted body of work serving as the culminating academic and intellectual experience of the program; it must be supervised and graded by a faculty member under department protocols approved by the university's statutory body, and cannot be substituted with additional coursework or internship.",
+    "accreditationBody": null,
+    "specializations": ["Data Science", "Biostatistics", "Financial Statistics"],
+    "notes": [
+      "The source title of the program is 'Bachelor of Science in Statistics' (also written 'BS Statistics'); when all seven electives come from one specialization the degree is awarded as 'Bachelor of Science in Statistics (name of specialization)', e.g. BS Statistics (Biostatistics); otherwise it is awarded in generic form without specialization.",
+      "Table layout in the extracted text is interleaved: Semester III row 7 'Official Statistics 3 (3-0) Major' and its 'Total Credits (16)' appear on PDF page 17 after the Semester IV table, and Semester V's 'Total Credits (15)' appears on PDF page 18 after the Semester VI table. Tables were reconstructed by S.No. and every stated semester total matches the sum of its rows (18, 18, 16, 18, 15, 15, 15, 15 = 130 credit hours of coursework; plus the 3-credit internship = 133, the stated minimum).",
+      "Category 'IDS' in the tables means Interdisciplinary / Allied courses (12 credit hours, 4 courses). Calculus-I, Calculus – II and Linear Algebra are proposed by the NCRC; the department may instead offer any four interdisciplinary courses from the recommended list (Calculus-I, Calculus-II, Linear Algebra, Programming Fundamentals, Introduction to Database Management Systems, Introduction to Cybersecurity, Bioinformatics and Statistical Genetics, Financial Statistics and Risk Analysis, Environmental Statistics and Climate Modeling, Statistical Methods in Epidemiology and Public Health, Sports Analytics and Performance Modeling, Social Network Analysis and Text Mining, Statistical Applications in Engineering and Manufacturing, Political Data Science and Public Policy Analytics, Neural Network, Queuing Theory, Cloud Computing, Game Theory) or any other such course approved by its statutory body. The minimum of 12 IDS credit hours may be increased with statutory approval.",
+      "Capstone Project is categorised 'Major' in the Semester VIII table but is counted separately (3 credit hours) in the program structure; the 81-credit Major therefore comprises 27 three-credit courses excluding the capstone (20 named courses plus 7 electives).",
+      "Placeholder titles kept verbatim: 'Natural Science', 'Social Science' and 'Arts & Humanities' may be any course in that broader category relevant to the program (Arts & Humanities examples: a regional or international language such as Chinese, Arabic, French or Spanish, or Philosophy, History etc.; Social Science examples: Psychology, Sociology, Anthropology). HEC-designed model courses may be used for the General Education courses marked with an asterisk in the source. 'Understanding of Holy Quran - I' and '- II' are prescribed for all NQF level 4-8 qualifications under HEC letter no. 1001/2022/Coord(Acad)/HEC/235 dated March 28, 2025.",
+      "Electives: the department offers at least seven electives (21 credit hours, a minimum of 25% of the 81-credit major), either from the general pool or from within a single specialization; where the major exceeds 81 credit hours the number of specialization electives increases accordingly. Offering a specialization is optional, and departments may develop additional specializations with statutory approval. Credit combinations for electives and IDS courses may be arranged according to the nature of the course.",
+      "General pool of electives for the BS without specialization (PDF pages 26-27, 33 numbered items as printed, with duplicates): Statistical Tools for Data Science; Statistics for Deep Learning; Statistical Methods for Data Mining; Statistical Machine Learning; Artificial Intelligence; Big Data Analytics; Digital Analytics; High-Dimensional Data Analysis; Epidemiology; Survival Analysis; Categorical Data Analysis; Analysis of Repeated Measurements; Design and Analysis of Medical Studies; Structural Equation Models; Pharmaceutical Statistics; Clinical Trials; Financial Econometrics; Time Series Analysis and Forecasting; Actuarial Statistics; Reliability Analysis; Predictive Modeling; Structural Equation Modeling; Digital Analytics (repeated); Big Data Analytics (repeated); Applied Econometrics; Operations Research; Bayesian Statistics; Stochastic Processes; Spatial Statistics; Population Studies and Demographic Techniques; Robust Statistics; Environmental Statistics; Functional Data Analysis. Any seven of these, or any other advanced course in Statistics, may be offered.",
+      "Specialization 1, Data Science (recommended courses, any seven): Statistical Tools for Data Science; Statistics for Deep Learning; Statistical Methods for Data Mining; Statistical Machine Learning; Artificial Intelligence; Big Data Analytics; Digital Analytics; High Dimensional Data Analysis.",
+      "Specialization 2, Biostatistics (recommended courses, any seven): Epidemiology; Survival Analysis; Categorical Data Analysis; Analysis of Repeated Measurements; Design and Analysis of Medical Studies; Structural Equation Models; Pharmaceutical Statistics; Clinical Trials.",
+      "Specialization 3, Financial Statistics (recommended courses, any seven): Financial Econometrics; Time Series Analysis and Forecasting; Actuarial Statistics; Reliability Analysis; Predictive Modeling; Structural Equation Modeling; Digital Analytics; Big Data Analytics.",
+      "The course sequence is described as logically arranged but suggestive only: the offering department may rearrange the sequence and alter course titles and credits provided the essence of the prescribed courses remains intact, and may add courses subject to HEC policies and statutory approval. General Education courses must however be offered with the same titles and minimum credits as prescribed in the HEC Undergraduate Education Policy V 1.1.",
+      "Semester and load rules (PDF page 15): regular semesters are 16-18 weeks (1-2 weeks for examination), summer semesters 8-9 weeks (1 week for examination); course load is 15-18 credit hours per regular semester and up to 8 credit hours in a summer semester for remedial, deficiency, failure or repetition courses only; a 3-credit theory course meets 3 hours per week.",
+      "Equivalence for employment (PDF pages 10-11): BS Statistics graduates with or without specialization are considered at par, except where an employer requires a specific specialization. A BS Statistics graduate may obtain equivalence with a sub-field degree such as BS Data Science by completing at least 60 credit hours in that sub-field: 3 fundamental courses (9 credits), 4 interdisciplinary courses (12 credits), 7 electives (21 credits), a 12-credit minor, plus the 3-credit internship and 3-credit capstone in that area.",
+      "The document names no accreditation body or professional council for this program; accreditationBody is therefore null.",
+      "OCR corrections applied: 'Statistical Quality COntrol' to 'Statistical Quality Control'; 'Application of Information & CommunicationTechnologies' to 'Application of Information & Communication Technologies'; footnote markers (*, **, ***, ****, *****, ******, *#) removed from titles. The source itself is inconsistent in writing 'Calculus-I' and 'Calculus – II'; both kept verbatim. The table of contents entry 'Associate Degree in International Relations' is a copy-paste error in the source; the body section (PDF page 9) is 'Associate Degree in Statistics'."
+    ]
+  },
+  {
+    "slug": "ad-statistics",
+    "sourceTitle": "HEC Curriculum for Statistics Degree Programs (AD | BS | M.Phil), Revised 2025",
+    "programTitleInSource": "Associate Degree in Statistics",
+    "sourcePages": "PDF page 9 (Associate Degree in Statistics), PDF pages 11-12 (entry and exit provisions at undergraduate level), PDF pages 14-17 (BS eligibility and Semesters I-IV of the BS scheme of studies)",
+    "scope": "The Associate Degree in Statistics is defined in the HEC curriculum as the first four semesters of the Bachelor of Science in Statistics, sharing its eligibility criteria and structure, and is awarded in generic form without any specialization. Students enrolled in the BS may exit with the Associate Degree after completing the requirements of the first four semesters with a minimum CGPA of 2.00/4.00, and Associate Degree holders with that CGPA may be admitted to the fifth semester of the BS without deficiency courses. The four semesters combine general education and calculus courses with introductory statistics, probability, sampling, inference, exploratory data analysis, regression, data wrangling, statistical packages and official statistics.",
+    "duration": "First four regular semesters of the BS Statistics scheme (2 years at the BS pace of two regular semesters per year); the document states no AD-specific maximum duration",
+    "totalCreditHours": "70 (computed from Semesters I-IV of the BS scheme: 18 + 18 + 16 + 18; the document does not state an AD credit total)",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (15 courses) (computed from Semesters I-IV)" },
+      { "component": "Major / Discipline Related Courses", "credits": "30 credit hours (10 courses) (computed from Semesters I-IV)" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "6 credit hours (2 courses: Calculus-I and Calculus – II) (computed from Semesters I-IV)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Introduction to Statistics", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Quantitative Reasoning – I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Application of Information & Communication Technologies", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Calculus-I", "credits": "3 (3-0)", "category": "IDS" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Introduction to Probability & Probability Distributions", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Introduction to Sampling Theory", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Calculus – II", "credits": "3 (3-0)", "category": "IDS" },
+          { "title": "Understanding of Holy Quran - I", "credits": "1 (0-1)", "category": "General Education" },
+          { "title": "Quantitative Reasoning – II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Basic Statistical Inference", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Exploratory Data Analysis and Visualization", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Arts & Humanities", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Edu. / Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Understanding of Holy Quran - II", "credits": "1 (0-1)", "category": "General Education" },
+          { "title": "Ideology & Constitution of Pakistan", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Official Statistics", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "16"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Introduction to Regression and Analysis of Variance", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Data Wrangling", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Statistical Packages", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Non-Parametric Methods", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Social Science", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Civics & Community Engagement", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (involving 12 years of schooling) or an IBCC-equivalent qualification in any group of studies is the minimum eligibility requirement, the same as for the Bachelor of Science in Statistics.",
+      "Universities or departments may set higher eligibility and admission criteria than these minimums."
+    ],
+    "passingCriteria": [
+      "The requirements of the first four semesters of the Bachelor of Science in Statistics as prescribed in the policy must be completed (70 credit hours as tabulated, including all 15 General Education courses).",
+      "A minimum CGPA of 2.00/4.00 must be maintained.",
+      "The Associate Degree in Statistics is awarded in its generic form, without any specialization."
+    ],
+    "internship": "Not required for the Associate Degree. The document prescribes the 3-credit internship as a degree award requirement of the Bachelor of Science in Statistics only, and no internship forms part of the first four semesters that make up the Associate Degree.",
+    "projects": "Not required for the Associate Degree. The 3-credit capstone project is a Bachelor of Science requirement scheduled in Semester VIII and is not part of the first four semesters.",
+    "accreditationBody": null,
+    "specializations": [],
+    "notes": [
+      "The document gives no separate AD scheme. PDF page 9 states that the eligibility criteria and the first four semesters of the Bachelor of Science in Statistics guide the admission requirement and the structure of the Associate Degree in Statistics; the curriculum above is therefore Semesters I-IV of the BS scheme (PDF pages 15-17), with the same table-reconstruction applied (Semester III row 7 'Official Statistics' and its total of 16 appear on PDF page 17 after Semester IV in the extracted text).",
+      "The document states no AD-specific credit total, duration or maximum duration. The 70 credit hours and the component breakdown (34 General Education, 30 Major, 6 IDS) are computed from the four semester tables; the 2-year duration follows from four regular semesters at the BS pace. The BS semester and load rules (16-18 week regular semesters, 15-18 credit hours per semester) apply.",
+      "Award criteria are taken from the exit provision on PDF page 12 (students exiting the BS with an Associate Degree must have completed the requirements of the first four semesters and maintained a minimum CGPA of 2.0/4.0) and from PDF page 9 (awarded in generic form without specialization). The document does not list separate award requirements for students admitted directly to the AD.",
+      "Entry pathway (PDF page 11): holders of an Associate Degree in Statistics with a minimum CGPA of 2.00/4.00 are admitted to the fifth semester of the BS Statistics without any deficiency course; holders of an Associate Degree in a related discipline must first complete deficiency courses through a bridging semester; the university may set higher criteria.",
+      "Category 'IDS' means Interdisciplinary / Allied. Placeholder titles 'Natural Science' and 'Social Science' and 'Arts & Humanities' may be any course in that broader category; 'Understanding of Holy Quran - I' and '- II' are prescribed for all NQF level 4-8 qualifications. OCR correction: 'CommunicationTechnologies' to 'Communication Technologies'; footnote markers removed from titles.",
+      "The document names no accreditation body or professional council; accreditationBody is null. The table of contents lists 'Associate Degree in International Relations' in error; the body heading on PDF page 9 is 'Associate Degree in Statistics'."
+    ]
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "slug": "bs-education",
+    "sourceTitle": "HEC Curriculum for Education Degree Programs 2025 (Revised Curriculum for Degree Programs in Education, notified 11 April 2025)",
+    "programTitleInSource": "Bachelor of Education (B.Ed) four-year degree program (B.Ed 12+4)",
+    "sourcePages": "PDF pages 8-17 (guiding principles 8-9; program description, nomenclature, eligibility, structure 10-12; scheme of studies 12-14; course pools 15-17; specialization course pools 17-22; course learning outcomes 33-38)",
+    "scope": "The Bachelor of Education (B.Ed) four-year program, developed in 2006 as a 12+4 degree, prepares skilled, reflective and compassionate educators grounded in content knowledge, pedagogical skills and professionalism. Its curriculum spans mathematical reasoning, science, language, social sciences and the arts, pairs two years of content courses with two years of professional courses, and incorporates contemporary resources, research methodologies and technology. Prospective teachers gain practical experience through school observation, simulations and practice teaching, learn to plan lessons and assess learning, and must show ethical responsibility, inclusivity and commitment to lifelong learning. The revised program follows the HEC Undergraduate Education Policy V 1.1, with flexible entry points and credit transfer.",
+    "duration": "4 years (8 regular semesters); minimum 4 years, maximum 6 years",
+    "totalCreditHours": "Minimum 132 (universities may offer up to a maximum of 148)",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Major Education Courses (total)", "credits": "80 credit hours" },
+      { "component": "Major: Professional Courses Education (Compulsory/Fixed)", "credits": "36 credit hours (12 courses)" },
+      { "component": "Major: Class Observation and Practice Teaching (Practical/Fixed)", "credits": "02+06 = 08 credits (3 courses)" },
+      { "component": "Major: Pedagogy Courses (Compulsory/Fixed)", "credits": "18 credit hours (06 courses)" },
+      { "component": "Major: Specialization Courses (Electives, from the pool of courses of one chosen area of specialization)", "credits": "18 credit hours (6 courses)" },
+      { "component": "Interdisciplinary Courses (from pool of courses)", "credits": "12 credit hours (4 courses)" },
+      { "component": "Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project/Thesis", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning – I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Applications of Information & Communication Technologies (ICT)", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Professional Course Education I", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education II", "credits": "3 (3-0)", "category": "Major: Professional Course" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning – II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Social Sciences", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Professional Course Education III", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education IV", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education V", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "01 (0-1)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts & Humanities", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Ideology & Constitution of Pakistan", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Professional Course Education VI", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education VII", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education VIII", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Pedagogy Course - I", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "01 (0-1)", "category": "General Education" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Civics & Community Engagement (a) Scouting OR Emergency Training; b) Community Service)", "credits": "2 (1-1)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Professional Course Education IX", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education X", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "School Observation", "credits": "2 (0-2)", "category": "Major" },
+          { "title": "Pedagogy Course - II", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Interdisciplinary Course - I", "credits": "3 (3-0)", "category": "Interdisciplinary Courses" },
+          { "title": "Interdisciplinary Course - II", "credits": "3 (3-0)", "category": "Interdisciplinary Courses" },
+          { "title": "Professional Course Education XI", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Pedagogy Course - III", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" },
+          { "title": "Specialization Elective Course I", "credits": "3 (3-0)", "category": "Major: Elective" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Interdisciplinary Course - III", "credits": "3 (3-0)", "category": "Interdisciplinary Courses" },
+          { "title": "Professional Course Education XII", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Pedagogy Course - IV", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" },
+          { "title": "Pedagogy Course - V", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" },
+          { "title": "Specialization Elective Course II", "credits": "3 (3-0)", "category": "Major: Elective" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Practice Teaching - I", "credits": "3 (0-3)", "category": "Major: Practical Course" },
+          { "title": "Pedagogy Course - VI", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" },
+          { "title": "Specialization Elective Course – III", "credits": "3 (3-0)", "category": "Major: Elective" },
+          { "title": "Specialization Elective Course – IV", "credits": "3 (3-0)", "category": "Major: Elective" },
+          { "title": "Capstone Project", "credits": "3", "category": "Capstone Project" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Practice Teaching - II", "credits": "3 (0-3)", "category": "Major: Practical Course" },
+          { "title": "Interdisciplinary Course - IV", "credits": "3 (3-0)", "category": "Interdisciplinary Courses" },
+          { "title": "Specialization Elective Course – V", "credits": "3 (3-0)", "category": "Major: Elective" },
+          { "title": "Specialization Elective Course – VI", "credits": "3 (3-0)", "category": "Major: Elective" },
+          { "title": "Internship", "credits": "3", "category": "Internship" }
+        ],
+        "total": "15"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (involving 12 years of schooling) in any discipline or an Inter Board Coordination Commission (IBCC) equivalent qualification.",
+      "The admitting university may set minimum eligibility scores and may conduct an entry/admission test through its own testing body or an external testing services provider of repute, as per the screening, admission and merit calculation criteria approved by its statutory bodies.",
+      "Holders of an Associate Degree in Education or a related discipline are allowed admission to the fifth semester, with a minimum CGPA of 2.00/4.00 in the Associate Degree; the university may set higher criteria.",
+      "Holders of an Associate Degree in a discipline other than Education may be admitted to the fifth semester after completing 15-18 credit hours of deficiency courses in a bridging semester, as determined by the admitting department.",
+      "Holders of a two-year conventional BA/BSc/equivalent degree with a minimum 45% cumulative score are allowed admission to the fifth semester subject to completing 15-18 credit hours of deficiency courses in a bridging semester."
+    ],
+    "passingCriteria": [
+      "Completion of a minimum of 132 credit hours (including internship/field experience) spread over eight regular semesters; universities may offer up to a maximum of 148 credit hours.",
+      "Completion of the General Education courses with the same titles and credits as prescribed under the HEC Undergraduate Education Policy V 1.1.",
+      "Completion of a mandatory field experience/internship of 3 credit hours and six to eight weeks, graded by a faculty member in collaboration with the field supervisor; it cannot be substituted with additional coursework, capstone or project work.",
+      "Completion of a mandatory capstone project of 3 credit hours, supervised and graded by a faculty member under the department's protocols; it cannot be substituted with additional coursework or internship.",
+      "Completion of six specialization elective courses from one chosen specialization track and four interdisciplinary courses from the pools offered by the HEI.",
+      "The program must be completed within a minimum of 4 years and a maximum of 6 years, with a course load of 15-21 credit hours per regular semester."
+    ],
+    "internship": "A field experience/internship of 3 credit hours, lasting six to eight weeks and preferably undertaken during a semester or summer break, is a mandatory degree award requirement for the B.Ed. It is scheduled in Semester VIII, must be graded by a faculty member in collaboration with the supervisor in the field, and cannot be substituted with additional coursework, capstone or project work. Separately, the Major includes School Observation (2 credit hours, Semester IV) and Practice Teaching I and II (3 credit hours each, Semesters VII and VIII) as practical/fixed courses.",
+    "projects": "A capstone project of 3 credit hours (Semester VII) is a mandatory degree award requirement for the B.Ed. It is a multifaceted culminating body of work that must be supervised and graded by a faculty member as per the protocols prescribed by the concerned department, and it cannot be substituted with additional coursework or internship.",
+    "accreditationBody": null,
+    "specializations": [
+      "Early Childhood Care and Education",
+      "Educational Research",
+      "Educational Assessment",
+      "Child Rights and Safety Education",
+      "Educational Policy and Planning",
+      "Curriculum Studies",
+      "Educational Leadership and Management",
+      "Educational Psychology",
+      "Guidance and Counselling",
+      "Inclusive Education",
+      "Literacy and Non-Formal Education",
+      "Online and Distance Education",
+      "Quality Assurance in Education",
+      "Comparative Education",
+      "Teacher Professional Development",
+      "Mathematics Education",
+      "STEM Education",
+      "Islamic Education",
+      "Education for Sustainable Development",
+      "Educational Entrepreneurship",
+      "Educational Technology",
+      "Health and Physical Education",
+      "Artificial Intelligence in Education",
+      "Special Education (Intellectual Impairments)",
+      "Special Education (Physical Impairments)",
+      "Special Education (Hearing Impairments)",
+      "Special Education (Visual Impairments)",
+      "Special Education (Learning Disabilities)",
+      "Special Education (Autism Spectrum Disorders)"
+    ],
+    "notes": [
+      "Title difference: the document never uses the name 'BS Education'. The program is 'Bachelor of Education (B.Ed)' four-year (12+4). The Standard Nomenclature section (PDF page 11) states that all NQF level 6 undergraduate degree programs in Education shall only be offered with the title 'Bachelor of Education (B.Ed)', that programs with other nomenclatures shall be renamed accordingly, and that specializations are reflected on transcripts only, not on degrees.",
+      "Page numbering: PDF page markers are used in sourcePages. The booklet's printed page numbers are 7 lower (printed page 3 = PDF page 10).",
+      "The document has no explicit 'Degree Award Requirements' section for the B.Ed (only for the M.Phil, PDF page 32) and states no minimum CGPA for award of the B.Ed. passingCriteria were compiled from the Program Structure (PDF pages 11-12), Guiding Principles (PDF pages 8-9) and the specialization/interdisciplinary selection rules (PDF pages 15-16).",
+      "Stated semester totals: I 18, II 18, III 19, IV 17, V 15, VI 15, VII 15, VIII 15 = 132, matching the stated minimum of 132 credit hours. All totals were verified against the listed courses.",
+      "General Education: the structure table says '34 credit hours (14 courses)', but the scheme lists 15 General Education rows totalling 34 credits (Fehm-e-Quran I and II are 1 credit each and may be what the document counts as one course).",
+      "The scheme uses placeholders. Professional Course Education I-XII correspond to the 12 mandatory Major Professional Courses (PDF page 15): Foundations of Education; Inclusive Education; Education for Sustainable Development; Educational Psychology; Research Methods in Education; Curriculum Development; Critical Thinking and Reflective Practices; Educational Assessment and Evaluation; School Management; Educational Policies and Plans of Pakistan; Contemporary Literacies; Teaching Profession. The document does not assign these titles to specific semesters.",
+      "Pedagogy Course I-VI correspond to the 6 Major Pedagogy Courses (PDF page 15): Teaching of English; Teaching of Urdu; Teaching of Art, Crafts and Calligraphy; Teaching of Mathematics; Teaching of Science; Teaching of Social Studies and Islamiat.",
+      "Interdisciplinary Course I-IV: the student chooses 4 courses from a suggested list of 17 offered by the HEI (PDF pages 15-16), e.g. Education, Power and Politics; Economics of Education; Health and Safety Education; Child Abuse and Safety; Education in Pakistan; Islamic Education; Sociology of Education; History of Education; Media Education; Science, Technology and Society; Comparative Education; Guidance and Counselling in School; Production of Resource Materials; Human Growth and Development; Exceptional Children; Development of Individualized Education Plan; Family Problems and Interventions. HEIs may add more.",
+      "Specialization Elective Course I-VI: the student chooses one specialization track from the 29 listed and takes 6 courses from it; each track lists 7-8 suggestive courses (PDF pages 17-22). HEIs may add courses and tracks.",
+      "General Education footnotes (PDF pages 14-16): starred courses may use HEC-designed model courses. 'Natural Science' may be any course in that category (General Science / Environmental Science suggestive; suggested list: General Science, Environmental Science, Public Health, Human Nutrition, General Mathematics). 'Social Sciences' may be any course in that category (Sociology suggestive; list: Psychology, Philosophy, Economics, History, Political Science, Sociology, Social Work). 'Arts & Humanities' may be any course in that category (History suggestive; list: Urdu, Arabic, Persian, Statistics, Fine Arts, Journalism, Physical Education, Geography).",
+      "Credit notation was normalised only for spacing and dash glyphs: the document prints '3(3–0)' for Specialization Elective Courses III-VI and '01(0-1)' for Fehm-e-Quran; these are recorded as '3 (3-0)' and '01 (0-1)'. Capstone Project and Internship are printed with a bare '3' and no theory-practical split.",
+      "The 'Civics & Community Engagement' row lists sub-options a) Scouting OR Emergency Training and b) Community Service, which are kept in the title.",
+      "Per the Guiding Principles (PDF page 8), the offering department may rearrange the course sequence provided the essence of the prescribed courses remains intact, and may add courses subject to approval of the university's statutory body.",
+      "Other structural parameters (PDF page 12): regular semesters of 16-18 weeks (1-2 weeks for examination); summer semesters of 8-9 weeks with up to 9 credit hours for remedial/deficiency/failure/repetition courses only; 3 theory credit hours = 3 contact hours per week; 1 lab/field credit hour = 3 contact hours per week.",
+      "Accreditation: NACTE is named only as a copy recipient of the notification letter (PS to Chairman NACTE) and through contributors (Chairman NACTE and Secretary NACTE on the committee). The document does not state that NACTE or any other body accredits or recognises the program, so accreditationBody is null.",
+      "Specialization names follow the per-track section headings (PDF pages 17-22), which match the table of contents. The summary list on PDF pages 16-17 has minor variants: 'Guidance and Counseling', 'Online and Distance Learning', 'Special Education (Autism Spectrum Disorder)', and lists the Visual/Physical/Hearing Impairments tracks in a different order (25 Visual, 26 Physical, 27 Hearing).",
+      "The Course Learning Outcomes section (PDF pages 33-38) also includes CLOs for 'General Methods of Teaching', 'Educational Technology', 'Guidance and Counseling', 'Comparative Education' and 'Learning Theories', which are not among the 12 mandatory professional courses listed on PDF page 15.",
+      "The same booklet also covers B.Ed 2.5-year (84 credit hours, 5 semesters, PDF pages 22-25), B.Ed 1.5-year (54 credit hours, 3 semesters, PDF pages 25-28) and M.Phil in Education (32 credit hours, PDF pages 29-32); these were not extracted."
+    ]
+  },
+  {
+    "slug": "ad-education",
+    "sourceTitle": "HEC Curriculum for Education Degree Programs 2025 (Revised Curriculum for Degree Programs in Education, notified 11 April 2025)",
+    "programTitleInSource": "Associate Degree in Education (ADE)",
+    "sourcePages": "PDF page 22 (program structure); PDF page 9 (Associate Degree definition and entry/exit provisions); PDF page 11 (eligibility); PDF pages 12-13 (Semesters I-IV of the B.Ed scheme)",
+    "scope": "The Associate Degree in Education (ADE) is structured in accordance with the HEC Undergraduate Education Policy V 1.1 and comprises a minimum of 72 credit hours spread over four regular semesters. Its scheme of studies is the same as the first four semesters of the four-year Bachelor of Education (B.Ed), combining the General Education component with ten mandatory professional courses in Education, two pedagogy courses and school observation. The capstone project and field experience are not mandatory requirements for the ADE. Students enrolled in the B.Ed may exit with the ADE after completing the first four semesters, and ADE graduates are allowed admission to the fifth semester of the B.Ed.",
+    "duration": "2 years (4 regular semesters); no maximum duration is stated for the ADE",
+    "totalCreditHours": "Minimum 72",
+    "structure": [
+      { "component": "General Education Courses", "credits": "34 credit hours (15 course rows incl. Fehm-e-Quran I and II) (computed)" },
+      { "component": "Major: Professional Courses Education I-X (Compulsory/Fixed)", "credits": "30 credit hours (10 courses) (computed)" },
+      { "component": "Major: Pedagogy Courses I-II (Compulsory/Fixed)", "credits": "6 credit hours (2 courses) (computed)" },
+      { "component": "Major: School Observation (Practical/Fixed)", "credits": "2 credit hours (1 course) (computed)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning – I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Applications of Information & Communication Technologies (ICT)", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Professional Course Education I", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education II", "credits": "3 (3-0)", "category": "Major: Professional Course" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning – II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Social Sciences", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Professional Course Education III", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education IV", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education V", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "01 (0-1)", "category": "General Education" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts & Humanities", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Ideology & Constitution of Pakistan", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Professional Course Education VI", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education VII", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education VIII", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Pedagogy Course - I", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "01 (0-1)", "category": "General Education" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Civics & Community Engagement (a) Scouting OR Emergency Training; b) Community Service)", "credits": "2 (1-1)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Professional Course Education IX", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "Professional Course Education X", "credits": "3 (3-0)", "category": "Major: Professional Course" },
+          { "title": "School Observation", "credits": "2 (0-2)", "category": "Major" },
+          { "title": "Pedagogy Course - II", "credits": "3 (3-0)", "category": "Major: Pedagogy Course" }
+        ],
+        "total": "17"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate (involving 12 years of schooling) in any discipline or an Inter Board Coordination Commission (IBCC) equivalent qualification.",
+      "The admitting university may set minimum eligibility scores and may conduct an entry/admission test through its own testing body or an external testing services provider of repute, as per the screening, admission and merit calculation criteria approved by its statutory bodies."
+    ],
+    "passingCriteria": [
+      "Completion of a minimum of 72 credit hours spread over four regular semesters, following the scheme of the first four semesters of the four-year B.Ed.",
+      "Completion of the General Education courses with the same titles and credits as prescribed under the HEC Undergraduate Education Policy V 1.1.",
+      "The capstone project and field experience/internship are not mandatory requirements for the Associate Degree in Education.",
+      "A student enrolled in the four-year B.Ed may exit with the Associate Degree in Education after completing the requirements of the first four semesters as prescribed in the policy."
+    ],
+    "internship": "Not required. The document states that field experience (internship) is not a mandatory requirement for the Associate Degree in Education. School Observation (2 credit hours, Semester IV) is part of the ADE scheme.",
+    "projects": "Not required. The document states that the capstone project is not a mandatory requirement for the Associate Degree in Education.",
+    "accreditationBody": null,
+    "specializations": [],
+    "notes": [
+      "The AD curriculum was built from Semesters I-IV of the B.Ed four-year scheme (PDF pages 12-13). The document states on PDF page 22 that the 'Scheme of ADE is same as that of first four semesters of B.Ed Four year degree program' and on PDF page 9 that the first four semesters of the B.Ed are aligned with the structure of the Associate Degree Program in Education. A note under Semester IV (PDF page 13) confirms the student may exit with the ADE after four semesters.",
+      "Title difference: our program name 'AD Education' corresponds to the document's 'Associate Degree in Education (ADE)'. The heading on PDF page 22 is misspelt 'ASSOCAITE DEGREE' in the source.",
+      "The document gives no separate program description, learning outcomes or degree award requirements for the ADE; the scope paragraph was condensed from the ADE structure statement (PDF page 22), the Associate Degree paragraph and entry/exit provisions (PDF page 9) and the eligibility section (PDF page 11, which names the ADE explicitly).",
+      "Semester totals as stated in the B.Ed scheme: I 18, II 18, III 19, IV 17 = 72, matching the stated minimum of 72 credit hours for the ADE.",
+      "The structure breakdown is computed from the first four semesters because the document gives only the 72 credit hour total for the ADE; the B.Ed structure table counts General Education as 34 credit hours (14 courses), whereas the scheme lists 15 General Education rows totalling 34 credits.",
+      "No minimum CGPA for award of the ADE and no maximum duration are stated. The CGPA of 2.00/4.00 mentioned on PDF page 9 is the minimum eligibility for ADE holders to be admitted to the fifth semester of the B.Ed, not an award requirement.",
+      "Progression: ADE graduates (Education and related disciplines) are allowed admission to the fifth semester of the four-year B.Ed with a minimum CGPA of 2.00/4.00; Associate Degree holders from other disciplines need 15-18 credit hours of deficiency courses in a bridging semester.",
+      "Specializations are not part of the ADE; specialization elective courses begin in Semester V of the B.Ed.",
+      "Placeholders: Professional Course Education I-X are drawn from the 12 mandatory Major Professional Courses and Pedagogy Course I-II from the 6 Major Pedagogy Courses listed on PDF page 15; the document does not assign specific titles to semesters. General Education footnotes (HEC model courses; any course in the Natural Science, Social Sciences and Arts & Humanities categories with suggested lists on PDF pages 14-16) apply as for the B.Ed.",
+      "Credit notation was normalised only for spacing: '01(0-1)' for Fehm-e-Quran is recorded as '01 (0-1)'.",
+      "Accreditation: NACTE is referenced only as a copy recipient of the notification letter and via committee contributors; the document does not state that any body accredits or recognises the ADE, so accreditationBody is null."
+    ]
+  }
+]

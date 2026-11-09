@@ -76,24 +76,40 @@ The faculty `slug` is its URL and is referenced by programs (`facultySlug`); the
 
 File: `src/content/programs.ts`
 
-13 undergraduate (`undergraduate({...})`) and 9 associate degree programs (`associate({...})`), plus the 7 proposed graduate programs in `proposedPrograms` (listed, no detail pages). Each program has a `slug` (its URL), names, its faculty, draft descriptive text and an `official` block: the scheme of study. Fill it with information approved by the University:
+13 undergraduate (`undergraduate({...})`) and 9 associate degree programs (`associate({...})`), plus the 7 proposed graduate programs in `proposedPrograms` (listed, no detail pages). Each program has a `slug` (its URL), names, its faculty and draft descriptive text. Its scheme of study comes from `src/content/schemes.ts`, matched by slug.
+
+### Schemes of study (`src/content/schemes.ts`)
+
+One entry per program slug. Twenty entries were taken from the HEC revised curricula the University supplied in November 2026 (the PDFs are in `public/documents/hec-curricula/` and linked from each program page). Each entry has:
 
 ```ts
-official: {
-  scope: 'The program covers ...',
-  duration: '4 years (8 semesters)',
-  totalCreditHours: '136',
-  curriculum: [{ semester: 'Semester 1', courses: ['Course one', 'Course two'] }],
-  eligibility: ['Intermediate (FSc) with at least ...% marks'],
-  passingCriteria: ['Minimum CGPA of 2.0', '...'],
-  internship: 'A six-week supervised internship after the sixth semester.',
-  projects: 'A final-year project in two parts over semesters 7 and 8.',
-  accreditation: 'Recognised by the Higher Education Commission; accredited by ...',
-  fees: 'Per-semester fee as approved',
+'bs-english': {
+  basis: {                                   // where the scheme comes from; null = the University's own approved scheme
+    title: 'HEC Curriculum for English Degree Programs (2025)',
+    issued: 'notified by HEC on 12 June 2025',
+    document: '/documents/hec-curricula/english-2025.pdf',
+    note: 'Optional sentence shown to readers, e.g. that HEC prescribes one scheme for all computing associate degrees',
+  },
+  scope: 'One paragraph describing the program.',
+  duration: '4 years (8 regular semesters); maximum 6 years',
+  totalCreditHours: 'Minimum 136 (universities may offer up to 148)',
+  structure: [{ component: 'General Education', credits: '34 credit hours (15 courses)' }],
+  curriculum: [
+    { semester: 'Semester I', total: '18', courses: [{ title: 'Introduction to Linguistics', credits: '3 (3-0)', category: 'Major' }] },
+  ],
+  specializations: ['English Linguistics', 'English Literature'],   // or null
+  eligibility: ['Higher Secondary School Certificate ...'],
+  passingCriteria: ['A minimum of 136 credit hours must be completed.', 'CGPA must not be below 2.00 ...'],
+  internship: 'A supervised internship of 3 credit hours ...',
+  projects: 'A capstone project of 3 credit hours ...',
+  accreditation: 'Programs in this field are accredited or recognised by ... status will be published.',
+  fees: null,
 },
 ```
 
-Because programs currently share one `unconfirmed` block, give a program its own `official` object when you fill it in. Each field becomes its own section on the program page as soon as it is filled. Fees are public tuition information and may be published once approved; this is different from the internal infrastructure costs, which must never be published.
+While `basis` is set, the program page shows a panel saying the scheme follows the HEC curriculum and that the University's own scheme will replace it. **When the Academic Council approves CueTech's scheme of study for a program**, edit the entry with the approved courses and set `basis: null`; the panel disappears. Fill `fees` with the approved fee once published. Programs with no entry (BS Poultry Science, B.E. Information Security Management Technology) show "to be confirmed" panels until a scheme is added.
+
+Each field becomes its own section on the program page as soon as it is filled. Fees are public tuition information and may be published once approved; this is different from the internal infrastructure costs, which must never be published.
 
 **To add a program**: copy an existing entry, change the `slug`, names, `facultySlug` and text. It appears automatically in the directory, its faculty page, the menus, the sitemap and the admissions lists. **To launch a proposed graduate program**: move it from `proposedPrograms` to `programs` using a `make('Graduate')` helper, and the level filter will offer it.
 

@@ -1,0 +1,161 @@
+[
+  {
+    "slug": "llb",
+    "sourceTitle": "HEC Curriculum for Bachelor of Laws (LLB) 2025 (Revised Curriculum of LLB Four Year Degree Program, notified 10 July 2025, effective Fall 2025)",
+    "programTitleInSource": "Bachelor of Laws (LLB)",
+    "sourcePages": "PDF pages 8-17 and 26 (guiding principles, internship and capstone requirements 8-9; programme description, eligibility and structure 10-11; core course list 11-12; scheme of studies 12-14; footnotes, interdisciplinary list and elective clusters 14-17; degree award requirements 17; NCRC decisions 26)",
+    "scope": "The Bachelor of Laws (LLB) is a four-year undergraduate degree at level 6 of the National Qualifications Framework. It replaces the five-year LLB after the Pakistan Bar Council and its Directorate of Legal Education proposed the reduction to align the degree with other undergraduate programmes and the HEC Undergraduate Education Policy V 1.1. The programme combines theoretical knowledge with hands-on learning and covers core areas such as Constitutional Law, Criminal Law, Contract Law, Property Law and Legal Ethics, alongside specialised electives and clinical legal education. It emphasises research, advocacy and legal writing, preparing graduates for careers as legal practitioners, judges, academics and policy makers, or for advanced study in law.",
+    "duration": "4 years (minimum 8 regular semesters); maximum 6 years, further extendable by one more year subject to approval of the university's statutory body under HEC Undergraduate Education Policy 2023 V 1.1",
+    "totalCreditHours": "Minimum 146 (universities may offer up to a maximum of 148)",
+    "structure": [
+      { "component": "General Education", "credits": "35 credit hours (14 courses)" },
+      { "component": "Discipline Related Courses / Major", "credits": "93 credit hours (31 courses)" },
+      { "component": "Major - Core Courses", "credits": "75 credit hours (25 courses)" },
+      { "component": "Major - Specialization Electives", "credits": "18 credit hours (6 courses)" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "12 credit hours (4 courses)" },
+      { "component": "Field Experience / Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project", "credits": "3 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Introduction to Law and Legal Systems", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Pakistan Studies", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "IDS-I", "credits": "3 (3-0)", "category": "Interdisciplinary" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Social Science", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Expository Writing", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Natural Science (Environmental Sciences & Law)", "credits": "3 (2-1)", "category": "General Education" },
+          { "title": "Law of Torts", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "1 (0-1)", "category": "General Education" },
+          { "title": "Criminal Law", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Arts and Humanities", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "1 (0-1)", "category": "General Education" },
+          { "title": "Law of Contract", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Jurisprudence", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Principles of Constitutional Law", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "IDS-II", "credits": "3 (3-0)", "category": "Interdisciplinary" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Constitutional Law of Pakistan (Ideology and Constitution of Pakistan)", "credits": "3 (3-0)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2-0)", "category": "General Education" },
+          { "title": "Equity, Trusts and Specific Relief", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Law of Property", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Alternative Dispute Resolution (ADR)", "credits": "3 (3-0)", "category": "Interdisciplinary" },
+          { "title": "Islamic Jurisprudence", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Islamic Personal Law-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Law of Business Organizations-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Law of Evidence", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Administrative and Services Law", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Land Law", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Cyber Law", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Islamic Personal Law-II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Law of Business Organizations-II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Legal Drafting and Pleadings", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "International Law", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective-II", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Legal Ethics and Moot Cases", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Criminal Procedure Code-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Civil Procedure Code-I", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Research Methodology", "credits": "3 (3-0)", "category": "Interdisciplinary" },
+          { "title": "Elective-III", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective-IV", "credits": "3 (3-0)", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Criminal Procedure Code-II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Civil Procedure Code-II", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Environmental Law", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective-V", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Elective-VI", "credits": "3 (3-0)", "category": "Major" },
+          { "title": "Capstone Project", "credits": "3 (3-0)", "category": "Capstone Project" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate or A-levels (involving 12 years of schooling), or an IBCC-equivalent qualification, with a minimum of 45% marks.",
+      "A score of at least 50% in the Law Admission Test (LAT) conducted by ETC-HEC is mandatory.",
+      "No upper age limit applies to the LLB programme, and any student who has completed 12 years of schooling and cleared the LAT is eligible for admission irrespective of age or any sessional gap, as there is no such bar under the Pakistan Bar Council Legal Education Rules, 2015."
+    ],
+    "passingCriteria": [
+      "All courses in the General Education category must be completed as prescribed by the HEC Undergraduate Education Policy 2023 V 1.1.",
+      "A total of 146 credit hours must be completed in a minimum of 8 semesters spread over a minimum of four years.",
+      "The capstone project (3 credit hours) must be completed following HEC-prescribed guidelines and cannot be substituted with additional coursework.",
+      "An internship of 3 credit hours must be completed in accordance with the HEC Undergraduate Education Policy V 1.1 and cannot be substituted with additional coursework, capstone, research or project work.",
+      "CGPA must not be below 2.00 out of 4.00 at the completion of the degree programme; the university may set a higher standard.",
+      "A minimum of 75% attendance is mandatory to sit each semester's final examination conducted by the HEI."
+    ],
+    "internship": "A field experience/internship of 3 credit hours is a mandatory degree award requirement for the LLB. The internship lasts six to eight weeks, preferably undertaken during a semester or summer break, and must be graded by a faculty member in collaboration with the supervisor in the field. It cannot be substituted with additional coursework, capstone, research or project work. The internship does not appear as a row in the semester-wise scheme; the eight semester totals sum to 143 credit hours and the internship brings the degree total to 146.",
+    "projects": "A capstone project of 3 credit hours is a mandatory degree award requirement, placed in Semester VIII. The document describes it as a multifaceted body of work serving as a culminating academic and intellectual experience; it must be supervised and graded by a faculty member under the protocols of the department and cannot be substituted with additional coursework or internship. No separate research thesis is required; research skills are covered by the mandatory interdisciplinary course Research Methodology (Semester VII). Moot court and clinical work are delivered through the core course Legal Ethics and Moot Cases (Semester VII), whose outcomes include advocacy, client counselling, drafting, e-filing, ADR, role-plays, mock trials and moot court simulations; clinical legal education is described as a seminal feature of the programme, and Legal Clinics and Mooting, Advocacy, and Drafting (Practical Modules) are offered as electives in the Legal Ethics & Skills cluster.",
+    "accreditationBody": "Pakistan Bar Council (PBC), described in the document as the apex regulatory body of lawyers, together with its Directorate of Legal Education (DLE); the Pakistan Bar Council Legal Education Rules, 2015 are cited. The four-year programme was proposed by the PBC/DLE and approved by the Constitutional Bench of the Supreme Court of Pakistan, and the curriculum is notified by the HEC.",
+    "specializations": [
+      "Technology & Law",
+      "Business & Commercial Law",
+      "Human Rights & Social Justice",
+      "Environment & Climate Justice",
+      "Constitutional Law and Governance",
+      "Legal Ethics & Skills",
+      "Emerging and Specialized Legal Fields / Niche and Frontier Areas of Law"
+    ],
+    "notes": [
+      "Programme length: the notification is headed 'Revised Curriculum of LLB Four Year Degree Program'; the structure section says the programme 'comprises a minimum of 08 regular semesters (Four Years)' and the structure table gives 'Program Duration: Minimum 4 Years, Maximum 6 Years (further extendable to another year subject to the approval of the university's statutory body following the provisions of HEC Undergraduate Education Policy 2023 V 1.1)'.",
+      "Earlier five-year LLB: the document states that the Supreme Court judgment reported as 2019 SCMR 389 had mandated a five-year LLB programme; the reduction from five to four years was proposed by the Pakistan Bar Council and its Directorate of Legal Education and approved by the Constitutional Bench of the Supreme Court. All HEIs and affiliated colleges must implement the revised four-year scheme effective Fall 2025. The LLB (Shariya & Law) programme is excluded and continues as a 5-year double-major degree under the HEC Undergraduate Education Policy 2023.",
+      "Degree nomenclature and level: the degree title is 'Bachelor of Laws (LLB)' at level 6 of the HEC National Qualifications Framework. The document is HEC letter No. 5-4/HEC/NCRC/Law/2025/7695 dated 10 July 2025.",
+      "The eight semester totals stated in the document (17, 18, 17, 19, 18, 18, 18, 18) sum to 143 credit hours; the 3-credit internship is not shown in any semester, and 143 + 3 = 146, matching the stated minimum. Semester IV is 19 credit hours, which exceeds the 15-18 credit hours per regular semester given in the structure table; this is reproduced as printed.",
+      "The structure table says General Education is 14 courses, but the scheme lists 15 General Education rows; Fehm-e-Quran I and II (1 credit each) are evidently counted as one course. The Fehm-e-Quran credit is printed as '01(0-1)' and has been normalised to '1 (0-1)'. Non-Muslim students take a two-credit-hour interdisciplinary course as a substitute for the Fehm-e-Quran courses, and 'Religious Education / Ethics' in place of Islamic Studies.",
+      "Footnote markers removed from titles: * (Quantitative Reasoning-I and II, Functional English, Applications of ICT, Pakistan Studies, Islamic Studies, Civics and Community Engagement, Entrepreneurship) means the university may use HEC-designed model courses; ** (Social Science, Expository Writing, Natural Science, Arts and Humanities) means the university may offer any course within the broader subject domain/cluster to meet the credits; *** (Elective-I to VI) means the university may offer any advanced LLB course as an elective based on its resources, location and programme objectives.",
+      "IDS-I and IDS-II are placeholders for interdisciplinary courses. The recommended list is Economics, Sociology, Psychology, Political Science, Gender Studies, Media, Public Policy and History; Alternative Dispute Resolution (ADR) and Research Methodology are mandatory interdisciplinary courses as recommended by the NCRC and are scheduled in Semesters IV and VII respectively.",
+      "Specialization electives: 6 electives (18 credits) are chosen from the clusters listed in specializations. Cluster contents as printed: Technology & Law - Data Protection & Privacy Law; Artificial Intelligence and Law; Digital Forensics and Electronic Evidence; Blockchain and Legal Implications; Intellectual Property in the Digital Age; Telecommunication Law; Legal Tech and Law Practice Automation; FinTech and Law; Media Law. Business & Commercial Law - Corporate Law; Mergers and Acquisitions; Banking, Securities & Capital Markets Regulation; Insurance Law; Taxation Law; Custom and Tariff Laws; International Trade Law & E-commerce; Start-up Law & Legal Compliance; Competition & Consumer Law; Consumer Protection Law; Islamic Commercial Law; Intellectual Property Law; International Trade Law; International Economic Law. Human Rights & Social Justice - International Human Rights Law; Refugee and Migration Law; Gender Justice and Law; Disability Rights Law; Law and Social Movements; Labour Law; Public Interest Litigation; Law and Society; International Humanitarian Law (IHL); Juvenile and Social Justice Law. Environment & Climate Justice - Climate Change Law; Sustainable Development & Environmental Justice; Water Law and Policy; Energy Law; Environmental Governance and Policy; Law of the Sea and Ocean Governance; Disaster Law and Climate Resilience. Constitutional Law and Governance - Comparative Constitutional Law; Law and Public Policy; Transitional Justice; Election Law; Immigration and Nationality Law; Decentralization and Federalism Law. Legal Ethics & Skills - Legal Writing and Research in the Digital Era; Legal Clinics; Professional Ethics (including Technology Focus); Mooting, Advocacy, and Drafting (Practical Modules); Corporate Compliance and Ethics; Publication Ethics; Ethics in ADR and Litigation. Emerging and Specialized Legal Fields / Niche and Frontier Areas of Law - Space Law; Sports Law; Biotechnology and Law; Health Law & Bioethics; Medical and Forensic Law; Law and Development; Maritime, Shipping, and Admiralty Law.",
+      "The 25 core courses (75 credits) listed on PDF pages 11-12 match the Major courses in the scheme exactly; the Major component of 93 credits (31 courses) is the 25 core courses plus the 6 electives.",
+      "The course sequence is described as logically arranged but suggestive only: universities may redistribute courses across semesters, alter titles and credits provided the essence of the courses is intact, and add courses with approval of the university's statutory body, subject to the 148 credit-hour maximum. General Education courses must be offered with the same titles and credits as in HEC Undergraduate Education Policy V 1.1.",
+      "NCRC decisions (PDF page 26): the Semester System is to be implemented in affiliated colleges, with semester final examinations and results handled by the concerned universities; the course 'Ideology and Constitution of Pakistan' should be taught only through the Faculty of Law.",
+      "Semester durations stated: 16-18 weeks for regular semesters (1-2 weeks for examination), 8-9 weeks for summer semesters (1 week for examination); summer load up to 8 credit hours for remedial/deficiency/failure/repetition courses only. 3 theory credit hours = 3 one-hour classes, 2 ninety-minute classes or 1 three-hour class per week; 1 practical credit hour = 3 contact hours per week.",
+      "OCR spacing fixes applied to titles: 'Law of Business Organizations -I/-II' to 'Law of Business Organizations-I/-II'; 'Islamic Personal Law- II' to 'Islamic Personal Law-II'. The document does not define an Associate Degree exit for this programme, and none is included."
+    ]
+  }
+]

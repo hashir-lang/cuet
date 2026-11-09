@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowRight, Briefcase, Check } from 'lucide-react';
+import { ArrowRight, Briefcase, Check, FileText } from 'lucide-react';
 import { programBySlug, programFaqs, programs, programsForFaculty } from '@/content/programs';
 import { facultyBySlug } from '@/content/faculties';
 import { site } from '@/content/site';
+import type { SchemeBasis } from '@/content/types';
 import { PageHero } from '@/components/ui/PageHero';
 import { Media } from '@/components/media/Media';
 import { FaqList } from '@/components/ui/Accordion';
@@ -62,6 +63,46 @@ function SectionTitle({ id, children, draft }: { id: string; children: React.Rea
   );
 }
 
+/** Says where the scheme of study comes from when it is an HEC model curriculum rather than the University's own. */
+function BasisNote({ basis, compact = false }: { basis: SchemeBasis; compact?: boolean }) {
+  if (compact) {
+    return (
+      <p className="mt-3 text-sm text-stone-600">
+        Source: {basis.title}
+        {basis.document ? (
+          <>
+            {' '}
+            (
+            <a href={basis.document} className="text-forest-700 underline underline-offset-4" target="_blank" rel="noopener">
+              PDF
+            </a>
+            )
+          </>
+        ) : null}
+        .
+      </p>
+    );
+  }
+  return (
+    <aside aria-label="Basis of this scheme of study" className="flex gap-3 border border-forest-200 bg-forest-50 p-4 sm:p-5">
+      <FileText className="mt-0.5 size-5 shrink-0 text-forest-700" aria-hidden="true" />
+      <div className="min-w-0 text-[0.95rem] leading-relaxed text-stone-700">
+        <p className="font-semibold text-ink">Scheme of study based on the {basis.title}</p>
+        <p className="mt-1">
+          The curriculum below follows the national minimum standard {basis.issued}. {basis.note ? `${basis.note} ` : ''}
+          The University’s own scheme of study, approved by its Academic Council, will replace it when published.
+        </p>
+        {basis.document ? (
+          <a href={basis.document} className="link-arrow mt-2 inline-flex text-forest-700" target="_blank" rel="noopener">
+            Download the HEC curriculum (PDF)
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </a>
+        ) : null}
+      </div>
+    </aside>
+  );
+}
+
 function Official({ value, title, children }: { value: string | string[] | null; title: string; children: React.ReactNode }) {
   if (value === null) {
     return (
@@ -103,7 +144,7 @@ export default async function ProgramPage({ params }: Props) {
     { label: 'Department', value: faculty.department.shortName },
     { label: 'Duration', value: o.duration ?? <TBC /> },
     { label: 'Credit hours', value: o.totalCreditHours ?? <TBC /> },
-    { label: 'Accreditation', value: o.accreditation ?? <TBC /> },
+    { label: 'Scheme of study', value: o.curriculum ? (o.basis ? 'HEC curriculum' : 'University approved') : <TBC /> },
     { label: 'Fees', value: o.fees ?? <TBC /> },
   ];
 
@@ -197,6 +238,8 @@ export default async function ProgramPage({ params }: Props) {
               </div>
             </section>
 
+            {o.basis ? <BasisNote basis={o.basis} /> : null}
+
             <section aria-labelledby="scope" className="scroll-mt-28">
               <SectionTitle id="scope">Scope</SectionTitle>
               <Official value={o.scope} title="The scope of the program will be published here">
@@ -236,16 +279,35 @@ export default async function ProgramPage({ params }: Props) {
             <section aria-labelledby="duration" className="scroll-mt-28">
               <SectionTitle id="duration">Duration and credit hours</SectionTitle>
               {o.duration || o.totalCreditHours ? (
-                <dl className="mt-6 grid gap-px border border-stone-200 bg-stone-200 sm:grid-cols-2">
-                  <div className="bg-paper p-5">
-                    <dt className="text-sm text-stone-600">Duration</dt>
-                    <dd className="mt-1 font-serif text-2xl">{o.duration ?? <TBC />}</dd>
-                  </div>
-                  <div className="bg-paper p-5">
-                    <dt className="text-sm text-stone-600">Credit hours required</dt>
-                    <dd className="mt-1 font-serif text-2xl">{o.totalCreditHours ?? <TBC />}</dd>
-                  </div>
-                </dl>
+                <>
+                  <dl className="mt-6 grid gap-px border border-stone-200 bg-stone-200 sm:grid-cols-2">
+                    <div className="bg-paper p-5">
+                      <dt className="text-sm text-stone-600">Duration</dt>
+                      <dd className="mt-1 font-serif text-xl leading-snug sm:text-2xl">{o.duration ?? <TBC />}</dd>
+                    </div>
+                    <div className="bg-paper p-5">
+                      <dt className="text-sm text-stone-600">Credit hours required</dt>
+                      <dd className="mt-1 font-serif text-xl leading-snug sm:text-2xl">{o.totalCreditHours ?? <TBC />}</dd>
+                    </div>
+                  </dl>
+                  {o.structure ? (
+                    <div className="mt-4 overflow-x-auto border border-stone-200">
+                      <table className="w-full min-w-[22rem] text-left text-[0.95rem]">
+                        <caption className="border-b border-stone-200 bg-ivory px-5 py-3 text-left font-semibold">Program structure</caption>
+                        <tbody className="divide-y divide-stone-200">
+                          {o.structure.map((row) => (
+                            <tr key={row.component}>
+                              <th scope="row" className="px-5 py-2.5 font-medium">
+                                {row.component}
+                              </th>
+                              <td className="px-5 py-2.5 text-stone-700">{row.credits}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : null}
+                </>
               ) : (
                 <Pending title="Duration and credit hours to be confirmed" className="mt-6">
                   The official duration and the credit hours required for {p.shortName} will be published from the approved scheme of study.
@@ -256,18 +318,63 @@ export default async function ProgramPage({ params }: Props) {
             <section aria-labelledby="curriculum" className="scroll-mt-28">
               <SectionTitle id="curriculum">Curriculum</SectionTitle>
               {o.curriculum ? (
-                <div className="mt-6 space-y-6">
-                  {o.curriculum.map((sem) => (
-                    <div key={sem.semester}>
-                      <h3 className="heading-md">{sem.semester}</h3>
-                      <ul className="mt-2 list-disc pl-5">
-                        {sem.courses.map((c) => (
-                          <li key={c}>{c}</li>
+                <>
+                  {o.basis ? <BasisNote basis={o.basis} compact /> : null}
+                  <div className="mt-6 space-y-8">
+                    {o.curriculum.map((sem) => {
+                      const hasCategory = sem.courses.some((c) => c.category);
+                      return (
+                        <div key={sem.semester} className="overflow-x-auto border border-stone-200">
+                          <table className="w-full min-w-[30rem] text-left text-[0.95rem]">
+                            <caption className="flex items-baseline justify-between gap-4 border-b border-stone-200 bg-ivory px-5 py-3 text-left">
+                              <span className="heading-md">{sem.semester}</span>
+                              {sem.total ? <span className="text-sm text-stone-600">Total credit hours: {sem.total}</span> : null}
+                            </caption>
+                            <thead className="text-sm text-stone-600">
+                              <tr>
+                                <th scope="col" className="px-5 py-2 font-semibold">
+                                  Course
+                                </th>
+                                <th scope="col" className="whitespace-nowrap px-5 py-2 font-semibold">
+                                  Credit hours
+                                </th>
+                                {hasCategory ? (
+                                  <th scope="col" className="px-5 py-2 font-semibold">
+                                    Category
+                                  </th>
+                                ) : null}
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-stone-200">
+                              {sem.courses.map((c, i) => (
+                                <tr key={`${c.title}-${i}`}>
+                                  <th scope="row" className="px-5 py-2.5 font-medium">
+                                    {c.title}
+                                  </th>
+                                  <td className="numerals px-5 py-2.5 text-stone-700">{c.credits}</td>
+                                  {hasCategory ? <td className="px-5 py-2.5 text-stone-600">{c.category ?? ''}</td> : null}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  {o.specializations?.length ? (
+                    <div className="mt-8">
+                      <h3 className="heading-md">Specialization streams</h3>
+                      <p className="mt-2 text-stone-700">Electives may be grouped into one of the following streams, subject to the University’s academic resources and approval.</p>
+                      <ul className="mt-4 flex flex-wrap gap-2">
+                        {o.specializations.map((s) => (
+                          <li key={s} className="border border-stone-200 bg-ivory px-3.5 py-2 text-[0.95rem]">
+                            {s}
+                          </li>
                         ))}
                       </ul>
                     </div>
-                  ))}
-                </div>
+                  ) : null}
+                </>
               ) : (
                 <Pending title="The official curriculum will be published here" className="mt-6">
                   The semester-by-semester scheme of studies for {p.shortName} has not yet been supplied. It will list courses and credit hours once approved by the University.

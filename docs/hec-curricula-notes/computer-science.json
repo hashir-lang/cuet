@@ -1,0 +1,352 @@
+[
+  {
+    "slug": "bs-computer-science",
+    "sourceTitle": "HEC Curriculum of BS Computer Science and Associate Degree Computing (2025) – Revised Curriculum for Degree Programs in Computer Science, notified by HEC letter No. HEC/NCRC/CS&IT/2025/8163 dated October 14, 2025",
+    "programTitleInSource": "BS Computer Science",
+    "sourcePages": "PDF pages 10-20 (guiding principles, internship/FYP/certification requirements, program description, nomenclature, eligibility, structure, GE/core/interdisciplinary tables and semester-wise scheme; printed pages 1-11); specialization course lists PDF pages 20-28; Annex-A/B/C PDF pages 84-86",
+    "scope": "The BS Computer Science is a four-year degree aligned with the HEC Undergraduate Education Policy V 1.1. It is designed to equip students with a solid foundation in core computing principles alongside specialized knowledge in emerging fields such as software engineering, artificial intelligence, data science, cyber security, robotics and gaming design. The program emphasizes theoretical understanding and practical skills, fostering problem-solving, software and hardware development, and critical analysis of technological solutions. Students engage in hands-on projects, internships and research activities addressing real-world challenges in industry, healthcare, entertainment and national security, while the curriculum promotes ethical and professional responsibility, teamwork and effective communication to produce adaptable, lifelong learners in computing.",
+    "duration": "4 years (minimum 8 regular semesters); maximum 6 years, further extendable by one year subject to approval of the university's statutory body under the HEC Undergraduate Education Policy 2023 V 1.1",
+    "totalCreditHours": "Minimum 130 (the HEC scheme totals exactly 130; universities may set higher standards provided the HEC minimum is not reduced)",
+    "structure": [
+      { "component": "Minimum Credit Hours", "credits": "130" },
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Discipline Related Courses / Major (total)", "credits": "75 credit hours (26 courses)" },
+      { "component": "Computer Science Core Courses (compulsory)", "credits": "48 credit hours (14 courses)" },
+      { "component": "Specialization Electives", "credits": "24 credit hours (08 courses)" },
+      { "component": "Professional Certification", "credits": "03 credit hours" },
+      { "component": "Interdisciplinary / Allied Courses", "credits": "12 credit hours (4 courses; Calculus and Analytical Geometry and Linear Algebra mandatory)" },
+      { "component": "Field Experience / Internship", "credits": "3 credit hours" },
+      { "component": "Capstone Project / Final Year Project", "credits": "6 credit hours" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "3 (2+1)", "category": "General Education" },
+          { "title": "Social Science", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Programming Fundamentals", "credits": "4 (3+1)", "category": "Major" },
+          { "title": "Calculus & Analytical Geometry – IDS I", "credits": "3 (3+0)", "category": "IDS - Mandatory" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Arts and Humanities", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "1 (0+1)", "category": "General Education" },
+          { "title": "Object Oriented Programming", "credits": "4 (3+1)", "category": "Major" },
+          { "title": "Digital Logic Design", "credits": "4 (3+1)", "category": "Major" },
+          { "title": "Linear Algebra IDS-II", "credits": "3 (3+0)", "category": "IDS - Mandatory" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Expository Writing", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2+1)", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "1 (0+1)", "category": "General Education" },
+          { "title": "Data Structures", "credits": "4 (3+1)", "category": "Major" },
+          { "title": "Database Systems", "credits": "4 (3+1)", "category": "Major" },
+          { "title": "Operating Systems", "credits": "4 (3+1)", "category": "Major" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Software Engineering", "credits": "3 (3+0)", "category": "Major" },
+          { "title": "Computer Organization & Architecture", "credits": "3 (2+1)", "category": "Major" },
+          { "title": "Design & Analysis of Algorithms", "credits": "3 (3+0)", "category": "Major" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester V",
+        "courses": [
+          { "title": "Computer Networks", "credits": "3", "category": "Major" },
+          { "title": "Information Security", "credits": "3", "category": "Major" },
+          { "title": "Artificial Intelligence", "credits": "3", "category": "Major" },
+          { "title": "Theory of Automata", "credits": "3 (3+0)", "category": "Major" },
+          { "title": "IDS - III", "credits": "3 (3+0)", "category": "IDS" },
+          { "title": "IDS - IV", "credits": "3 (3+0)", "category": "IDS" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester VI",
+        "courses": [
+          { "title": "Cloud Computing", "credits": "3", "category": "Major" },
+          { "title": "Elective-I", "credits": "3", "category": "Major" },
+          { "title": "Elective-II", "credits": "3", "category": "Major" },
+          { "title": "Elective-III", "credits": "3", "category": "Major" },
+          { "title": "Elective-IV", "credits": "3", "category": "Major" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VII",
+        "courses": [
+          { "title": "Elective-V", "credits": "3", "category": "Major" },
+          { "title": "Elective-VI", "credits": "3", "category": "Major" },
+          { "title": "Elective-VII", "credits": "3", "category": "Major" },
+          { "title": "Elective-VIII", "credits": "3", "category": "Major" },
+          { "title": "Professional Certification", "credits": "3", "category": "Certification" }
+        ],
+        "total": "15"
+      },
+      {
+        "semester": "Semester VIII",
+        "courses": [
+          { "title": "Final Year Project", "credits": "6", "category": "Capstone Project" },
+          { "title": "Field Experience", "credits": "3", "category": "Field Experience" }
+        ],
+        "total": "9"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate / A-levels (minimum 12 years of schooling) or an IBCC-equivalent qualification with at least 50% marks, having studied Mathematics, is the basic eligibility requirement for admission to all BS Computing programs.",
+      "Students who have not studied Mathematics at intermediate level must pass deficiency courses in Mathematics (06 credits) in the first year, including a zero semester.",
+      "Candidates may additionally be required to pass an entry test conducted by the university or admission authority and to fulfil other institutional criteria such as interviews or aptitude assessments.",
+      "Holders of a 14-year qualification in Computing (Associate Degree – Computing) with a minimum CGPA of 2.00/4.00 may be admitted to the fifth semester after completing 15-18 credits of deficiency courses in a bridging semester; the university may set higher eligibility and admission criteria for this pathway."
+    ],
+    "passingCriteria": [
+      "Completion of a minimum of 130 credit hours over at least eight regular semesters (four years), within a maximum of six years, extendable by one further year with the approval of the university's statutory body.",
+      "Completion of all 14 General Education courses (34 credit hours) with the same titles and credits as prescribed in the HEC Undergraduate Education Policy V 1.1.",
+      "Completion of the 14 compulsory Computer Science core courses (48 credit hours), 24 credit hours of specialization electives (7-8 courses from a specialization cluster) and at least 12 credit hours of interdisciplinary courses, including the mandatory Calculus and Analytical Geometry and Linear Algebra.",
+      "Completion of a graded Field Experience / Internship of 3 credit hours, which cannot be substituted with additional coursework, capstone, research or project work.",
+      "Completion of a Capstone / Final Year Project of 6 credit hours, which cannot be substituted with additional coursework or internship.",
+      "Completion of industry-relevant professional certification(s) equivalent to 3 credit hours over the four-year program, where a certification comprising at least 16 hours of study counts as 1 credit hour.",
+      "A course load of 15-21 credit hours per regular semester; summer/winter semesters are used only for remedial, deficiency, failure or repetition courses.",
+      "A student with a semester GPA below 2.00/4.00 who passes all papers is promoted on probation and must achieve more than 2.0 GPA in the next semester; a student with GPA 1.7 or above who fails any paper is promoted conditionally on probation and must register in the summer semester to improve the grade; a student with GPA below 1.7 in two consecutive semesters who still fails papers after attending a summer semester for one academic year is dropped from the university rolls."
+    ],
+    "internship": "A Field Experience / Internship of 3 credit hours (equal to a minimum of 150 working hours; 6 to 8 weeks) is a mandatory degree-award requirement for the BS Computer Science, graded by a faculty member in collaboration with the supervisor in the field. It cannot be substituted with additional coursework, capstone or project work. The scheme places it in Semester VIII, but it may be offered during a summer/winter semester, and Annex-A allows completion at any time during the four-year degree, recommending it after the second year (four semesters). Accepted modes are on-site, remote/online, university-assigned projects/tasks, and industry-focused courses/workshops/bootcamps offered or approved by the university; assessment may include internship reports/logbooks, employer/supervisor feedback, presentations or viva and project deliverables. The Associate Degree – Computing structure contains no internship component.",
+    "projects": "A Capstone / Final Year Project of 6 credit hours is a mandatory degree-award requirement for the BS Computer Science and cannot be substituted with additional coursework or internship. The scheme places it in Semester VIII, but it may be split across the 7th and 8th semesters (Annex-B: a minimum of 6 credit hours completed over at least two consecutive semesters or during the last semester). The main text says the FYP must be supervised jointly by an industry supervisor and graded by a faculty member; Annex-B requires a department-approved faculty supervisor with industry co-supervisors encouraged. Projects should align with one or more UN Sustainable Development Goals or relevant thematic areas; students may work individually or in teams with clearly defined roles. Evaluation is staged (proposal approval, progress reviews, final presentation/demonstration, report submission, external evaluation where required) and deliverables are a final report/thesis, presentation slides, a working prototype/system/model and a poster or summary document, with plagiarism rules and acknowledgement of licensed data, copyrighted material and AI tools. Separately, professional certification(s) equivalent to 3 credit hours (Semester VII in the scheme) are a mandatory degree-completion requirement.",
+    "accreditationBody": "National Computing Education Accreditation Council (NCEAC)",
+    "specializations": [
+      "Software Engineering",
+      "Data Science",
+      "Artificial Intelligence",
+      "Cyber Security",
+      "Information Technology",
+      "Computer Engineering",
+      "Computer Games Development",
+      "Multimedia and Animation",
+      "Robotics",
+      "Human Computer Interaction",
+      "Internet of Things (IoT)",
+      "Network Infrastructure & Cloud Computing",
+      "Quantum Computing",
+      "Health Informatics"
+    ],
+    "notes": [
+      "HEC's standard title is 'BS Computer Science' (NQF Level 6), to be implemented from Spring 2026. A specialization title may appear on the degree (e.g., 'BS Computer Science – Artificial Intelligence') or only on the transcript, as approved by the university's statutory bodies; a generic BS Computer Science in which students take electives from any cluster, with no specialization title, is also permitted. HEIs may add further specializations within the given framework.",
+      "PDF page numbers are printed page + 9 (e.g., PDF page 17 = printed page 8). Program description PDF 11-12; PLOs PDF 12-13; eligibility and structure PDF 13-14; GE table PDF 15; core courses PDF 15-16; interdisciplinary list PDF 16-17; scheme of studies PDF 17-20; specialization guidelines and course lists PDF 20-28; CLOs PDF 33-73; certifications PDF 74-83; Annex-A internship PDF 84; Annex-B FYP PDF 85; Annex-C certification framework PDF 86.",
+      "The semester sequence is stated to be suggestive only: departments may rearrange the sequence, alter titles and credits provided the essence of the courses remains intact, add courses with statutory approval, and redistribute courses across semesters. All semester totals printed in the document were verified by addition (18 + 19 + 19 + 17 + 18 + 15 + 15 + 9 = 130).",
+      "Footnote markers removed from titles: * the university may use HEC-designed model courses; ** the department may offer any course within the broader subject domain/cluster (Social Science, Arts and Humanities, Natural Science); *** electives are any advanced course from the areas of specialization based on available resources; **** Professional Certification; ***** the Final Year Project may be split across Semesters VII and VIII and Field Experience may be offered in a summer/winter semester.",
+      "Semester IV prints 'Computer Organization & Architecture (Computer Organization & Architecture)', a duplicated parenthetical treated as a layout artefact; the core course list describes the course as 'Computer Organization & Architecture, Assembly language included' at 2+1.",
+      "Semester V shows Computer Networks, Information Security and Artificial Intelligence, and Semester VI shows Cloud Computing, as plain '3' credits; the core course list offers each as '2+1 / 3+0' at the department's choice. Core list credits: Programming Fundamentals, Object Oriented Programming, Database Systems, Digital Logic Design, Data Structures and Operating Systems 3+1; Software Engineering, Design and Analysis of Algorithms and Theory of Automata 3+0; Computer Organization & Architecture 2+1.",
+      "Interdisciplinary (IDS) courses: a 21-course list (PDF 16-17) of which Calculus and Analytical Geometry and Linear Algebra are mandatory (IDS I and II in Semesters I-II); IDS III and IDS IV (Semester V) are placeholders to be filled from the remaining list (Discrete Structure, Probability & Statistics, Economics, Organizational Behavior, Media and Information Literacy, E-Governance and ICT Policy, Environmental Science, Professional Practice, Digital Marketing & E-Commerce, Technology Management, Financial Technology (FinTech) Fundamentals, Geographic Information Systems (GIS) & Spatial Data, Bioinformatics, Smart Cities & Urban Informatics, Cyber Law & Digital Policy, Technology and Sustainable Development, Digital Media & Communication Studies, Project Management, Educational Technology (EdTech)); universities may extend the list with statutory approval.",
+      "Specialization electives: 24 credit hours taken as 7-8 courses from one specialization cluster; each cluster lists 14-21 courses, many offered as 2+1 or 3+0 variants. The Computer Engineering and Robotics clusters group their courses and require at least 2 courses from each group. The document adds that universities continuing existing BS Computing specialization degrees other than BS Computer Science may continue and seek NCEAC accreditation, but such degrees are not considered equivalent to BS Computer Science.",
+      "Professional certification: PDF 20 states a certification equals 1 credit hour per at least 16 hours of study, accumulated over the four-year program; Annex-C (PDF 86) states 3 credit hours with at least 48 hours of engagement, that certification credit may replace only one elective course, is subject to a university-administered validation test, and applies from the Fall 2026 intake; PDF 11 additionally says certifications may be considered for credit substitution of a minimum of one and maximum of six credit hours upon course mapping and statutory approval, and that students may replace certain electives with internationally recognized certifications equivalent to 3 credit hours. Recommended certification lists (PSEB/P@SHA and per specialization) are on PDF 74-83.",
+      "The document gives no explicit minimum CGPA for award of the BS degree; it gives only the semester probation policy (PDF 14) and a 2.00/4.00 CGPA minimum in the Associate Degree for lateral entry to Semester V.",
+      "Semester duration is 16-18 weeks for regular semesters (1-2 weeks for examinations) and 8-9 weeks for summer semesters (1 week for examinations); 3 credit hours of theory require 3 contact hours per week and 1 credit hour of practical work requires 3 contact hours per week.",
+      "Text extraction placed the GE course table after the core course table on PDF 15; both were read and reconciled (GE categories: Arts & Humanities 1 course/2 cr, Natural Sciences 1/3 (2+1), Social Sciences 1/2, Functional English and Expository Writing 2/6, Quantitative Reasoning 2/6, Islamic Studies/Ethics 1/2, Ideology & Constitution of Pakistan 1/2, Application of ICT 1/3 (2+1), Entrepreneurship 1/2, Civics and Community Engagement 1/2, Pakistan Studies 1/2, Fehm e Quran 1/2; total 14 courses, 34 credits). Fehm-e-Quran is delivered as two 1-credit parts in Semesters II and III."
+    ]
+  },
+  {
+    "slug": "ad-computer-science",
+    "sourceTitle": "HEC Curriculum of BS Computer Science and Associate Degree Computing (2025) – Revised Curriculum for Degree Programs in Computer Science, notified by HEC letter No. HEC/NCRC/CS&IT/2025/8163 dated October 14, 2025",
+    "programTitleInSource": "Associate Degree – Computing",
+    "sourcePages": "PDF pages 28-32 (nomenclature, eligibility, structure, GE table, core courses, pool of electives and 4-semester scheme; printed pages 19-23); guiding principles PDF 10; entry pathway to BS PDF 11",
+    "scope": "The Associate Degree – Computing is the standardized two-year undergraduate qualification at NQF Level 5 that the HEC Computer Science curriculum (2025) prescribes alongside the BS Computer Science, following the HEC Undergraduate Education Policy 2023 V 1.1. It comprises a minimum of four regular semesters and 72 credit hours: the 14 General Education courses mandated for every undergraduate degree, seven compulsory computing core courses that provide a strong and comprehensive foundation in the fundamental areas of computing, and 12 credit hours of electives drawn from a pool of applied computing courses. Graduates may progress to the fifth semester of BS Computer Science after completing bridging courses.",
+    "duration": "2 years (minimum 4 regular semesters); maximum 3.5 years",
+    "totalCreditHours": "Minimum 72 (the HEC scheme totals exactly 72; universities may set higher standards provided the HEC minimum is not reduced)",
+    "structure": [
+      { "component": "Minimum Credit Hours", "credits": "72" },
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Discipline Related Courses / Major (total)", "credits": "38 credit hours (11 courses)" },
+      { "component": "Computing Core (compulsory)", "credits": "26 credit hours (7 courses)" },
+      { "component": "Specialization Electives (from the Pool of Electives)", "credits": "12 credit hours (3-4 courses)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "3 (2+1)", "category": "General Education" },
+          { "title": "Social Science", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Programming Fundamentals", "credits": "3+1", "category": "Major" },
+          { "title": "Elective - I", "credits": "3", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Arts and Humanities", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "1 (0+1)", "category": "General Education" },
+          { "title": "Object Oriented Programming", "credits": "3+1", "category": "Major" },
+          { "title": "Data Structures", "credits": "3+1", "category": "Major" },
+          { "title": "Elective - II", "credits": "3", "category": "Major" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Expository Writing", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2+1)", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "1 (0+1)", "category": "General Education" },
+          { "title": "Computer Networks", "credits": "3", "category": "Major" },
+          { "title": "Database Systems", "credits": "3+1", "category": "Major" },
+          { "title": "Elective-III", "credits": "3", "category": "Major" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Software Engineering", "credits": "3+0", "category": "Major" },
+          { "title": "Operating Systems", "credits": "3+1", "category": "Major" },
+          { "title": "Elective-IV", "credits": "3", "category": "Major" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate / A-levels (minimum 12 years of schooling) or an IBCC-equivalent qualification with at least 45% marks, having studied Mathematics, is the basic eligibility requirement for admission to all Associate Degrees in Computing programs.",
+      "Students who have not studied Mathematics at intermediate level must pass deficiency courses in Mathematics (06 credits) in the first year, including a zero semester.",
+      "Candidates may additionally be required to pass an entry test conducted by the university or admission authority and to fulfil other institutional criteria such as interviews or aptitude assessments."
+    ],
+    "passingCriteria": [
+      "Completion of a minimum of 72 credit hours over at least four regular semesters (two years), within a maximum of 3.5 years.",
+      "Completion of all 14 General Education courses (34 credit hours) with the same titles and credits as prescribed in the HEC Undergraduate Education Policy V 1.1.",
+      "Completion of the seven compulsory computing core courses (26 credit hours) and 12 credit hours (3-4 courses) of electives from the pool of electives approved by the university's statutory bodies.",
+      "A course load of 15-21 credit hours per regular semester; summer/winter semesters are used only for remedial, deficiency, failure or repetition courses.",
+      "The document states no minimum CGPA for award of the Associate Degree; a CGPA of at least 2.00/4.00 in the Associate Degree is, however, the minimum for admission to the fifth semester of BS Computer Science."
+    ],
+    "internship": "Not required. The Associate Degree – Computing structure (34 General Education + 26 core + 12 electives = 72 credit hours) contains no Field Experience / Internship component; the document states the 3-credit internship as a degree-award requirement for the BS Computer Science only.",
+    "projects": "Not required. No Capstone / Final Year Project and no professional certification component appears in the Associate Degree – Computing structure or scheme; these are stated as BS Computer Science requirements only.",
+    "accreditationBody": null,
+    "specializations": [],
+    "notes": [
+      "HEC's standard title is 'Associate Degree – Computing' (NQF Level 5), fixed by the NCRC 'for the sake of standardization'. The University's program name 'Associate Degree in Computer Science' differs from this HEC nomenclature; HEIs are advised to align degree nomenclature with the revised scheme with effect from Spring 2026.",
+      "The document gives the Associate Degree its own 4-semester scheme (PDF 31-32, printed 22-23) rather than defining it as the first four semesters of the BS. It differs from BS Semesters I-IV: Digital Logic Design, Computer Organization & Architecture, Design & Analysis of Algorithms and the mandatory interdisciplinary mathematics courses (Calculus & Analytical Geometry, Linear Algebra) are absent; Computer Networks is brought forward to Semester III; and one 3-credit elective from the Pool of Electives is added in each semester. Semester totals printed in the document were verified by addition (18 + 19 + 17 + 18 = 72).",
+      "Credit notation kept as printed: AD core courses appear as '3+1', '3+0' or '3' without a bracketed total, while General Education courses appear as '3 (3+0)' etc. Computer Networks is '2+1 / 3+0' in the core list and '3' in the scheme. Core list: Programming Fundamentals 3+1, Object Oriented Programming 3+1, Database Systems 3+1, Data Structures 3+1, Computer Networks 2+1 / 3+0, Software Engineering 3+0, Operating Systems 3+1 (total 26).",
+      "Pool of Electives (PDF 30-31), each 3 credit hours: Introduction to Cloud Fundamentals; Web Development (Frontend and Backend); Mobile App Development; Data Analytics and SQL for Practitioners; Introduction to Machine Learning and AI Tools; Cybersecurity Fundamentals; DevOps and CI/CD Essentials; Database Administration and SQL Tuning; UX/UI and Product Prototyping; Internet of Things (IoT) Basics; Practical Python Scripting and Automation; Applied Networking and Wireless Technologies; Low-code/No-code Application Development; Blockchain and Smart Contract Basics; Digital Logic Design; Information Security; Computer Organization & Architecture; Design and Analysis of Algorithms; Theory of Automata; Software Project Management. HEIs may add further courses to the pool upon approval from their statutory bodies. The document lists no named specialization streams for the AD, hence specializations is empty.",
+      "Footnote markers removed from titles: * the university may use HEC-designed model courses; ** the department may offer any course within the broader subject domain/cluster (Social Science, Arts and Humanities, Natural Science). Fehm-e-Quran is delivered as two 1-credit parts in Semesters II and III.",
+      "The AD section states no internship, capstone, certification or minimum-CGPA requirement and prints no probation policy (the probation policy on PDF 14 appears under the BS structure only). The document names NCEAC as the accrediting body only in connection with BS Computing programs and does not name an accreditation body for the Associate Degree, so accreditationBody is null.",
+      "Pathway (PDF 11): only students with a 14-year qualification in Computing are admitted to the fifth semester of BS Computer Science, with a minimum CGPA of 2.00/4.00 in the Associate Degree in Computing, and must complete 15-18 credits of deficiency courses in a bridging semester before enrolling in Semester V; universities may set higher criteria.",
+      "Semester duration is 16-18 weeks for regular semesters (1-2 weeks for examinations) and 8-9 weeks for summer semesters; 3 credit hours of theory require 3 contact hours per week and 1 credit hour of practical work requires 3 contact hours per week. Text extraction placed the GE table after the core course table on PDF 30; both were reconciled. PDF page = printed page + 9."
+    ]
+  },
+  {
+    "slug": "ad-data-science",
+    "sourceTitle": "HEC Curriculum of BS Computer Science and Associate Degree Computing (2025) – Revised Curriculum for Degree Programs in Computer Science, notified by HEC letter No. HEC/NCRC/CS&IT/2025/8163 dated October 14, 2025",
+    "programTitleInSource": "Associate Degree – Computing",
+    "sourcePages": "PDF pages 28-32 (Associate Degree – Computing: nomenclature, eligibility, structure, core courses, pool of electives and 4-semester scheme; printed pages 19-23); Data Science specialization course list PDF pages 21-22 (printed 12-13) with CLOs on PDF 38-41; entry pathway to BS PDF 11",
+    "scope": "The Associate Degree – Computing is the standardized two-year undergraduate qualification at NQF Level 5 prescribed by the HEC Computer Science curriculum (2025). The curriculum fixes a single title for the Level 5 program rather than field-specific associate degrees; a Data Science orientation is carried by the 12 credit hours of electives, which the university may draw from the prescribed pool or add from the Data Science specialization courses with statutory-body approval. The program comprises at least four regular semesters and 72 credit hours, combining the 14 mandatory General Education courses with seven compulsory computing core courses, and leads on to the fifth semester of BS Computer Science after bridging courses.",
+    "duration": "2 years (minimum 4 regular semesters); maximum 3.5 years",
+    "totalCreditHours": "Minimum 72 (the HEC scheme totals exactly 72; universities may set higher standards provided the HEC minimum is not reduced)",
+    "structure": [
+      { "component": "Minimum Credit Hours", "credits": "72" },
+      { "component": "General Education Courses", "credits": "34 credit hours (14 courses)" },
+      { "component": "Discipline Related Courses / Major (total)", "credits": "38 credit hours (11 courses)" },
+      { "component": "Computing Core (compulsory)", "credits": "26 credit hours (7 courses)" },
+      { "component": "Specialization Electives (from the Pool of Electives; Data Science courses for this program)", "credits": "12 credit hours (3-4 courses)" }
+    ],
+    "curriculum": [
+      {
+        "semester": "Semester I",
+        "courses": [
+          { "title": "Quantitative Reasoning-I", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Functional English", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Applications of Information and Communication Technologies", "credits": "3 (2+1)", "category": "General Education" },
+          { "title": "Social Science", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Programming Fundamentals", "credits": "3+1", "category": "Major" },
+          { "title": "Elective - I", "credits": "3", "category": "Major" }
+        ],
+        "total": "18"
+      },
+      {
+        "semester": "Semester II",
+        "courses": [
+          { "title": "Quantitative Reasoning-II", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Arts and Humanities", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Pakistan Studies", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Fehm-e-Quran – I (for Muslim Students)", "credits": "1 (0+1)", "category": "General Education" },
+          { "title": "Object Oriented Programming", "credits": "3+1", "category": "Major" },
+          { "title": "Data Structures", "credits": "3+1", "category": "Major" },
+          { "title": "Elective - II", "credits": "3", "category": "Major" }
+        ],
+        "total": "19"
+      },
+      {
+        "semester": "Semester III",
+        "courses": [
+          { "title": "Expository Writing", "credits": "3 (3+0)", "category": "General Education" },
+          { "title": "Natural Science", "credits": "3 (2+1)", "category": "General Education" },
+          { "title": "Fehm-e-Quran – II (for Muslim Students)", "credits": "1 (0+1)", "category": "General Education" },
+          { "title": "Computer Networks", "credits": "3", "category": "Major" },
+          { "title": "Database Systems", "credits": "3+1", "category": "Major" },
+          { "title": "Elective-III", "credits": "3", "category": "Major" }
+        ],
+        "total": "17"
+      },
+      {
+        "semester": "Semester IV",
+        "courses": [
+          { "title": "Civics and Community Engagement", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Ideology and Constitution of Pakistan", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Entrepreneurship", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Islamic Studies (Religious Education / Ethics for non-Muslim students)", "credits": "2 (2+0)", "category": "General Education" },
+          { "title": "Software Engineering", "credits": "3+0", "category": "Major" },
+          { "title": "Operating Systems", "credits": "3+1", "category": "Major" },
+          { "title": "Elective-IV", "credits": "3", "category": "Major" }
+        ],
+        "total": "18"
+      }
+    ],
+    "eligibility": [
+      "Higher Secondary School Certificate / A-levels (minimum 12 years of schooling) or an IBCC-equivalent qualification with at least 45% marks, having studied Mathematics, is the basic eligibility requirement for admission to all Associate Degrees in Computing programs.",
+      "Students who have not studied Mathematics at intermediate level must pass deficiency courses in Mathematics (06 credits) in the first year, including a zero semester.",
+      "Candidates may additionally be required to pass an entry test conducted by the university or admission authority and to fulfil other institutional criteria such as interviews or aptitude assessments."
+    ],
+    "passingCriteria": [
+      "Completion of a minimum of 72 credit hours over at least four regular semesters (two years), within a maximum of 3.5 years.",
+      "Completion of all 14 General Education courses (34 credit hours) with the same titles and credits as prescribed in the HEC Undergraduate Education Policy V 1.1.",
+      "Completion of the seven compulsory computing core courses (26 credit hours) and 12 credit hours (3-4 courses) of electives from the pool of electives approved by the university's statutory bodies.",
+      "A course load of 15-21 credit hours per regular semester; summer/winter semesters are used only for remedial, deficiency, failure or repetition courses.",
+      "The document states no minimum CGPA for award of the Associate Degree; a CGPA of at least 2.00/4.00 in the Associate Degree is, however, the minimum for admission to the fifth semester of BS Computer Science."
+    ],
+    "internship": "Not required. The Associate Degree – Computing structure (34 General Education + 26 core + 12 electives = 72 credit hours) contains no Field Experience / Internship component; the document states the 3-credit internship as a degree-award requirement for the BS Computer Science only.",
+    "projects": "Not required. No Capstone / Final Year Project and no professional certification component appears in the Associate Degree – Computing structure or scheme; these are stated as BS Computer Science requirements only.",
+    "accreditationBody": null,
+    "specializations": [],
+    "notes": [
+      "HEC prescribes one standardized Associate Degree for computing, titled 'Associate Degree – Computing' (NQF Level 5), fixed by the NCRC 'for the sake of standardization'. The 2025 curriculum contains no separate 'Associate Degree in Data Science'; the University's AD Data Science is therefore mapped to the Associate Degree – Computing scheme above, and the HEC title would apply to the award. The provision for showing a specialization title on the degree or transcript is stated for the BS Computer Science only, not for the Associate Degree.",
+      "The Data Science emphasis is carried by the four 3-credit electives (Elective I-IV, 12 credit hours, one per semester). The Data Science domain courses the document gives (BS Computer Science specialization cluster 2, PDF 21-22), all 3+0 (3 credit hours): Introduction to Data Science; Computational Statistics; Data Engineering; Data Visualization; Business Intelligence; Tools and Techniques in Data Science; Big Data Analytics; Machine Learning; Deep Learning; Natural Language Processing; Data Ethics & Security; Computer Vision; Information Retrieval; Generative AI; Data Mining. Their CLOs are on PDF 38-41.",
+      "The AD's own Pool of Electives (PDF 30-31) already contains data-oriented options at 3 credits each: Data Analytics and SQL for Practitioners; Introduction to Machine Learning and AI Tools; Practical Python Scripting and Automation; Database Administration and SQL Tuning. Offering the BS Data Science specialization courses as AD electives relies on the document's note that 'HEIs may add further courses in the above pool of electives upon approval from their statutory bodies'. Full pool: Introduction to Cloud Fundamentals; Web Development (Frontend and Backend); Mobile App Development; Data Analytics and SQL for Practitioners; Introduction to Machine Learning and AI Tools; Cybersecurity Fundamentals; DevOps and CI/CD Essentials; Database Administration and SQL Tuning; UX/UI and Product Prototyping; Internet of Things (IoT) Basics; Practical Python Scripting and Automation; Applied Networking and Wireless Technologies; Low-code/No-code Application Development; Blockchain and Smart Contract Basics; Digital Logic Design; Information Security; Computer Organization & Architecture; Design and Analysis of Algorithms; Theory of Automata; Software Project Management.",
+      "The document gives the Associate Degree its own 4-semester scheme (PDF 31-32, printed 22-23) rather than defining it as the first four semesters of the BS; it differs from BS Semesters I-IV (no Digital Logic Design, Computer Organization & Architecture, Design & Analysis of Algorithms or interdisciplinary mathematics courses; Computer Networks in Semester III; one elective per semester). Semester totals printed in the document were verified by addition (18 + 19 + 17 + 18 = 72).",
+      "Credit notation kept as printed: AD core courses appear as '3+1', '3+0' or '3' without a bracketed total; Computer Networks is '2+1 / 3+0' in the core list and '3' in the scheme. Footnote markers removed from titles: * HEC-designed model course may be used; ** any course within the broader subject domain/cluster may be offered (Social Science, Arts and Humanities, Natural Science).",
+      "The AD section states no internship, capstone, certification or minimum-CGPA requirement and prints no probation policy (the probation policy on PDF 14 appears under the BS structure only). The document names NCEAC only in connection with BS Computing programs and does not name an accreditation body for the Associate Degree, so accreditationBody is null. The document lists no named specialization streams for the AD, hence specializations is empty.",
+      "Pathway (PDF 11): students with a 14-year qualification in Computing and a minimum CGPA of 2.00/4.00 in the Associate Degree in Computing may be admitted to the fifth semester of BS Computer Science after completing 15-18 credits of deficiency courses in a bridging semester; universities may set higher criteria. Implementation of the revised scheme and nomenclature is effective from Spring 2026. PDF page = printed page + 9."
+    ]
+  }
+]

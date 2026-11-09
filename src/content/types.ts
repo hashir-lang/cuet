@@ -93,6 +93,41 @@ export type Faculty = {
 
 export type ProgramLevel = 'Undergraduate' | 'Associate Degree' | 'Graduate';
 
+/** One course row in a semester table. Credits keep the source notation, e.g. "3 (3-0)" or "2+1". */
+export type Course = { title: string; credits: string; category?: string };
+
+export type Semester = { semester: string; courses: Course[]; total?: string };
+
+/** Where a scheme of study comes from, shown on the program page. */
+export type SchemeBasis = {
+  /** e.g. "HEC Curriculum for English Degree Programs 2025" */
+  title: string;
+  /** e.g. "notified June 2025" */
+  issued: string;
+  /** Public path of the source PDF, e.g. "/documents/hec-curricula/english-2025.pdf", or null */
+  document: string | null;
+  /** Anything a reader should know, e.g. that HEC prescribes one standard scheme for all computing associate degrees */
+  note?: string;
+};
+
+export type SchemeOfStudy = {
+  basis: SchemeBasis | null;
+  scope: string | null;
+  duration: string | null;
+  totalCreditHours: string | null;
+  /** How the credit hours are made up, e.g. General Education 34, Major 84 */
+  structure: { component: string; credits: string }[] | null;
+  curriculum: Semester[] | null;
+  /** Specialization streams or elective clusters the scheme offers */
+  specializations: string[] | null;
+  eligibility: string[] | null;
+  passingCriteria: string[] | null;
+  internship: string | null;
+  projects: string | null;
+  accreditation: string | null;
+  fees: string | null;
+};
+
 export type Program = {
   slug: string;
   name: string;
@@ -106,21 +141,11 @@ export type Program = {
   learningOutcomes: Draft<string[]>;
   careerAreas: Draft<string[]>;
   /**
-   * The scheme of study. Every field must come from the University. Null = not yet confirmed,
-   * and the program page shows a "to be confirmed" panel for it.
+   * The scheme of study. Null fields are not yet confirmed, and the program page shows a
+   * "to be confirmed" panel for each. `basis` says where the scheme comes from: null means the
+   * University's own approved scheme; otherwise the HEC model curriculum it is taken from.
    */
-  official: {
-    scope: string | null;
-    duration: string | null;
-    totalCreditHours: string | null;
-    curriculum: { semester: string; courses: string[] }[] | null;
-    eligibility: string[] | null;
-    passingCriteria: string[] | null;
-    internship: string | null;
-    projects: string | null;
-    accreditation: string | null;
-    fees: string | null;
-  };
+  official: SchemeOfStudy;
   featured: boolean;
   seoKeywords: string[];
   media: MediaSlot;

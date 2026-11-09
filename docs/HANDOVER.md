@@ -1,6 +1,6 @@
 # Handover report
 
-Status of the Central University of Emerging Technologies-CueTech website as delivered for local development. Updated 4 November 2026 after the restructure to the University's website brief (Annex-A).
+Status of the Central University of Emerging Technologies-CueTech website as delivered for local development. Updated 9 November 2026 after the faculty renames and the addition of the HEC schemes of study.
 
 ## 1. What was built
 
@@ -13,7 +13,7 @@ Status of the Central University of Emerging Technologies-CueTech website as del
 | Admissions | Overview plus the 10 sub-tabs of the brief: Why Choose CueTech?, Academic and Student Support System, Programs and Eligibility Criteria, Admission Schedule, How to Apply, Fees Structure, How to Pay your Fee?, Scholarships and Financial Assistance, FAQs, Apply Online |
 | Academics | Hub plus Academic Rules and Regulations (eight items), Academic Calendar, Online and Blended Learning, Curriculum and Schemes of Study, Teaching and Learning, Academic Advising and Student Support, Examination and Assessment |
 | Faculties and Departments | Directory plus 13 faculty pages, named as in the Act, each showing its department |
-| Degree Programs | Searchable directory with level and faculty filters; Undergraduate (13) and Associate Degree (9) listings; 22 program pages laid out as schemes of study; the 7 proposed graduate programs listed |
+| Degree Programs | Searchable directory with level and faculty filters; Undergraduate (13) and Associate Degree (9) listings; 22 program pages laid out as schemes of study, 20 of them filled from the HEC revised curricula (see section 2a); the 7 proposed graduate programs listed |
 | Teaching Faculty | Hub plus 13 department pages for photographs, profiles and official emails |
 | Global Engagement | Hub plus the 10 pages of the brief |
 | News, Events and Media | University News, four category listings (Official Announcements, Press Releases, Media Coverage, Notices and Circulars), Events Calendar, two event category listings (Seminars and Conferences, Workshops and Training Programs), Photo Gallery, Video Gallery, Newsletter, and detail pages (template entries) |
@@ -28,6 +28,33 @@ The production build pre-renders 158 routes; the crawler finds 150 public pages.
 **Names used.** The University's name appears as "Central University of Emerging Technologies-CueTech" in titles, the footer, the hero and structured data (legal name "Central University of Emerging Technologies"). Faculties and departments follow Annex-A, with three names corrected by the University on 5 November 2026: "Faculty of Medicine and Allied Health Sciences" (Annex-A read "Management and Allied Health Sciences"), "Faculty of Aviation and Aeronautical Sciences" (Annex-A read "Aviation and Aeronautics") and "Faculty of Agriculture Sciences" (Annex-A read "Agricultural Sciences"). Faculty names are written in full with "and" (never "&") everywhere, including the menus. Programs follow Annex-A; the brief does not assign programs to faculties, so these placements are assumptions to confirm: AD Data Science under Computing and Emerging Technologies; AD Accounting and Finance and AD Business Analytics under Management Sciences; B.E. Information Security Management Technology under Engineering and Technology; BS Public Health under Medicine and Allied Health Sciences; BS Poultry Science under Veterinary Sciences; BS Agribusiness Management under Agriculture Sciences.
 
 **Removed from the previous version** (not in the brief): BS Software Engineering, Doctor of Physical Therapy, BA LLB, BS Engineering Technology and BS Mathematics. The former URLs `/student-life`, `/admissions/requirements` and the old faculty and program slugs no longer exist; nothing has been deployed, so no redirects are needed.
+
+## 2a. Schemes of study from the HEC revised curricula
+
+On 9 November 2026 the University supplied a folder of HEC (Higher Education Commission) curriculum documents. The latest revision for each discipline the University offers was used to fill the program pages: semester-by-semester course tables with credit hours and categories, program structure, eligibility, degree award requirements, internship and capstone rules, and specialization streams. Older revisions in the folder (2011 to 2017) were not used. The nine PDFs used are copied to `public/documents/hec-curricula/` and linked from the program pages; the full folder is excluded from git (`.gitignore`) because it is 280 MB. The data lives in `src/content/schemes.ts`.
+
+Every program page that uses an HEC scheme says so in a panel ("Scheme of study based on the …") and in its FAQs, and states that the University's own scheme, approved by its Academic Council, will replace it. These are HEC's minimum national standards, not CueTech's approved schemes.
+
+The extraction files in `docs/hec-curricula-notes/` (one JSON per HEC document) hold the same data plus a `notes` list for each program: the PDF pages used, the elective and specialization course lists, title differences, and any inconsistency found in the source (for example, a semester that exceeds the stated course load, or a "14 courses" count against 15 printed rows). Read them before finalising a scheme.
+
+| Program | HEC document used | Notes for the University |
+| --- | --- | --- |
+| BS Computer Science | Revised Curriculum for Degree Programs in Computer Science (October 2025) | 130 credit hours; NCEAC accreditation; 14 specialization clusters listed |
+| AD Computer Science, AD Data Science | Same document, "Associate Degree – Computing" | HEC fixes the title "Associate Degree – Computing" for all computing ADs and gives it its own 72-credit scheme (not the first four BS semesters). There is no separate HEC scheme for an AD in Data Science; the page shows the standard AD with a note that the data science courses are offered as the electives. The University should confirm the degree titles it will award |
+| BBA | Curriculum Booklet: Business and Management (October 2025) | NBEAC accreditation; nine specialization clusters |
+| BS Aviation Management, BS Agribusiness Management | Same document, "BS Programs in Business and Management Disciplines" | HEC lists "Aviation Management" and "Agribusiness" (not "Agribusiness Management") among the BS titles allowed to continue (section 2.3); one generic 130-credit scheme applies, with 27 credit hours of domain courses set by the institution and no named specializations. The HEC business document, not the Agriculture booklet, is the right source for Agribusiness |
+| AD Business Administration, AD Accounting and Finance, AD Business Analytics, AD Aviation Management | Same document, "Associate Degrees in Business and Management Disciplines" | One generic 70 to 72 credit scheme with 21 credit hours of domain courses set by the institution. HEC's recommended AD titles are Accounting, Marketing, Finance, Human Resource Management, Entrepreneurship, Supply Chain Management, Islamic Banking and Finance, Project Management, Business Analytics and Digital Marketing. "Business Administration" (which HEC uses for the BBA exit award) and "Aviation Management" are not in that list; the University should confirm these titles |
+| BS English, AD English | Curriculum for English Degree Programs (June 2025) | AD defined as the first four semesters of the BS (70 credit hours) |
+| BS Education, AD Education | Revised Curriculum for Degree Programs in Education (April 2025) | HEC titles the four-year degree "Bachelor of Education (B.Ed)", not BS Education; the AD ("ADE") is the first four semesters, 72 credit hours. No CGPA threshold is stated |
+| LLB | Revised Curriculum of LLB Four-Year Degree Program (July 2025) | Four-year LLB replacing the five-year program; LAT entry test with 50%; Pakistan Bar Council |
+| BS Statistics, AD Statistics | Curriculum for Statistics: AD, BS, M.Phil. (2025) | AD defined as the first four semesters (70 credit hours); specializations Data Science, Biostatistics, Financial Statistics |
+| BS Public Health | Curriculum of Public Health: AD, BS, MS (2025) | Pre-medical group required; 125 credit hours; 20 optional specializations; no accrediting council named |
+| BS Nursing | Curriculum of BS in Nursing / MS in Nursing (2024) | 134 credit hours plus a one-year paid internship after coursework; Pakistan Nursing and Midwifery Council |
+| Doctor of Pharmacy | Revised Curriculum for Degree Programs in Pharmacy (September 2025) | Five years, 195 credit hours; pre-medical with 60%; Pharmacy Council of Pakistan |
+| BS Poultry Science | None in the folder | The folder has no Poultry Science curriculum (Meat Science is postgraduate; the Agriculture 2026 booklet covers ten crop and food disciplines). Page shows "to be confirmed" panels |
+| B.E. Information Security Management Technology | None in the folder | The Engineering Technologies booklet (2016) covers Electronics, Electrical, Civil and Mechanical only; the Cyber Security booklet (2026) is for BS Cyber Security, a different program. Page shows "to be confirmed" panels |
+
+Also in the folder but not used, because the University does not offer the program: Allied Health Sciences, Agriculture (ten B.Sc. Hons. disciplines), Commerce, Cyber Security, Computing Disciplines 2023 (superseded by the 2025 Computer Science booklet), Aerospace and Avionics Engineering, and some sixty other disciplines.
 
 ## 2. Information the University needs to supply
 
@@ -47,7 +74,7 @@ Each item is shown on the site as a marked placeholder until supplied. Where to 
 - The policy documents listed on Policies and Regulations, as each is approved
 
 **Academic**
-- For each of the 22 programs, the scheme of study: scope, duration, credit hours, curriculum, admission criteria, passing criteria, internship, projects, accreditation status and fees
+- CueTech's own approved scheme of study for each program, to replace the HEC minimum scheme now shown (see section 2a); schemes for BS Poultry Science and B.E. Information Security Management Technology, which have none; the accreditation status of each program; and the fee for each program
 - Approval or replacement of all text marked "Draft copy"
 - CueTech's own academic rules (semester, examination, probation, degree requirements, industry linkages) as PDFs or pages; the academic calendar
 - Deans; teaching faculty profiles with photographs and official emails, by department
@@ -99,13 +126,14 @@ All tokens are in `src/app/globals.css`.
 
 ## 6. Testing summary
 
-Tested on the production build (`npm run build` and `npx next start -p 3100`) on 4 November 2026, after the restructure.
+Tested on the production build (`npm run build` and `npx next start -p 3100`) on 9 November 2026, after the faculty renames and the HEC schemes of study were added.
 
 | Test | Result |
 | --- | --- |
 | Production build | Passes; 158 routes pre-rendered as static HTML |
 | Type check | Passes |
-| Site crawler (150 pages) | No broken links or anchors; every page has a unique title, a description, a canonical URL, a sharing image and exactly one H1; no financial wording |
+| Site crawler (150 pages, 9 linked PDFs) | No broken links or anchors; every page has a unique title, a description, a canonical URL, a sharing image and exactly one H1; no financial wording; every HEC curriculum PDF resolves |
+| Scheme data | Semester totals in the 20 HEC schemes were re-added against the course rows during extraction and matched the documents; the first semester of LLB, Pharm.D and BS Computer Science was compared line by line with the source text |
 
 The following were run on the previous version of the site (before the restructure) and should be repeated before launch: layout sweep at 360, 768, 1024 and 1440 px; axe accessibility checks; interaction tests (menu, drawer, program search, FAQ accordion, contact validation); worst-case data on `/dev/stress`; Lighthouse. In particular, check the nine-item desktop menu at exactly 1280 px wide (it is sized to fit with room to spare and scrolls sideways rather than wrapping if a browser renders the labels wider) and the new admissions pop-up with a screen reader.
 

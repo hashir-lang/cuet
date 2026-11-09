@@ -23,8 +23,10 @@ const text = (html) => strip(html).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
 
 async function get(path) {
   const res = await fetch(BASE + path, { redirect: 'manual' });
-  return { status: res.status, body: res.headers.get('content-type')?.includes('text/html') ? await res.text() : '' };
+  const html = Boolean(res.headers.get('content-type')?.includes('text/html'));
+  return { status: res.status, html, body: html ? await res.text() : '' };
 }
+let documents = 0;
 
 // Seed with sitemap URLs too.
 try {
@@ -38,9 +40,14 @@ while (queue.length) {
   const path = queue.shift();
   if (seen.has(path)) continue;
   seen.add(path);
-  const { status, body } = await get(path);
+  const { status, html, body } = await get(path);
   if (status !== 200) {
     problems.push(`${path} → HTTP ${status}`);
+    continue;
+  }
+  // Linked documents (PDFs) only need to exist; the HTML checks below do not apply to them.
+  if (!html) {
+    documents++;
     continue;
   }
   pages.set(path, body);
@@ -78,7 +85,7 @@ for (const [path, html] of pages) {
 }
 for (const [t, paths] of titles) if (paths.length > 1) problems.push(`Duplicate title "${t}" on ${paths.join(', ')}`);
 
-console.log(`Checked ${pages.size} pages at ${BASE}`);
+console.log(`Checked ${pages.size} pages and ${documents} linked documents at ${BASE}`);
 if (problems.length) {
   console.log(`\n${problems.length} problem(s):`);
   for (const p of problems) console.log(` - ${p}`);

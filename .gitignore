@@ -5,3 +5,7 @@ out
 next-env.d.ts
 .env*.local
 test-results
+
+# Source documents supplied by the University (280 MB of HEC curriculum PDFs). The ones the
+# website uses are copied to public/documents/hec-curricula/.
+Revised Curriculum/

@@ -5,7 +5,7 @@ import { DraftBadge, Pending, TBC } from '@/components/ui/Editorial';
 import { sectionByKey } from '@/content/sections';
 import { requiredDocuments } from '@/content/admissions';
 import { faculties } from '@/content/faculties';
-import { programLevels, programsForFaculty } from '@/content/programs';
+import { programLevels, programs, programsForFaculty } from '@/content/programs';
 import { site } from '@/content/site';
 import { pageMeta } from '@/lib/seo';
 
@@ -19,6 +19,8 @@ export const metadata = pageMeta({
 
 export default function ProgramsEligibilityPage() {
   const levels = programLevels.filter((l) => l.level !== 'Graduate');
+  const withCriteria = programs.filter((p) => p.official.eligibility).length;
+  const fromHec = programs.some((p) => p.official.eligibility && p.official.basis);
   return (
     <SectionLayout section={section} current="/admissions/programs-eligibility" title="Programs and Eligibility Criteria" lede="Every program open to applicants, the entry criteria for each, and the documents to prepare.">
       <div className="space-y-14">
@@ -26,10 +28,15 @@ export default function ProgramsEligibilityPage() {
           <h2 id="eligibility" className="heading-lg">
             Eligibility by program
           </h2>
-          <p className="mt-3 text-stone-700">Each program has its own entry criteria. They will be confirmed by the University and published below and on each program page.</p>
-          <Pending title="Program eligibility criteria are awaiting confirmation" className="mt-5">
-            Minimum qualifications, required subjects and any entry test or interview requirements have not yet been supplied. Contact the Admissions Office for current information.
-          </Pending>
+          <p className="mt-3 text-stone-700">Each program has its own entry criteria. The full criteria, and the scheme of study each is based on, are on the program pages.</p>
+          {withCriteria < programs.length ? (
+            <Pending title={withCriteria ? 'Some eligibility criteria are awaiting confirmation' : 'Program eligibility criteria are awaiting confirmation'} className="mt-5">
+              {fromHec
+                ? 'Where criteria are shown, they are the minimum standards of the HEC curriculum the program follows; the University may set higher requirements, including an entry test. Programs marked "to be confirmed" have no published criteria yet.'
+                : 'Minimum qualifications, required subjects and any entry test or interview requirements have not yet been supplied.'}{' '}
+              Contact the Admissions Office for current information.
+            </Pending>
+          ) : null}
           {levels.map((l) => (
             <div key={l.level} className="mt-8 overflow-x-auto border border-stone-200">
               <table className="w-full min-w-[34rem] text-left">
