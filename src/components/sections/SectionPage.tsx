@@ -196,7 +196,7 @@ function Message({ role }: { role: keyof typeof university.messages }) {
     <div className="grid gap-8 sm:grid-cols-[12rem_1fr]">
       {m.photo ? (
         <div className="relative aspect-[4/5] overflow-hidden border border-stone-200 bg-stone-100">
-          <Image src={m.photo} alt={`${m.name}, ${m.title}`} fill sizes="12rem" className="object-cover" />
+          <Image src={m.photo} alt={`${m.name ?? m.title}`} fill sizes="12rem" className="object-cover" />
         </div>
       ) : (
         <div className="grid aspect-[4/5] place-items-center border border-stone-200 bg-stone-100">
@@ -205,7 +205,7 @@ function Message({ role }: { role: keyof typeof university.messages }) {
       )}
       <div>
         <p className="eyebrow text-sandstone-600">{m.title}</p>
-        <p className="heading-md mt-2">{m.name}</p>
+        <p className="heading-md mt-2">{m.name ?? <TBC label="Name to be announced" />}</p>
         <div className="prose-cul mt-6 text-stone-700">
           {m.text.map((p, i) => (
             <p key={i}>{p}</p>
@@ -226,7 +226,7 @@ function Gallery() {
         <figcaption className="mt-3 text-sm text-stone-600">The main building of {site.legalName}, Maulana Shaukat Ali Road, {site.city}. Photograph supplied by the University.</figcaption>
       </figure>
       <Pending title="More photographs will be added as the campus is completed" className="mt-8">
-        Until then, the other images on this website are illustrations or stock photographs and do not show the University.
+        Until then, the other images on this website are stock photographs and do not show the University.
       </Pending>
     </section>
   );

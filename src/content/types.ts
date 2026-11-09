@@ -10,7 +10,7 @@
  *   stored here. Do not add them.
  */
 
-/** Keys for the illustrated artwork plates (see components/media/plates.tsx). */
+/** Keys for the illustrated artwork plates (see components/media/illustrations/plates.ts), the fallback when a slot has no photograph. */
 export type PlateKey =
   | 'management'
   | 'computing'

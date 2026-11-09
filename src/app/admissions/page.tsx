@@ -3,7 +3,6 @@ import { ArrowRight, CalendarDays, ClipboardList, FileCheck2, Send } from 'lucid
 import { SectionLayout } from '@/components/sections/SectionLayout';
 import { FaqList } from '@/components/ui/Accordion';
 import { Pending } from '@/components/ui/Editorial';
-import { Media } from '@/components/media/Media';
 import { sectionByKey } from '@/content/sections';
 import { faculties } from '@/content/faculties';
 import { programLevels, programsForFaculty } from '@/content/programs';
@@ -39,7 +38,7 @@ export default function AdmissionsPage() {
       current="/admissions"
       title="Admissions Overview"
       lede="Everything you need to choose a program, check the requirements and submit your application."
-      aside={<Media media={{ src: null, alt: 'Illustration representing admissions', plate: 'admissions' }} className="aspect-[4/3] w-full" priority />}
+      width="wide"
       heroChildren={
         <div className="flex flex-col gap-3 sm:flex-row">
           <Link href="/admissions/how-to-apply" className="btn btn-primary">

@@ -37,7 +37,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing computing and emerging technologies', plate: 'computing' },
+    media: { src: '/images/stock/computing.jpg', alt: 'A laptop on a desk showing lines of code. Stock photograph.', plate: 'computing', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -57,7 +57,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing business and management studies', plate: 'management' },
+    media: { src: '/images/stock/management.jpg', alt: 'A person presenting in a meeting, with charts on a laptop and a notebook. Stock photograph.', plate: 'management', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -77,7 +77,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing literature and the humanities', plate: 'humanities' },
+    media: { src: '/images/stock/humanities.jpg', alt: 'An open book and a handwritten notebook with a pen, in front of a bookshelf. Stock photograph.', plate: 'humanities', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -97,7 +97,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing education and teaching', plate: 'education' },
+    media: { src: '/images/stock/education.jpg', alt: 'A teacher at the front of a classroom addressing adult students. Stock photograph.', plate: 'education', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -121,7 +121,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 10,
-    media: { src: null, alt: 'Illustration representing law and justice', plate: 'law' },
+    media: { src: '/images/stock/law.jpg', alt: 'A bronze statue of Lady Justice holding the scales. Stock photograph.', plate: 'law', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -145,7 +145,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing aviation and aeronautical sciences', plate: 'aviation' },
+    media: { src: '/images/stock/aviation.jpg', alt: 'An airliner wing seen through the cabin window above the clouds. Stock photograph.', plate: 'aviation', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -169,7 +169,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing statistics and the natural sciences', plate: 'sciences' },
+    media: { src: '/images/stock/sciences.jpg', alt: 'A laptop screen showing an analytics dashboard with charts. Stock photograph.', plate: 'sciences', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -193,7 +193,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing agricultural sciences and agribusiness', plate: 'agriculture' },
+    media: { src: '/images/stock/agriculture.jpg', alt: 'A farmer inspecting ripe wheat in a field. Stock photograph.', plate: 'agriculture', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -217,7 +217,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing allied health sciences', plate: 'allied-health' },
+    media: { src: '/images/stock/public-health.jpg', alt: 'A nurse giving an older man a vaccine injection. Stock photograph.', plate: 'allied-health', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -241,7 +241,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing engineering and technology', plate: 'engineering' },
+    media: { src: '/images/stock/information-security.jpg', alt: 'Server racks with network cables and status lights. Stock photograph.', plate: 'engineering', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -265,7 +265,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing nursing education', plate: 'nursing' },
+    media: { src: '/images/stock/nursing.jpg', alt: 'A nurse in scrubs pushing an incubator along a hospital corridor. Stock photograph.', plate: 'nursing', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -289,7 +289,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing pharmacy and pharmaceutical sciences', plate: 'pharmacy' },
+    media: { src: '/images/stock/pharmacy.jpg', alt: 'A pharmacist in a white coat checking medicines beside stock shelves. Stock photograph.', plate: 'pharmacy', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
   {
@@ -313,7 +313,7 @@ export const faculties: Faculty[] = [
     plannedFacultyPositions: 6,
     plannedStaffPositions: 2,
     crsAllocationUnpublished: 2,
-    media: { src: null, alt: 'Illustration representing veterinary and poultry science', plate: 'poultry' },
+    media: { src: '/images/stock/veterinary.jpg', alt: 'Brown hens in a farmyard beside a fence and coop. Stock photograph.', plate: 'poultry', caption: 'Stock photograph. It does not show the University.' },
     head: null,
   },
 ];

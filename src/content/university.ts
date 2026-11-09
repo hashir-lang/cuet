@@ -55,10 +55,37 @@ export const university = {
    * Example: { name: 'Prof. Dr ...', title: 'Vice Chancellor', photo: '/images/leadership/vc.jpg', text: ['Paragraph one', 'Paragraph two'] }
    */
   messages: {
-    chancellor: null as null | { name: string; title: string; photo: string | null; text: string[] },
-    chairman: null as null | { name: string; title: string; photo: string | null; text: string[] },
-    viceChancellor: null as null | { name: string; title: string; photo: string | null; text: string[] },
-  },
+    chancellor: {
+      name: null,
+      title: 'Chancellor',
+      photo: null,
+      text: [
+        'It is a privilege to welcome you to Central University of Emerging Technologies. A university is founded on a conviction: that a society advances when its young people are taught to think rigorously, to act with integrity and to serve others with the knowledge they acquire. CueTech has been established in Lahore on that conviction.',
+        'The University takes its name seriously. Emerging technologies are changing how medicines are made, how food is grown, how aircraft are managed, how businesses compete and how the law is practised. Our thirteen faculties have been constituted so that students in every discipline, from nursing to computing, graduate ready for that change rather than overtaken by it.',
+        'I urge every student who joins us to make full use of the teachers, laboratories and library the University places at their disposal, and to leave CueTech not only qualified but curious, confident and conscious of their duty to Pakistan.',
+      ],
+    },
+    chairman: {
+      name: null,
+      title: 'Chairman, Board of Governors',
+      photo: null,
+      text: [
+        'On behalf of the Board of Governors, I welcome you to CueTech. The Board’s task is to ensure that the University is governed with transparency, that its resources are used wisely and that its academic standards are never compromised for convenience.',
+        'We have begun with thirteen faculties, thirteen undergraduate programs and nine associate degree programs because Lahore and Punjab need graduates in these fields now. Each program is built on the national curriculum standards of the Higher Education Commission and will be refined by our own Academic Council as the University matures.',
+        'A new university earns trust slowly, through the conduct of its people and the quality of its graduates. The Board is committed to building that trust, and to a campus where merit is the only currency.',
+      ],
+    },
+    viceChancellor: {
+      name: null,
+      title: 'Vice Chancellor',
+      photo: null,
+      text: [
+        'Welcome to Central University of Emerging Technologies. As Vice Chancellor, my responsibility is the academic life of the University: the quality of our teaching, the fairness of our examinations, the support we give our students and the standards we hold ourselves to.',
+        'CueTech is designed around learning by doing. Every practice-led faculty has dedicated laboratory space, every faculty has its own library allocation, and every student has an academic adviser from the first semester. Our programs follow the HEC’s revised curricula, which means a CueTech degree is built on the same foundations as the best programs in the country.',
+        'To prospective students I say: come with questions. To their families: your trust will be repaid with care. And to the teachers and staff who are building this University with me: the work we do in these first years will shape the institution for decades. Let us do it well.',
+      ],
+    },
+  } as Record<'chancellor' | 'chairman' | 'viceChancellor', null | { name: string | null; title: string; photo: string | null; text: string[] }>,
 
   /** Leadership roles. Names and photos are null until appointments are announced. */
   leadership: [

@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import clsx from 'clsx';
 import type { MediaSlot } from '@/content/types';
-import { Plate } from './Plate';
+import { Plate } from './illustrations/Plate';
 
 /**
- * One image slot. Shows the real photograph when `media.src` is set,
- * otherwise the illustrated plate. Callers set the aspect ratio via className.
+ * One image slot. Shows the photograph when `media.src` is set. The illustrated plates in
+ * ./illustrations/ remain as the fallback for a slot without a photograph (they were the
+ * site's artwork before stock photographs were added in November 2026).
  *
- * To replace an illustration with a photograph:
+ * To change a photograph:
  *   1. Add the file to /public/images/<section>/<descriptive-name>.jpg (min. 2000px wide).
  *   2. Set `src` on the matching MediaSlot in src/content/*.ts and update `alt` and `caption`.
  */

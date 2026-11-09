@@ -25,7 +25,7 @@ export default function EventsPage() {
   const linked = eventCategories.filter((c) => c.slug === 'seminars-conferences' || c.slug === 'workshops-training');
 
   return (
-    <SectionLayout section={section} current="/events" title="Events Calendar" lede="Admissions sessions, academic lectures, workshops and occasions across the University.">
+    <SectionLayout section={section} current="/events" title="Events Calendar" lede="Admissions sessions, academic lectures, workshops and occasions across the University." width="wide">
       <div className="space-y-10">
         <nav aria-label="Event categories">
           <ul className="flex flex-wrap gap-2">

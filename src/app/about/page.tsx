@@ -3,7 +3,6 @@ import { ArrowRight } from 'lucide-react';
 import { SectionLayout } from '@/components/sections/SectionLayout';
 import { SectionIndex } from '@/components/sections/SectionIndex';
 import { DraftBadge } from '@/components/ui/Editorial';
-import { Media } from '@/components/media/Media';
 import { sectionByKey } from '@/content/sections';
 import { university } from '@/content/university';
 import { site } from '@/content/site';
@@ -38,7 +37,7 @@ export default function AboutPage() {
       title="Introduction to CueTech"
       eyebrow="About CueTech"
       lede={section.summary}
-      aside={<Media media={{ src: null, alt: 'Illustration of the University campus', plate: 'campus' }} className="aspect-[4/3] w-full" priority />}
+      width="wide"
     >
       <div className="space-y-14">
         <section aria-labelledby="overview-title">

@@ -24,10 +24,11 @@ export const site = {
     'Central University of Emerging Technologies-CueTech, Lahore: 13 faculties offering 13 undergraduate and 9 associate degree programs, from computer science, pharmacy and nursing to aviation management, law and agribusiness.',
 
   /**
-   * Show small "Draft copy" / "To be confirmed" markers on the site.
-   * Keep this `true` until every draft text has been approved by the University.
+   * Show the small "Draft copy" badge next to text written for editorial review.
+   * Switched off at the University's request (9 November 2026). Set to `true` to see which
+   * text is still unapproved; "To be confirmed" panels are unaffected by this setting.
    */
-  showEditorialMarkers: true,
+  showEditorialMarkers: false,
 
   /**
    * Official CueTech logo, cut from the supplied artwork into transparent PNGs in /public/brand/.

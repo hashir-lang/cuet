@@ -56,10 +56,57 @@ export default function CareersPage() {
         eyebrow="Careers at CueTech"
         title="Careers at CueTech"
         lede="Academic and administrative vacancies are announced here. Previous announcements remain listed for reference."
-        aside={<Media media={{ src: null, alt: 'Illustration representing careers at the University', plate: 'management' }} className="aspect-[4/3] w-full" priority />}
+        aside={<Media media={{ src: '/images/stock/careers.jpg', alt: 'A young woman shaking hands with an interviewer. Stock photograph.', plate: 'management', caption: 'Stock photograph. It does not show the University.' }} className="aspect-[4/3] w-full" priority />}
       />
 
-      <Section labelledBy="open-title">
+      <Section labelledBy="working-title">
+        <div className="container-cul">
+          <div className="max-w-[60rem]">
+            <h2 id="working-title" className="heading-xl">
+              Working at CueTech
+            </h2>
+            <div className="prose-cul mt-5 text-stone-700">
+              <p className="lede text-ink">
+                CueTech is building its first teaching and administrative teams. Its thirteen departments need faculty who know their subject, teach well and want to shape a new institution; its offices need professionals who can set up systems that will last.
+              </p>
+              <p>
+                The University’s infrastructure plan provides for six faculty positions and two staff positions in each faculty in the first phase, alongside the University’s central offices. Positions are advertised in the national press and on this page, and filled through the Selection Board on merit.
+              </p>
+            </div>
+          </div>
+          <ul className="mt-8 grid gap-px border border-stone-200 bg-stone-200 sm:grid-cols-2 xl:grid-cols-4">
+            {[
+              { title: 'Academic positions', text: 'Professors, Associate and Assistant Professors and Lecturers in each department, appointed against HEC qualification criteria.' },
+              { title: 'Laboratory and clinical staff', text: 'Laboratory engineers, technologists, clinical instructors and technicians for the practice-led faculties.' },
+              { title: 'Administration and services', text: 'Registrar’s office, examinations, finance, admissions, student affairs, IT, library and campus services.' },
+              { title: 'What the University offers', text: 'Competitive pay, support for research and professional development, and the chance to build a department from its first cohort.' },
+            ].map((c) => (
+              <li key={c.title} className="bg-paper p-5 sm:p-6">
+                <h3 className="heading-md">{c.title}</h3>
+                <p className="mt-2 text-[0.95rem] text-stone-700">{c.text}</p>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-8 border border-stone-200 bg-ivory p-6">
+            <h3 className="heading-md">How recruitment works</h3>
+            <ol className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                'Positions are advertised with the qualifications, experience and documents required and a closing date.',
+                'Applications are screened against the advertised criteria; shortlisted candidates are invited for a test, demonstration lecture or interview.',
+                'The Selection Board recommends appointments to the Board of Governors on merit.',
+                'Offers are made in writing. The University never charges a fee at any stage of recruitment.',
+              ].map((s, i) => (
+                <li key={s} className="flex gap-3 text-[0.95rem] text-stone-700">
+                  <span className="numerals font-serif text-xl text-sandstone-600">0{i + 1}</span>
+                  <span>{s}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </Section>
+
+      <Section labelledBy="open-title" tone="ivory">
         <div className="container-cul grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <h2 id="open-title" className="heading-xl">

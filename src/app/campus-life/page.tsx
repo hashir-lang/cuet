@@ -2,7 +2,6 @@ import { BookOpen, Compass, HeartHandshake, Landmark, LifeBuoy, Users } from 'lu
 import { SectionLayout } from '@/components/sections/SectionLayout';
 import { SectionIndex } from '@/components/sections/SectionIndex';
 import { DraftBadge } from '@/components/ui/Editorial';
-import { Media } from '@/components/media/Media';
 import { sectionByKey } from '@/content/sections';
 import { site } from '@/content/site';
 import { pageMeta } from '@/lib/seo';
@@ -31,7 +30,7 @@ export default function CampusLifePage() {
       current="/campus-life"
       title={section.title}
       lede="University is more than lectures. It is where curiosity grows, friendships form and confidence is built."
-      aside={<Media media={{ src: null, alt: 'Illustration representing student life', plate: 'student-life' }} className="aspect-[4/3] w-full" priority />}
+      width="wide"
       cta={{ title: 'See where you will study.', primary: { label: 'Campus and Facilities', href: '/campus' }, secondary: { label: 'Visit Our Campus', href: '/contact/visit' } }}
     >
       <div className="space-y-14">

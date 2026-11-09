@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { SectionLayout } from '@/components/sections/SectionLayout';
 import { SectionIndex } from '@/components/sections/SectionIndex';
-import { Media } from '@/components/media/Media';
 import { sectionByKey } from '@/content/sections';
 import { faculties } from '@/content/faculties';
 import { programsForFaculty } from '@/content/programs';
@@ -26,7 +25,7 @@ export default function AcademicsPage() {
       current="/academics"
       title="Academics"
       lede={section.summary}
-      aside={<Media media={{ src: null, alt: 'Illustration of the academic library', plate: 'library' }} className="aspect-[4/3] w-full" priority />}
+      width="wide"
       cta={{ title: 'Find the program that fits your ambition.', primary: { label: 'Degree Programs', href: '/programs' }, secondary: { label: 'How to Apply', href: '/admissions/how-to-apply' } }}
     >
       <div className="space-y-14">

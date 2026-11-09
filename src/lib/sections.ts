@@ -20,10 +20,6 @@ export const genericPage = (key: SectionKey, slug: string) => {
 export const menuLinks = (section: Section): SectionLink[] =>
   section.menuLinks ?? section.pages.map((p) => ({ label: p.navLabel ?? p.title, href: pageHref(section, p), description: p.summary }));
 
-/** Links for the side navigation on the section's pages. */
-export const sideNavLinks = (section: Section): SectionLink[] =>
-  section.sideNav ?? section.pages.map((p) => ({ label: p.navLabel ?? p.title, href: pageHref(section, p) }));
-
 /** The section's hub: its own page, or the parent it belongs to when it has none (e.g. media pages under News & Events). */
 export const sectionHub = (section: Section) => section.hub ?? { label: section.label, href: section.path };
 

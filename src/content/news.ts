@@ -34,7 +34,7 @@ export const news: Article[] = [
       'This is a template entry. It shows how an admissions announcement will appear on the website.',
       'When the University publishes its admissions schedule, replace this text with the official announcement, including the intake, the programs open for application and the key dates.',
     ],
-    media: { src: null, alt: 'Illustration for admissions news', plate: 'admissions' },
+    media: { src: '/images/stock/admissions.jpg', alt: 'Rows of graduates in blue caps and gowns. Stock photograph.', plate: 'admissions', caption: 'Stock photograph. It does not show the University.' },
     isTemplate: true,
   },
   {
@@ -47,7 +47,7 @@ export const news: Article[] = [
       'This is a template entry. It shows how faculty news will appear on the website.',
       'Replace it with verified news supplied by a faculty office, together with a photograph and caption.',
     ],
-    media: { src: null, alt: 'Illustration for faculty news', plate: 'news' },
+    media: { src: '/images/stock/lecture.jpg', alt: 'Students in a tiered lecture hall listening and taking notes. Stock photograph.', plate: 'news', caption: 'Stock photograph. It does not show the University.' },
     isTemplate: true,
   },
   {
@@ -60,7 +60,7 @@ export const news: Article[] = [
       'This is a template entry. It shows how a press release will appear on the website.',
       'Use it to report progress on facilities such as laboratories and the library once the University is ready to announce it.',
     ],
-    media: { src: null, alt: 'Illustration for campus news', plate: 'campus' },
+    media: { src: '/images/hero/main-building.jpg', alt: 'The main building of the University, with its name and emblem above the entrance.', plate: 'campus', caption: 'Main building, Maulana Shaukat Ali Road, Lahore. Photograph supplied by the University.' },
     isTemplate: true,
   },
   {
@@ -73,7 +73,7 @@ export const news: Article[] = [
       'This is a template entry. It shows how a notice or circular will appear on the website.',
       'Replace it with the text of the notice, the issuing office and the date of issue.',
     ],
-    media: { src: null, alt: 'Illustration for a University notice', plate: 'library' },
+    media: { src: '/images/hero/library.jpg', alt: 'Tall library shelves lit by warm hanging lamps. Stock photograph.', plate: 'library', caption: 'Stock photograph. It does not show the University.' },
     isTemplate: true,
   },
 ];

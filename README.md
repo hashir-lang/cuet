@@ -69,10 +69,10 @@ src/
     admissions/        Admissions pop-up
     brand/             Wordmark and emblem built from the official CueTech logo
     cards/             Program, faculty, news and event cards
-    layout/            Header (two-tier on desktop), desktop menu, mobile drawer,
-                       section side navigation, footer, back-to-top
-    media/             Image slots and illustrated artwork plates
-    sections/          Section layout, hub index and the generic sub-page template
+    layout/            Header (two-tier on desktop), desktop menu, mobile drawer, footer, back-to-top
+    media/             Image slots; illustrations/ holds the artwork plates kept as the fallback
+    sections/          Section layout (full-width pages with a "More in" band), hub index and the
+                       generic sub-page template
     ui/                Sections, page headers, breadcrumbs, FAQ lists, placeholders
   content/             ALL website content:
     sections.ts        The sitemap: sections, sub-pages, menu links and draft page text
@@ -90,7 +90,8 @@ src/
 public/
   brand/               Official CueTech logo cut-outs (emblem and full lockup, navy and light)
   fonts/               Self-hosted fonts (SIL Open Font License)
-  images/              Photographs (hero/main-building.jpg is the University's own photo)
+  images/              Photographs: hero/main-building.jpg is the University's own photo; stock/ holds
+                       the Unsplash stock photographs (credits in docs/stock-photo-credits.json)
   documents/           HEC curriculum PDFs linked from the program pages
   og-image.png         Social sharing image
 docs/

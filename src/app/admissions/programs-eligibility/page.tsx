@@ -22,7 +22,7 @@ export default function ProgramsEligibilityPage() {
   const withCriteria = programs.filter((p) => p.official.eligibility).length;
   const fromHec = programs.some((p) => p.official.eligibility && p.official.basis);
   return (
-    <SectionLayout section={section} current="/admissions/programs-eligibility" title="Programs and Eligibility Criteria" lede="Every program open to applicants, the entry criteria for each, and the documents to prepare.">
+    <SectionLayout section={section} current="/admissions/programs-eligibility" title="Programs and Eligibility Criteria" lede="Every program open to applicants, the entry criteria for each, and the documents to prepare." width="wide">
       <div className="space-y-14">
         <section aria-labelledby="eligibility">
           <h2 id="eligibility" className="heading-lg">

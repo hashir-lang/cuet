@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { SectionLayout } from '@/components/sections/SectionLayout';
 import { Pending } from '@/components/ui/Editorial';
-import { Media } from '@/components/media/Media';
 import { sectionByKey } from '@/content/sections';
 import { departments } from '@/content/faculties';
 import { facultyMembers, membersOfDepartment } from '@/content/teaching-faculty';
@@ -25,7 +24,7 @@ export default function TeachingFacultyPage() {
       current="/teaching-faculty"
       title={section.title}
       lede={section.summary}
-      aside={<Media media={{ src: null, alt: 'Illustration representing teaching', plate: 'education' }} className="aspect-[4/3] w-full" priority />}
+      width="wide"
       cta={{ title: 'Join the teaching faculty.', text: 'Academic appointments are announced on the Careers page.', primary: { label: 'Careers at CueTech', href: '/careers' }, secondary: { label: 'Faculties and Departments', href: '/faculties' } }}
     >
       <div className="space-y-10">
@@ -38,7 +37,7 @@ export default function TeachingFacultyPage() {
           <h2 id="departments-title" className="heading-lg">
             Departments
           </h2>
-          <ol className="mt-5 grid gap-px border border-stone-200 bg-stone-200 sm:grid-cols-2">
+          <ol className="mt-5 grid gap-px border border-stone-200 bg-stone-200 sm:grid-cols-2 xl:grid-cols-3">
             {departments.map((d, i) => {
               const n = membersOfDepartment(d.slug).length;
               return (

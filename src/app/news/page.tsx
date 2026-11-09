@@ -20,7 +20,7 @@ export default function NewsPage() {
   const onlyTemplates = news.every((n) => n.isTemplate);
 
   return (
-    <SectionLayout section={section} current="/news" title="University News" lede="Official news from the University, its faculties and its campus." cta={{ title: 'Stay informed.', text: 'Admissions announcements, events and notices are published here first.', primary: { label: 'Events Calendar', href: '/events' }, secondary: { label: 'Official Announcements', href: '/news/category/announcements' } }}>
+    <SectionLayout section={section} current="/news" title="University News" lede="Official news from the University, its faculties and its campus." width="wide" cta={{ title: 'Stay informed.', text: 'Admissions announcements, events and notices are published here first.', primary: { label: 'Events Calendar', href: '/events' }, secondary: { label: 'Official Announcements', href: '/news/category/announcements' } }}>
       <div className="space-y-10">
         <nav aria-label="News categories">
           <ul className="flex flex-wrap gap-2">
@@ -37,7 +37,7 @@ export default function NewsPage() {
           <Pending title="No news has been published yet">The entries below are templates that show how news will appear. They will be replaced by official University announcements.</Pending>
         ) : null}
         {sorted.length ? (
-          <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2">
+          <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {sorted.map((a) => (
               <li key={a.slug}>
                 <ArticleCard article={a} headingLevel="h2" />

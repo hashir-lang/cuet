@@ -39,7 +39,7 @@ export default async function EventCategoryPage({ params }: Props) {
   const onlyTemplates = items.length > 0 && items.every((e) => e.isTemplate);
 
   return (
-    <SectionLayout section={section} current={`/events/category/${c.slug}`} title={c.label} lede={c.description}>
+    <SectionLayout section={section} current={`/events/category/${c.slug}`} title={c.label} lede={c.description} width="wide">
       <div className="space-y-10">
         {items.length === 0 ? (
           <Pending title={`No ${c.label.toLowerCase()} have been announced yet`}>Events will appear here as they are confirmed.</Pending>

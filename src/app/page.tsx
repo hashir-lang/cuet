@@ -240,10 +240,10 @@ export default function HomePage() {
           />
           <div className="grid auto-rows-[11rem] grid-cols-2 gap-3 sm:auto-rows-[14rem] sm:gap-4 lg:grid-cols-4">
             <Media media={{ src: '/images/hero/main-building.jpg', alt: 'The main building of the University, with its name and emblem above the entrance.', plate: 'campus', caption: 'Main building, Maulana Shaukat Ali Road, Lahore. Photograph supplied by the University.' }} className="col-span-2 row-span-2" sizes="50vw" />
-            <Media media={{ src: null, alt: 'Illustration of the library', plate: 'library' }} className="col-span-1" sizes="25vw" showLabel={false} />
-            <Media media={{ src: null, alt: 'Illustration of a pharmacy laboratory', plate: 'pharmacy' }} className="col-span-1" sizes="25vw" showLabel={false} />
-            <Media media={{ src: null, alt: 'Illustration of an aviation learning space', plate: 'aviation' }} className="col-span-1" sizes="25vw" showLabel={false} />
-            <Media media={{ src: null, alt: 'Illustration of an engineering workshop', plate: 'engineering' }} className="col-span-1" sizes="25vw" showLabel={false} />
+            <Media media={{ src: '/images/hero/library.jpg', alt: 'Tall library shelves lit by warm hanging lamps. Stock photograph.', plate: 'library', caption: 'Stock photograph.' }} className="col-span-1" sizes="25vw" showLabel={false} />
+            <Media media={{ src: '/images/stock/pharmacy.jpg', alt: 'A pharmacist in a white coat checking medicines beside stock shelves. Stock photograph.', plate: 'pharmacy', caption: 'Stock photograph.' }} className="col-span-1" sizes="25vw" showLabel={false} />
+            <Media media={{ src: '/images/stock/aviation.jpg', alt: 'An airliner wing seen through the cabin window above the clouds. Stock photograph.', plate: 'aviation', caption: 'Stock photograph.' }} className="col-span-1" sizes="25vw" showLabel={false} />
+            <Media media={{ src: '/images/hero/engineering.jpg', alt: 'An engineer working at a laptop inside a machine workshop. Stock photograph.', plate: 'engineering', caption: 'Stock photograph.' }} className="col-span-1" sizes="25vw" showLabel={false} />
           </div>
         </div>
       </Section>
@@ -251,7 +251,7 @@ export default function HomePage() {
       {/* 9. Student experience */}
       <Section tone="ivory" labelledBy="student-title">
         <div className="container-cul grid items-center gap-12 lg:grid-cols-12">
-          <Media media={{ src: null, alt: 'Illustration representing student life', plate: 'student-life' }} className="aspect-[4/3] lg:col-span-6" />
+          <Media media={{ src: '/images/stock/campus-life.jpg', alt: 'Students walking along a path past a brick campus building. Stock photograph.', plate: 'student-life', caption: 'Stock photograph.' }} className="aspect-[4/3] lg:col-span-6" />
           <div className="lg:col-span-5 lg:col-start-8">
             <SectionHeading id="student-title" eyebrow="Campus Life" title="More than a degree." className="!mb-6" />
             <p className="lede text-stone-700">University is where friendships form, interests deepen and confidence grows. Life at CueTech is built around academic support, community and a campus designed for study.</p>

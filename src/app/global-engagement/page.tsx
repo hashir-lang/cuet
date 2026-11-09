@@ -1,7 +1,6 @@
 import { SectionLayout } from '@/components/sections/SectionLayout';
 import { SectionIndex } from '@/components/sections/SectionIndex';
 import { DraftBadge, Pending } from '@/components/ui/Editorial';
-import { Media } from '@/components/media/Media';
 import { sectionByKey } from '@/content/sections';
 import { partners } from '@/content/global';
 import { site } from '@/content/site';
@@ -22,7 +21,7 @@ export default function GlobalEngagementPage() {
       current="/global-engagement"
       title={section.title}
       lede={section.summary}
-      aside={<Media media={{ src: null, alt: 'Illustration representing international engagement', plate: 'aviation' }} className="aspect-[4/3] w-full" priority />}
+      width="wide"
       cta={{ title: 'Studying at CueTech from abroad?', primary: { label: 'International Student Admissions', href: '/global-engagement/international-admissions' }, secondary: { label: 'Contact Us', href: '/contact' } }}
     >
       <div className="space-y-14">

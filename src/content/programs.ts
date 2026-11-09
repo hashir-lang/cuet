@@ -1,5 +1,16 @@
 import type { Draft, MediaSlot, Program, ProgramLevel, ProposedProgram } from './types';
 import { schemes } from './schemes';
+import { facultyBySlug } from './faculties';
+
+/**
+ * Photographs for program pages. A program shows its faculty's photograph unless it has its
+ * own entry here. All are stock photographs (see docs/stock-photo-credits.json).
+ */
+const programPhotos: Record<string, Pick<MediaSlot, 'src' | 'alt' | 'caption'>> = {
+  'ad-data-science': { src: '/images/stock/sciences.jpg', alt: 'A laptop screen showing an analytics dashboard with charts. Stock photograph.', caption: 'Stock photograph. It does not show the University.' },
+  'ad-business-analytics': { src: '/images/stock/sciences.jpg', alt: 'A laptop screen showing an analytics dashboard with charts. Stock photograph.', caption: 'Stock photograph. It does not show the University.' },
+  'bs-computer-science': { src: '/images/stock/study-group.jpg', alt: 'Students working at long library tables, seen from above. Stock photograph.', caption: 'Stock photograph. It does not show the University.' },
+};
 
 /**
  * Degree programs, as listed in the University's website brief (Annex-A):
@@ -44,17 +55,20 @@ type ProgramInput = Omit<Program, 'official' | 'overview' | 'introduction' | 'ob
 
 const make =
   (level: ProgramLevel) =>
-  (p: ProgramInput): Program => ({
-    ...p,
-    level,
-    overview: draft(p.overview),
-    introduction: draft(p.introduction),
-    objectives: draft(p.objectives),
-    learningOutcomes: draft(p.learningOutcomes),
-    careerAreas: draft(p.careerAreas),
-    official: schemes[p.slug] ?? unconfirmed,
-    media: { src: null, ...p.media },
-  });
+  (p: ProgramInput): Program => {
+    const photo = programPhotos[p.slug] ?? facultyBySlug(p.facultySlug)?.media;
+    return {
+      ...p,
+      level,
+      overview: draft(p.overview),
+      introduction: draft(p.introduction),
+      objectives: draft(p.objectives),
+      learningOutcomes: draft(p.learningOutcomes),
+      careerAreas: draft(p.careerAreas),
+      official: schemes[p.slug] ?? unconfirmed,
+      media: photo?.src ? { ...p.media, src: photo.src, alt: photo.alt, caption: photo.caption } : { src: null, ...p.media },
+    };
+  };
 
 const undergraduate = make('Undergraduate');
 const associate = make('Associate Degree');

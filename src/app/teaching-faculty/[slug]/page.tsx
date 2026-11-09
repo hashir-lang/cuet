@@ -6,7 +6,7 @@ import { ArrowRight, Mail, UserRound } from 'lucide-react';
 import { SectionLayout } from '@/components/sections/SectionLayout';
 import { Pending } from '@/components/ui/Editorial';
 import { sectionByKey } from '@/content/sections';
-import { departmentBySlug, departments } from '@/content/faculties';
+import { departmentBySlug, departments, facultyBySlug } from '@/content/faculties';
 import { programsForFaculty } from '@/content/programs';
 import { membersOfDepartment } from '@/content/teaching-faculty';
 import { site } from '@/content/site';
@@ -37,11 +37,33 @@ export default async function DepartmentFacultyPage({ params }: Props) {
   if (!d) notFound();
   const members = membersOfDepartment(d.slug);
   const programs = programsForFaculty(d.facultySlug);
+  const faculty = facultyBySlug(d.facultySlug)!;
 
   return (
-    <SectionLayout section={section} current={`/teaching-faculty/${d.slug}`} title={d.name} eyebrow={d.facultyName} lede={`Teaching faculty of the ${d.name}.`}>
+    <SectionLayout section={section} current={`/teaching-faculty/${d.slug}`} title={d.name} eyebrow={d.facultyName} lede={faculty.tagline} width="wide">
       <div className="space-y-12">
-        <section aria-labelledby="members-title">
+        <section aria-labelledby="about-dept-title">
+          <h2 id="about-dept-title" className="heading-lg">
+            About the department
+          </h2>
+          <div className="prose-cul mt-5 text-stone-700">
+            {faculty.introduction.value.map((p, i) => (
+              <p key={i} className={i === 0 ? 'lede text-ink' : undefined}>
+                {p}
+              </p>
+            ))}
+          </div>
+          <h3 className="eyebrow mt-8 text-sandstone-600">Areas of teaching</h3>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {faculty.focusAreas.value.map((a) => (
+              <li key={a} className="border border-stone-200 bg-ivory px-3.5 py-2 text-[0.95rem]">
+                {a}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section aria-labelledby="members-title" className="border-t border-stone-200 pt-8">
           <h2 id="members-title" className="heading-lg">
             Faculty members
           </h2>

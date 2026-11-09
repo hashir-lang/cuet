@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import clsx from 'clsx';
 import type { Faculty, Program } from '@/content/types';
-import { Plate } from '@/components/media/Plate';
+import { Media } from '@/components/media/Media';
 import { pad2 } from '@/lib/format';
 
 type Row = { faculty: Faculty; programs: Program[] };
@@ -52,7 +52,7 @@ export function FacultyIndex({ rows }: { rows: Row[] }) {
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             {rows.map(({ faculty }, i) => (
               <div key={faculty.slug} className="preview-layer absolute inset-0" data-active={i === active}>
-                <Plate plate={faculty.media.plate} archScale={0.62} />
+                <Media media={faculty.media} className="h-full w-full" sizes="40vw" showLabel={false} archScale={0.62} />
               </div>
             ))}
           </div>

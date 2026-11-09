@@ -18,11 +18,18 @@ export const metadata = pageMeta({
 });
 
 const environments = [
-  { plate: 'library' as const, title: 'Academic library', text: 'Every faculty has a dedicated allocation of books to support coursework and independent study.' },
-  { plate: 'pharmacy' as const, title: 'Science laboratories', text: 'Laboratory space for pharmaceutical, health and natural sciences, where students learn by practice.' },
-  { plate: 'computing' as const, title: 'Computing laboratory', text: 'A dedicated laboratory for programming, software development, data science and statistical computing.' },
-  { plate: 'law' as const, title: 'Legal skills facility', text: 'A space for advocacy and moot court exercises in the Faculty of Law and Shariah.' },
+  { src: '/images/hero/library.jpg', alt: 'Tall library shelves lit by warm hanging lamps. Stock photograph.', plate: 'library' as const, title: 'Academic library', text: 'Every faculty has a dedicated allocation of books to support coursework and independent study.' },
+  { src: '/images/stock/pharmacy.jpg', alt: 'A pharmacist in a white coat checking medicines beside stock shelves. Stock photograph.', plate: 'pharmacy' as const, title: 'Science laboratories', text: 'Laboratory space for pharmaceutical, health and natural sciences, where students learn by practice.' },
+  { src: '/images/stock/computing.jpg', alt: 'A laptop on a desk showing lines of code. Stock photograph.', plate: 'computing' as const, title: 'Computing laboratory', text: 'A dedicated laboratory for programming, software development, data science and statistical computing.' },
+  { src: '/images/stock/law.jpg', alt: 'A bronze statue of Lady Justice holding the scales. Stock photograph.', plate: 'law' as const, title: 'Legal skills facility', text: 'A space for advocacy and moot court exercises in the Faculty of Law and Shariah.' },
 ];
+
+const mainBuilding = {
+  src: '/images/hero/main-building.jpg',
+  alt: 'The main building of the University, with its name and emblem above the entrance.',
+  plate: 'campus' as const,
+  caption: 'Main building, Maulana Shaukat Ali Road, Lahore. Photograph supplied by the University.',
+};
 
 export default function CampusPage() {
   return (
@@ -35,7 +42,7 @@ export default function CampusPage() {
         eyebrow="About CueTech"
         title="Campus and Facilities"
         lede="The campus on Maulana Shaukat Ali Road, Lahore. The University’s infrastructure plan gives every faculty a library collection and every practice-led discipline dedicated laboratory space."
-        aside={<Media media={{ src: null, alt: 'Illustration of the University campus', plate: 'campus' }} className="aspect-[4/3] w-full" priority />}
+        aside={<Media media={mainBuilding} className="aspect-[4/3] w-full" priority />}
       />
 
       <Section labelledBy="numbers-title">
@@ -130,7 +137,7 @@ export default function CampusPage() {
 
       <Section tone="ivory" labelledBy="library-title">
         <div className="container-cul grid items-center gap-12 lg:grid-cols-12">
-          <Media media={{ src: null, alt: 'Illustration of the academic library', plate: 'library' }} className="aspect-[4/3] lg:col-span-6" />
+          <Media media={{ src: '/images/hero/library.jpg', alt: 'Tall library shelves lit by warm hanging lamps. Stock photograph.', plate: 'library', caption: 'Stock photograph.' }} className="aspect-[4/3] lg:col-span-6" />
           <div className="lg:col-span-5 lg:col-start-8">
             <SectionHeading id="library-title" eyebrow="Library resources" title="A collection for every discipline." className="!mb-6" />
             <p className="lede text-stone-700">
@@ -151,7 +158,7 @@ export default function CampusPage() {
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {environments.map((e) => (
               <li key={e.title}>
-                <Media media={{ src: null, alt: `Illustration: ${e.title.toLowerCase()}`, plate: e.plate }} className="aspect-[4/5]" showLabel={false} sizes="(min-width: 1024px) 25vw, 50vw" />
+                <Media media={{ src: e.src, alt: e.alt, plate: e.plate, caption: 'Stock photograph.' }} className="aspect-[4/5]" showLabel={false} sizes="(min-width: 1024px) 25vw, 50vw" />
                 <h3 className="heading-md mt-5">{e.title}</h3>
                 <p className="mt-2 text-stone-700">{e.text}</p>
               </li>
@@ -162,12 +169,16 @@ export default function CampusPage() {
 
       <Section tone="stone" labelledBy="gallery-title">
         <div className="container-cul">
-          <SectionHeading id="gallery-title" eyebrow="Campus gallery" title="Gallery." intro="Illustrations shown here will be replaced by photographs of the campus as facilities are completed." align="split" />
+          <SectionHeading id="gallery-title" eyebrow="Campus gallery" title="Gallery." intro="The main building is the University’s own photograph. The other images are stock photographs of each discipline and will be replaced by photographs of the campus as facilities are completed." align="split" />
           <ul className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
-            {faculties.slice(0, 9).map((f) => (
+            <li>
+              <Media media={mainBuilding} className="aspect-[4/3]" showLabel={false} sizes="(min-width: 1024px) 33vw, 50vw" />
+              <p className="mt-2 text-sm text-stone-600">Main building (photograph supplied by the University)</p>
+            </li>
+            {faculties.slice(0, 8).map((f) => (
               <li key={f.slug}>
                 <Media media={f.media} className="aspect-[4/3]" showLabel={false} sizes="(min-width: 1024px) 33vw, 50vw" />
-                <p className="mt-2 text-sm text-stone-600">{f.shortName} (illustration)</p>
+                <p className="mt-2 text-sm text-stone-600">{f.shortName} (stock photograph)</p>
               </li>
             ))}
           </ul>

@@ -8,14 +8,14 @@ After any change, run `npm run typecheck`. It catches typos such as a missing co
 
 1. **Never publish a fact the University has not verified.** Leave the field as `null`; the site will show a "To be confirmed" panel.
 2. **Never add internal financial figures** (costs, budgets, rates) from the infrastructure report.
-3. **Draft text is marked.** Fields wrapped in `draft(...)`, and the page text in `sections.ts`, show a small "Draft copy" badge. When the University has approved all draft text, set `showEditorialMarkers: false` in `src/content/site.ts` to hide the badges.
+3. **Draft text is still draft.** Fields wrapped in `draft(...)`, and the page text in `sections.ts`, were written for editorial review and await the University's approval. The "Draft copy" badges that marked them on the site are switched off (`showEditorialMarkers: false` in `src/content/site.ts`, at the University's request on 9 November 2026); set it back to `true` to see at a glance which text is still unapproved.
 4. **Images are illustrations until replaced.** Never caption a stock or AI-generated image as if it shows the University.
 
 ## The sitemap: sections, sub-pages and menus
 
 File: `src/content/sections.ts`
 
-This one file is the website's structure (Annex-A of the brief). Each section (About CueTech, Campus Life, Admissions, Academics, Teaching Faculty, Global Engagement, News & Events, Careers, Contact) lists its sub-pages. From it the site builds the main menu, the mobile drawer, the side navigation on every section page, the hub pages, the generic sub-pages and the XML sitemap.
+This one file is the website's structure (Annex-A of the brief). Each section (About CueTech, Campus Life, Admissions, Academics, Teaching Faculty, Global Engagement, News & Events, Careers, Contact) lists its sub-pages. From it the site builds the main menu, the mobile drawer, the hub pages, the generic sub-pages, the "More in …" links under every page and the XML sitemap. Every sub-page is a full page of its own (there is no side navigation); each section's `image` is the photograph shown in the header of all its pages.
 
 A sub-page looks like this:
 
@@ -32,7 +32,7 @@ A sub-page looks like this:
 }
 ```
 
-- **To fill a placeholder page**: add `body` paragraphs (and `parts` if the page has sub-headings) and delete `pending`. The "being prepared" panel disappears automatically.
+- **Every page now has draft text** (written 9 November 2026). Replace it with approved text in place. A `pending` note remains only where a fact is missing (a date, a name, a fee, a document); delete it when the fact is added.
 - **To add a page**: add an entry to the section's `pages`. It appears in the menu, the side navigation, the hub and the sitemap. Nothing else needs editing.
 - **To rename or reorder**: edit `title` or move the entry. Menu labels follow.
 - A page with `href` lives at a bespoke route (for example `how-to-apply`); edit that page's file under `src/app/` instead.
@@ -124,7 +124,7 @@ Each field becomes its own section on the program page as soon as it is filled. 
 
 File: `src/content/university.ts`
 
-Vision, mission, core values, goals and philosophy are drafts. Replace them with approved text. Fill `messages.chancellor`, `messages.chairman` and `messages.viceChancellor` with `{ name, title, photo, text: [...] }` to publish the three messages. Add leadership names (and photo paths), the history and sponsors as lists of paragraphs, the charter summary and documents, and `href` for each policy document as it is approved. The composition of each statutory body can be added as `text` in `sections.ts` under `governance`.
+Vision, mission, core values, goals and philosophy are drafts. Replace them with approved text. The three messages (`messages.chancellor`, `messages.chairman`, `messages.viceChancellor`) are drafted with `name: null`; put in each office holder's name, photo path and approved text. Add leadership names (and photo paths), the history and sponsors as lists of paragraphs (they replace the draft text in `sections.ts`), the charter documents, and `href` for each policy document as it is approved. The composition of each statutory body can be added as `text` in `sections.ts` under `governance`.
 
 ## News and events
 
@@ -141,13 +141,17 @@ Real entries are added to the sitemap automatically. Events with a date also get
 
 ## Photographs
 
-Every image slot (`media: { src: null, alt, plate }`) shows an illustrated plate while `src` is `null`.
+Every image slot is a `media: { src, alt, plate, caption }` object. The site currently uses **stock photographs** from Unsplash (free licence, no attribution required) in `public/images/stock/`; the list of files, their sources and what each shows is in `docs/stock-photo-credits.json`. None of them shows CueTech, which is why each `alt` and `caption` says "stock photograph". The only real photograph is the University's own main building (`public/images/hero/main-building.jpg`).
+
+To replace a stock photograph with a real one:
 
 1. Save the photo in `public/images/<section>/<descriptive-name>.jpg`, at least 2000 px wide, e.g. `public/images/faculties/pharmacy-laboratory.jpg`.
-2. Set `src: '/images/faculties/pharmacy-laboratory.jpg'`.
-3. Update `alt` to describe what the photo shows, and add a `caption` (who/where).
+2. Set `src: '/images/faculties/pharmacy-laboratory.jpg'` on the slot (faculties and programs in their content files; section headers in `sections.ts` under `image`; home and campus pages in their page files).
+3. Rewrite `alt` to describe what the photo really shows, and the `caption` (who/where, "Photograph supplied by the University").
 
-Until the campus is complete the University may use AI-generated images of the campus and students. Treat them like stock photographs: say so in the `alt` text and caption, and replace them with real photographs as the campus is completed.
+The illustrated plates that preceded the photographs are kept in `src/components/media/illustrations/`. They still appear automatically for any slot whose `src` is `null`, so nothing breaks if a photograph is removed.
+
+Until the campus is complete the University may also use AI-generated images of the campus and students. Treat them like stock photographs: say so in the `alt` text and caption, and replace them with real photographs as the campus is completed.
 
 Next.js resizes and converts photos to modern formats automatically, and lazy-loads them below the fold.
 

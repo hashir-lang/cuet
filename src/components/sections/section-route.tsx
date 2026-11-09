@@ -31,7 +31,7 @@ export function createSectionRoute(key: SectionKey) {
       const { page } = genericPage(key, slug);
       if (!page) notFound();
       return (
-        <SectionLayout section={section} current={pageHref(section, page)} title={page.title} lede={page.summary}>
+        <SectionLayout section={section} current={pageHref(section, page)} title={page.title} lede={page.summary} width="prose">
           <SectionPageBody section={section} page={page} />
         </SectionLayout>
       );

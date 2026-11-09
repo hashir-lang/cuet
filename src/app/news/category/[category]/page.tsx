@@ -36,7 +36,7 @@ export default async function NewsCategoryPage({ params }: Props) {
   const onlyTemplates = items.length > 0 && items.every((n) => n.isTemplate);
 
   return (
-    <SectionLayout section={section} current={`/news/category/${c.slug}`} title={c.label} lede={c.description}>
+    <SectionLayout section={section} current={`/news/category/${c.slug}`} title={c.label} lede={c.description} width="wide">
       <div className="space-y-10">
         {items.length === 0 ? (
           <Pending title={`No ${c.label.toLowerCase()} have been published yet`}>Entries will appear here as the University publishes them.</Pending>
@@ -44,7 +44,7 @@ export default async function NewsCategoryPage({ params }: Props) {
           <Pending title="Nothing has been published in this category yet">The entry below is a template that shows how items will appear.</Pending>
         ) : null}
         {items.length ? (
-          <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2">
+          <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((a) => (
               <li key={a.slug}>
                 <ArticleCard article={a} headingLevel="h2" />

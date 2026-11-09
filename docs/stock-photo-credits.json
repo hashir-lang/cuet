@@ -1,0 +1,202 @@
+[
+  {
+    "file": "/images/stock/computing.jpg",
+    "subject": "computing.jpg → students working at computers in a lab, or hands coding on a laptop with code on screen",
+    "unsplashPage": "https://unsplash.com/photos/m_HRfLhgABo",
+    "photographer": "Christopher Gower",
+    "description": "A laptop on a desk displays lines of code in an editor, with a second monitor behind it.",
+    "width": 2400,
+    "height": 1598,
+    "bytes": 383592
+  },
+  {
+    "file": "/images/stock/management.jpg",
+    "subject": "management.jpg → young business students or professionals discussing around a table with a laptop, documents or charts",
+    "unsplashPage": "https://unsplash.com/photos/5QgIuuBxKwM",
+    "photographer": "Headway",
+    "description": "A person gestures while speaking in a meeting, with a laptop showing charts and an open notebook on the table.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 482637
+  },
+  {
+    "file": "/images/stock/humanities.jpg",
+    "subject": "humanities.jpg → open books with a notebook and pen, or a student reading in a library",
+    "unsplashPage": "https://unsplash.com/photos/QJDzYT_K8Xg",
+    "photographer": "Aaron Burden",
+    "description": "An open book and a handwritten notebook with a pen lie on a table in front of a bookshelf.",
+    "width": 2400,
+    "height": 1802,
+    "bytes": 367892
+  },
+  {
+    "file": "/images/stock/education.jpg",
+    "subject": "education.jpg → a teacher at a whiteboard or in front of adult/college students in a classroom",
+    "unsplashPage": "https://unsplash.com/photos/14jNrPntbgk",
+    "photographer": "Vitaly Gariev",
+    "description": "A teacher stands at the front of a classroom speaking to adult students seated at desks.",
+    "width": 2400,
+    "height": 1350,
+    "bytes": 273491
+  },
+  {
+    "file": "/images/stock/law.jpg",
+    "subject": "law.jpg → law books on shelves, scales of justice, or a courtroom/moot court setting",
+    "unsplashPage": "https://unsplash.com/photos/yCdPU73kGSc",
+    "photographer": "Tingey Injury Law Firm",
+    "description": "A bronze Lady Justice statue, blindfolded, holds up the scales of justice against a plain grey wall.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 515211
+  },
+  {
+    "file": "/images/stock/aviation.jpg",
+    "subject": "aviation.jpg → an airliner wing seen from the cabin, or an aircraft at an airport terminal/apron",
+    "unsplashPage": "https://unsplash.com/photos/0GzRL4eKPUQ",
+    "photographer": "Octav Cado",
+    "description": "An airliner wing seen through a cabin window, flying above clouds under a clear blue sky.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 257906
+  },
+  {
+    "file": "/images/stock/sciences.jpg",
+    "subject": "sciences.jpg → statistics or data: charts and graphs on a laptop screen, or mathematical formulas on a board",
+    "unsplashPage": "https://unsplash.com/photos/JKUTrJ4vK00",
+    "photographer": "Luke Chesser",
+    "description": "A laptop screen shows an analytics dashboard with bar charts and line graphs.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 429701
+  },
+  {
+    "file": "/images/stock/agriculture.jpg",
+    "subject": "agriculture.jpg → a wheat or crop field, ideally with a farmer or agronomist inspecting crops",
+    "unsplashPage": "https://unsplash.com/photos/TP3bvMatFUc",
+    "photographer": "Mihajlo Sivč",
+    "description": "An older farmer runs his hand over ripe golden wheat in a vast field under a clear sky.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 580135
+  },
+  {
+    "file": "/images/stock/public-health.jpg",
+    "subject": "public-health.jpg → a health worker with a stethoscope, a vaccination or community health setting; clean clinical look",
+    "unsplashPage": "https://unsplash.com/photos/bsT-u4nBe7o",
+    "photographer": "CDC",
+    "description": "A nurse in a white coat gives an older man a vaccine injection in his upper arm.",
+    "width": 2400,
+    "height": 1587,
+    "bytes": 558940
+  },
+  {
+    "file": "/images/stock/information-security.jpg",
+    "subject": "information-security.jpg → a server room, network cables, or a cybersecurity workstation with screens",
+    "unsplashPage": "https://unsplash.com/photos/M5tzZtFCOfs",
+    "photographer": "Taylor Vick",
+    "description": "Server racks in a dark data centre with bundled network cables and glowing status lights.",
+    "width": 2400,
+    "height": 1347,
+    "bytes": 669855
+  },
+  {
+    "file": "/images/stock/nursing.jpg",
+    "subject": "nursing.jpg → a nurse in uniform in a hospital or training with a mannequin",
+    "unsplashPage": "https://unsplash.com/photos/ZCO_5Y29s8k",
+    "photographer": "Hush Naidoo Jade Photography",
+    "description": "A nurse in blue scrubs and a cap pushes an infant incubator along a bright hospital corridor.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 566890
+  },
+  {
+    "file": "/images/stock/pharmacy.jpg",
+    "subject": "pharmacy.jpg → a pharmacist with medicine shelves, or a pharmaceutical lab with tablets or vials",
+    "unsplashPage": "https://unsplash.com/photos/fTQHPb6r4wQ",
+    "photographer": "National Cancer Institute",
+    "description": "A pharmacist in a white coat examines a medicine package beside shelves of pharmacy stock.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 450088
+  },
+  {
+    "file": "/images/stock/veterinary.jpg",
+    "subject": "veterinary.jpg → a poultry farm with chickens, or a veterinarian examining poultry",
+    "unsplashPage": "https://unsplash.com/photos/8wWpDF4Av-Y",
+    "photographer": "Ben Moreland",
+    "description": "Several brown hens stand in a farmyard beside a wooden fence and chicken coop.",
+    "width": 2400,
+    "height": 1800,
+    "bytes": 709575
+  },
+  {
+    "file": "/images/stock/admissions.jpg",
+    "subject": "admissions.jpg → graduates in caps and gowns, or a student completing a form on a laptop at a desk",
+    "unsplashPage": "https://unsplash.com/photos/RUoQ_4hynqQ",
+    "photographer": "Ethan Gowans",
+    "description": "Rows of graduates in blue caps and gowns sit together at a graduation ceremony.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 591111
+  },
+  {
+    "file": "/images/stock/events.jpg",
+    "subject": "events.jpg → an audience in an auditorium or seminar hall listening to a speaker",
+    "unsplashPage": "https://unsplash.com/photos/3aVlWP-7bg8",
+    "photographer": "Mikael Kristenson",
+    "description": "High-angle view of an audience seated in rows of an auditorium during a conference.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 809558
+  },
+  {
+    "file": "/images/stock/global.jpg",
+    "subject": "global.jpg → a diverse group of international students together, or another clearly international academic scene (no flags)",
+    "unsplashPage": "https://unsplash.com/photos/kp7qkHTgSKc",
+    "photographer": "Vitaly Gariev",
+    "description": "A diverse group of university students gathers around a laptop in a lecture hall.",
+    "width": 2400,
+    "height": 1350,
+    "bytes": 411102
+  },
+  {
+    "file": "/images/stock/careers.jpg",
+    "subject": "careers.jpg → professionals in a modern office, a job interview or a handshake",
+    "unsplashPage": "https://unsplash.com/photos/IESB4iFVuzA",
+    "photographer": "Resume Genius",
+    "description": "A smiling young woman in a blazer shakes hands with an interviewer across an office table.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 412148
+  },
+  {
+    "file": "/images/stock/campus-life.jpg",
+    "subject": "campus-life.jpg → students walking and talking outdoors on a university campus",
+    "unsplashPage": "https://unsplash.com/photos/kaZHJj-DhC4",
+    "photographer": "Zoshua Colah",
+    "description": "Students walk along a paved path past a brick campus building beneath a large tree.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 1052154
+  },
+  {
+    "file": "/images/stock/lecture.jpg",
+    "subject": "lecture.jpg → a lecture hall with students listening or writing",
+    "unsplashPage": "https://unsplash.com/photos/RDBb3JUdOnc",
+    "photographer": "Vitaly Gariev",
+    "description": "Students seated in a tiered lecture hall listen and take notes during a class.",
+    "width": 2400,
+    "height": 1350,
+    "bytes": 381350
+  },
+  {
+    "file": "/images/stock/study-group.jpg",
+    "subject": "study-group.jpg → students doing group work in a seminar room or library",
+    "unsplashPage": "https://unsplash.com/photos/Dg8WzlOE1as",
+    "photographer": "Jaykumar Bherwani",
+    "description": "Overhead view of students working with laptops and notebooks at long tables in a library.",
+    "width": 2400,
+    "height": 1600,
+    "bytes": 981778
+  }
+]
